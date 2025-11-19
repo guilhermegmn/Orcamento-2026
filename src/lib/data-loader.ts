@@ -38,7 +38,6 @@ export async function loadJSON<T>(filePath: string): Promise<T | null> {
 
 export async function loadAllData() {
   const [
-    orcado2025,
     realizado2025,
     orcado2026,
     realizado2026,
@@ -46,7 +45,6 @@ export async function loadAllData() {
     equipamentosData,
     configData,
   ] = await Promise.all([
-    loadCSVData("/data/2025/orcado.csv"),
     loadCSVData("/data/2025/realizado.csv"),
     loadCSVData("/data/2026/orcado.csv"),
     loadCSVData("/data/2026/realizado.csv"),
@@ -58,7 +56,6 @@ export async function loadAllData() {
   ]);
 
   return {
-    orcado2025,
     realizado2025,
     orcado2026,
     realizado2026,
