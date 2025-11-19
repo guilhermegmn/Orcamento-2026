@@ -60,6 +60,7 @@ export interface Subclasse {
 export interface Equipamento {
   codigo: string;
   nome: string;
+  categoria: string;
   descricao: string;
   centro_custo: string;
   responsavel: string;
