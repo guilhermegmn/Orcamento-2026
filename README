@@ -36,8 +36,8 @@ Este projeto foi desenvolvido com Next.js 15 e React 19, oferecendo uma interfac
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/dashboard-orcamento-2025-2026.git
-cd dashboard-orcamento-2025-2026
+git clone https://github.com/guilhermegmn/Orcamento-2026.git
+cd Orcamento-2026
 ```
 
 2. Instale as dependências:
@@ -63,7 +63,7 @@ pnpm dev
 ## Estrutura do Projeto
 
 ```
-dashboard-orcamento-2025-2026/
+Orcamento-2026/
 ├── src/
 │   ├── app/              # Páginas e rotas (App Router)
 │   ├── components/       # Componentes React reutilizáveis
@@ -101,7 +101,7 @@ Você pode baixar um modelo de CSV diretamente pelo dashboard através do botão
 
 A maneira mais fácil de implantar este projeto é usar a [Vercel Platform](https://vercel.com):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/seu-usuario/dashboard-orcamento-2025-2026)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/guilhermegmn/Orcamento-2026)
 
 ### Outras plataformas
 
