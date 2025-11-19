@@ -1,0 +1,47 @@
+{
+  "aplicacao": {
+    "nome": "Dashboard de Orçamento Institucional",
+    "versao": "2.0.0",
+    "ano_atual": 2026,
+    "moeda": "BRL",
+    "simbolo_moeda": "R$"
+  },
+  "periodo": {
+    "ano_comparacao": 2025,
+    "ano_vigente": 2026,
+    "meses": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+    "meses_completos": [
+      "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+      "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+    ]
+  },
+  "alertas": {
+    "variacao_critica_percentual": 15,
+    "variacao_alerta_percentual": 10,
+    "variacao_atencao_percentual": 5,
+    "cores": {
+      "critico": "#ef4444",
+      "alerta": "#f59e0b",
+      "atencao": "#eab308",
+      "normal": "#10b981"
+    }
+  },
+  "formatacao": {
+    "casas_decimais": 2,
+    "separador_milhar": ".",
+    "separador_decimal": ",",
+    "prefixo_moeda": "R$ "
+  },
+  "limites": {
+    "registros_por_pagina": 20,
+    "max_categorias_grafico": 10,
+    "max_equipamentos_tabela": 50
+  },
+  "features": {
+    "importacao_csv": true,
+    "exportacao_relatorio": true,
+    "notificacoes_email": false,
+    "integracao_api": false,
+    "modo_escuro": true
+  }
+}
