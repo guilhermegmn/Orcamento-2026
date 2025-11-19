@@ -1,0 +1,140 @@
+# Dashboard de Orçamento 2025/2026
+
+Dashboard interativo para acompanhamento e análise do orçamento institucional para o período 2025/2026.
+
+## Sobre o Projeto
+
+Este projeto foi desenvolvido com Next.js 15 e React 19, oferecendo uma interface moderna e responsiva para visualização de dados orçamentários em tempo real.
+
+### Principais Funcionalidades
+
+- Visualização de KPIs orçamentários consolidados
+- Gráficos interativos de evolução temporal
+- Comparação entre orçamento previsto vs realizado
+- Filtros por categoria, período e centro de custo
+- Importação de dados via arquivo CSV
+- Dashboard totalmente responsivo
+
+### Tecnologias Utilizadas
+
+- **Framework:** Next.js 15.5.3 (App Router)
+- **UI:** React 19.1.0
+- **Estilização:** Tailwind CSS 4
+- **Gráficos:** Recharts 3.2.1
+- **Componentes:** Radix UI
+- **Parser CSV:** PapaParse 5.5.3
+- **Ícones:** Lucide React
+
+## Como Executar
+
+### Pré-requisitos
+
+- Node.js 20 ou superior
+- npm, yarn, pnpm ou bun
+
+### Instalação
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/dashboard-orcamento-2025-2026.git
+cd dashboard-orcamento-2025-2026
+```
+
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
+
+3. Execute o servidor de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+```
+
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador para visualizar o dashboard.
+
+## Estrutura do Projeto
+
+```
+dashboard-orcamento-2025-2026/
+├── src/
+│   ├── app/              # Páginas e rotas (App Router)
+│   ├── components/       # Componentes React reutilizáveis
+│   │   ├── ui/          # Componentes de UI base
+│   │   └── ...          # Componentes específicos do dashboard
+│   └── lib/             # Utilitários e helpers
+├── public/              # Arquivos estáticos
+└── package.json
+```
+
+## Formato do CSV
+
+O dashboard aceita importação de dados via CSV com o seguinte formato:
+
+```csv
+categoria,subcategoria,mes,previsto,realizado,centro_custo
+Pessoal,Salários,Jan,100000,95000,CC-001
+Pessoal,Salários,Fev,100000,98000,CC-001
+Operacional,Materiais,Jan,50000,45000,CC-002
+```
+
+### Campos obrigatórios:
+- `categoria`: Categoria principal do orçamento
+- `subcategoria`: Subcategoria ou detalhamento
+- `mes`: Mês (Jan, Fev, Mar, etc.)
+- `previsto`: Valor orçado/previsto
+- `realizado`: Valor executado/realizado
+- `centro_custo`: Centro de custo responsável
+
+Você pode baixar um modelo de CSV diretamente pelo dashboard através do botão "Baixar modelo CSV".
+
+## Implantação
+
+### Vercel (Recomendado)
+
+A maneira mais fácil de implantar este projeto é usar a [Vercel Platform](https://vercel.com):
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/seu-usuario/dashboard-orcamento-2025-2026)
+
+### Outras plataformas
+
+O projeto também pode ser implantado em:
+- Netlify
+- AWS Amplify
+- Google Cloud Platform
+- Qualquer servidor que suporte Node.js
+
+Para build de produção:
+```bash
+npm run build
+npm run start
+```
+
+## Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+
+1. Fork o projeto
+2. Crie sua feature branch (`git checkout -b feature/NovaFuncionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto é de uso interno institucional.
+
+## Suporte
+
+Para dúvidas ou problemas, abra uma issue no repositório ou entre em contato com a equipe de desenvolvimento.
+
+---
+
+Desenvolvido com Next.js 15 e React 19
