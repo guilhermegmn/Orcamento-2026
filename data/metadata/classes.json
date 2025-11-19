@@ -1,0 +1,119 @@
+{
+  "classes_orcamentarias": [
+    {
+      "codigo": "01",
+      "nome": "Pessoal",
+      "descricao": "Despesas com pessoal, salários e benefícios",
+      "cor": "#3b82f6",
+      "subclasses": [
+        {
+          "codigo": "01.01",
+          "nome": "Salários",
+          "descricao": "Salários e vencimentos"
+        },
+        {
+          "codigo": "01.02",
+          "nome": "Benefícios",
+          "descricao": "Benefícios e auxílios"
+        },
+        {
+          "codigo": "01.03",
+          "nome": "Encargos",
+          "descricao": "Encargos sociais e trabalhistas"
+        }
+      ]
+    },
+    {
+      "codigo": "02",
+      "nome": "Operacional",
+      "descricao": "Despesas operacionais e administrativas",
+      "cor": "#10b981",
+      "subclasses": [
+        {
+          "codigo": "02.01",
+          "nome": "Materiais",
+          "descricao": "Material de consumo e expediente"
+        },
+        {
+          "codigo": "02.02",
+          "nome": "Serviços",
+          "descricao": "Serviços de terceiros"
+        },
+        {
+          "codigo": "02.03",
+          "nome": "Utilidades",
+          "descricao": "Água, luz, telefone, internet"
+        }
+      ]
+    },
+    {
+      "codigo": "03",
+      "nome": "Infraestrutura",
+      "descricao": "Investimentos em infraestrutura e patrimônio",
+      "cor": "#f59e0b",
+      "subclasses": [
+        {
+          "codigo": "03.01",
+          "nome": "Equipamentos",
+          "descricao": "Aquisição de equipamentos"
+        },
+        {
+          "codigo": "03.02",
+          "nome": "Manutenção",
+          "descricao": "Manutenção predial e de equipamentos"
+        },
+        {
+          "codigo": "03.03",
+          "nome": "Obras",
+          "descricao": "Obras e reformas"
+        }
+      ]
+    },
+    {
+      "codigo": "04",
+      "nome": "Tecnologia",
+      "descricao": "Investimentos em tecnologia da informação",
+      "cor": "#8b5cf6",
+      "subclasses": [
+        {
+          "codigo": "04.01",
+          "nome": "Software",
+          "descricao": "Licenças e sistemas"
+        },
+        {
+          "codigo": "04.02",
+          "nome": "Hardware",
+          "descricao": "Equipamentos de TI"
+        },
+        {
+          "codigo": "04.03",
+          "nome": "Serviços TI",
+          "descricao": "Serviços de tecnologia"
+        }
+      ]
+    },
+    {
+      "codigo": "05",
+      "nome": "Administrativo",
+      "descricao": "Despesas administrativas gerais",
+      "cor": "#ec4899",
+      "subclasses": [
+        {
+          "codigo": "05.01",
+          "nome": "Viagens",
+          "descricao": "Viagens e deslocamentos"
+        },
+        {
+          "codigo": "05.02",
+          "nome": "Treinamento",
+          "descricao": "Capacitação e treinamento"
+        },
+        {
+          "codigo": "05.03",
+          "nome": "Consultoria",
+          "descricao": "Consultorias especializadas"
+        }
+      ]
+    }
+  ]
+}

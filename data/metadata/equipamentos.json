@@ -1,0 +1,58 @@
+{
+  "equipamentos": [
+    {
+      "codigo": "EQ-ADM",
+      "nome": "Administrativo",
+      "descricao": "Departamento Administrativo e Financeiro",
+      "centro_custo": "CC-001",
+      "responsavel": "João Silva",
+      "email": "joao.silva@exemplo.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "EQ-OPE",
+      "nome": "Operacional",
+      "descricao": "Departamento de Operações",
+      "centro_custo": "CC-002",
+      "responsavel": "Maria Santos",
+      "email": "maria.santos@exemplo.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "EQ-INF",
+      "nome": "Infraestrutura",
+      "descricao": "Departamento de Infraestrutura e Facilities",
+      "centro_custo": "CC-003",
+      "responsavel": "Carlos Oliveira",
+      "email": "carlos.oliveira@exemplo.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "EQ-TI",
+      "nome": "Tecnologia da Informação",
+      "descricao": "Departamento de TI e Inovação",
+      "centro_custo": "CC-004",
+      "responsavel": "Ana Costa",
+      "email": "ana.costa@exemplo.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "EQ-RH",
+      "nome": "Recursos Humanos",
+      "descricao": "Departamento de Gestão de Pessoas",
+      "centro_custo": "CC-005",
+      "responsavel": "Pedro Almeida",
+      "email": "pedro.almeida@exemplo.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "EQ-COM",
+      "nome": "Comercial",
+      "descricao": "Departamento Comercial e Vendas",
+      "centro_custo": "CC-006",
+      "responsavel": "Juliana Ferreira",
+      "email": "juliana.ferreira@exemplo.com.br",
+      "ativo": true
+    }
+  ]
+}
