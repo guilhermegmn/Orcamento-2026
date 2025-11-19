@@ -17,7 +17,7 @@ export async function loadCSVData(filePath: string): Promise<BudgetDataRow[]> {
           }));
           resolve(data);
         },
-        error: (error) => reject(error),
+        error: (error: Error) => reject(error),
       });
     });
   } catch (error) {
