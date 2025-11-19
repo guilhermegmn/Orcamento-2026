@@ -15,33 +15,31 @@ function parseValor(valor) {
   return Math.abs(numero) || 0;
 }
 
+// Categorias válidas conforme especificado
+const CATEGORIAS_VALIDAS = {
+  'CB': 'CAMINHÃO BASCULANTE',
+  'CC': 'CAMINHÃO COMBOIO',
+  'CG': 'CAMINHÃO GUINDAUTO',
+  'CP': 'CAMINHÃO PIPA',
+  'EH': 'ESCAVADEIRA HIDRAULICA',
+  'TE': 'TRATOR DE ESTEIRA',
+  'TP': 'TRATOR DE PNEUS',
+  'PC': 'PA CARREGADEIRA',
+  'VL': 'VEICULO LEVE',
+  'CA': 'COMPRESSOR DE AR',
+  'KSS': 'ORE SORTER',
+  'TC': 'TRANSPORTADOR DE CORREIA',
+  'PM': 'PENEIRA MOVEL',
+  'PV': 'PENEIRA VIBRATORIA',
+  'BM': 'BRITADOR'
+};
+
 // Função para extrair categoria do código de equipamento
 function extrairCategoria(codigo) {
-  if (!codigo) return 'GERAL';
+  if (!codigo) return null;
 
   const prefixo = codigo.split('-')[0];
-  const categorias = {
-    'CB': 'Caminhão Basculante',
-    'CC': 'Caminhão Comboio',
-    'CG': 'Caminhão Guindauto',
-    'CP': 'Caminhão Pipa',
-    'EH': 'Escavadeira Hidráulica',
-    'TE': 'Trator de Esteira',
-    'TP': 'Trator de Pneus',
-    'PC': 'Pá Carregadeira',
-    'VL': 'Veículo Leve',
-    'CA': 'Compressor de Ar',
-    'KSS': 'Ore Sorter',
-    'TC': 'Transportador de Correia',
-    'PM': 'Peneira Móvel',
-    'PV': 'Peneira Vibratória',
-    'BM': 'Britador',
-    'SD': 'Spray Dust',
-    'RE': 'Retroescavadeira',
-    'MN': 'Motoniveladora'
-  };
-
-  return categorias[prefixo] || 'Outros';
+  return CATEGORIAS_VALIDAS[prefixo] || null;
 }
 
 // Mapear classe orçamentária para classe e subclasse
@@ -133,6 +131,7 @@ function processarOrcamento2026() {
         resultado.push({
           ano: 2026,
           mes: meses[m],
+          classe_codigo: classeOrc,
           classe_orcamentaria: mapeamento.classe,
           subclasse: mapeamento.subclasse,
           equipamento: equipamento || 'GERAL',
@@ -183,6 +182,7 @@ function processarOrcamentoDetalhado() {
         resultado2025.push({
           ano: 2025,
           mes: meses[m],
+          classe_codigo: classeOrc,
           classe_orcamentaria: mapeamento.classe,
           subclasse: mapeamento.subclasse,
           equipamento: 'GERAL',
@@ -201,6 +201,7 @@ function processarOrcamentoDetalhado() {
         resultado2026.push({
           ano: 2026,
           mes: meses[m],
+          classe_codigo: classeOrc,
           classe_orcamentaria: mapeamento.classe,
           subclasse: mapeamento.subclasse,
           equipamento: 'GERAL',
@@ -217,9 +218,9 @@ function processarOrcamentoDetalhado() {
 
 // Salvar arquivos CSV
 function salvarCSV(dados, arquivo) {
-  const cabecalho = 'ano,mes,classe_orcamentaria,subclasse,equipamento,centro_custo,valor\n';
+  const cabecalho = 'ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,valor\n';
   const linhas = dados.map(d =>
-    `${d.ano},${d.mes},${d.classe_orcamentaria},${d.subclasse},${d.equipamento},${d.centro_custo},${d.valor}`
+    `${d.ano},${d.mes},${d.classe_codigo},${d.classe_orcamentaria},${d.subclasse},${d.equipamento},${d.centro_custo},${d.valor}`
   ).join('\n');
 
   fs.writeFileSync(arquivo, cabecalho + linhas, 'utf-8');

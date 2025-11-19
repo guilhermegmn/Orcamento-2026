@@ -69,7 +69,7 @@ export default function Dashboard() {
   const dadosPlanejamento = useMemo(() => {
     const filtrado2025 = realizado2025.filter((item) => {
       const classeMatch =
-        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_orcamentaria);
+        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_codigo);
 
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
       const categoriaMatch =
@@ -84,7 +84,7 @@ export default function Dashboard() {
 
     const filtrado2026 = orcado2026.filter((item) => {
       const classeMatch =
-        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_orcamentaria);
+        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_codigo);
 
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
       const categoriaMatch =
@@ -117,15 +117,17 @@ export default function Dashboard() {
     const classesMap = new Map<string, { orcado2025: number; orcado2026: number }>();
 
     filtrado2025.forEach((item) => {
-      const current = classesMap.get(item.classe_orcamentaria) || { orcado2025: 0, orcado2026: 0 };
+      const key = `${item.classe_codigo} - ${item.subclasse}`;
+      const current = classesMap.get(key) || { orcado2025: 0, orcado2026: 0 };
       current.orcado2025 += item.valor;
-      classesMap.set(item.classe_orcamentaria, current);
+      classesMap.set(key, current);
     });
 
     filtrado2026.forEach((item) => {
-      const current = classesMap.get(item.classe_orcamentaria) || { orcado2025: 0, orcado2026: 0 };
+      const key = `${item.classe_codigo} - ${item.subclasse}`;
+      const current = classesMap.get(key) || { orcado2025: 0, orcado2026: 0 };
       current.orcado2026 += item.valor;
-      classesMap.set(item.classe_orcamentaria, current);
+      classesMap.set(key, current);
     });
 
     return Array.from(classesMap.entries()).map(([classe, values]) => {
@@ -147,7 +149,7 @@ export default function Dashboard() {
   const dadosExecucao = useMemo(() => {
     const filtradoOrcado = orcado2026.filter((item) => {
       const classeMatch =
-        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(item.classe_orcamentaria);
+        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(item.classe_codigo);
 
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
       const categoriaMatch =
@@ -162,7 +164,7 @@ export default function Dashboard() {
 
     const filtradoRealizado = realizado2026.filter((item) => {
       const classeMatch =
-        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(item.classe_orcamentaria);
+        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(item.classe_codigo);
 
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
       const categoriaMatch =
@@ -218,15 +220,17 @@ export default function Dashboard() {
     const classesMap = new Map<string, { orcado: number; realizado: number }>();
 
     filtradoOrcado.forEach((item) => {
-      const current = classesMap.get(item.classe_orcamentaria) || { orcado: 0, realizado: 0 };
+      const key = `${item.classe_codigo} - ${item.subclasse}`;
+      const current = classesMap.get(key) || { orcado: 0, realizado: 0 };
       current.orcado += item.valor;
-      classesMap.set(item.classe_orcamentaria, current);
+      classesMap.set(key, current);
     });
 
     filtradoRealizado.forEach((item) => {
-      const current = classesMap.get(item.classe_orcamentaria) || { orcado: 0, realizado: 0 };
+      const key = `${item.classe_codigo} - ${item.subclasse}`;
+      const current = classesMap.get(key) || { orcado: 0, realizado: 0 };
       current.realizado += item.valor;
-      classesMap.set(item.classe_orcamentaria, current);
+      classesMap.set(key, current);
     });
 
     return Array.from(classesMap.entries()).map(([classe, values]) => ({
@@ -264,27 +268,38 @@ export default function Dashboard() {
   }, [dadosExecucao]);
 
   // Opções para os filtros
-  const opcoesClasses = useMemo(() =>
-    Array.from(new Set([...realizado2025, ...orcado2026].map((item) => item.classe_orcamentaria))).map(c => ({
-      value: c,
-      label: c
-    })),
-    [realizado2025, orcado2026]
-  );
+  const opcoesClasses = useMemo(() => {
+    const classesMap = new Map<string, string>();
+    [...realizado2025, ...orcado2026].forEach(item => {
+      const key = item.classe_codigo;
+      const label = `${item.classe_codigo} - ${item.subclasse}`;
+      classesMap.set(key, label);
+    });
+    return Array.from(classesMap.entries()).map(([value, label]) => ({
+      value,
+      label
+    })).sort((a, b) => a.value.localeCompare(b.value));
+  }, [realizado2025, orcado2026]);
 
   const opcoesCategorias = useMemo(() =>
-    Array.from(new Set(equipamentos.map((eq) => eq.categoria))).map(c => ({
-      value: c,
-      label: c
-    })),
+    Array.from(new Set(equipamentos.map((eq) => eq.categoria)))
+      .filter(c => c !== null && c !== 'Geral')
+      .map(c => ({
+        value: c!,
+        label: c!
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
     [equipamentos]
   );
 
   const opcoesEquipamentos = useMemo(() =>
-    equipamentos.map(eq => ({
-      value: eq.codigo,
-      label: eq.nome
-    })),
+    equipamentos
+      .filter(eq => eq.codigo !== 'GERAL')
+      .map(eq => ({
+        value: eq.codigo,
+        label: eq.codigo
+      }))
+      .sort((a, b) => a.label.localeCompare(b.label)),
     [equipamentos]
   );
 
