@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { TrendingUp, TrendingDown, BarChart3, LineChart } from "lucide-react";
+import { TrendingUp, TrendingDown, BarChart3, LineChart, List } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -48,6 +48,11 @@ export default function Dashboard() {
   const [filtroClassesExecucao, setFiltroClassesExecucao] = useState<string[]>([]);
   const [filtroCategoriasExecucao, setFilterCategoriasExecucao] = useState<string[]>([]);
   const [filtroEquipamentosExecucao, setFiltroEquipamentosExecucao] = useState<string[]>([]);
+
+  // Filtros Detalhamento (multi-select)
+  const [filtroEquipamentosDetalhamento, setFiltroEquipamentosDetalhamento] = useState<string[]>([]);
+  const [filtroCategoriasDetalhamento, setFiltroCategoriasDetalhamento] = useState<string[]>([]);
+  const [filtroMesesDetalhamento, setFiltroMesesDetalhamento] = useState<string[]>([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -267,6 +272,36 @@ export default function Dashboard() {
     }));
   }, [dadosExecucao]);
 
+  // ============= ABA DETALHAMENTO: Dados Detalhados 2025 =============
+
+  const dadosDetalhamento = useMemo(() => {
+    const filtrados = realizado2025.filter((item) => {
+      const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
+
+      const categoriaMatch =
+        filtroCategoriasDetalhamento.length === 0 ||
+        (equipamentoObj && filtroCategoriasDetalhamento.includes(equipamentoObj.categoria));
+
+      const equipamentoMatch =
+        filtroEquipamentosDetalhamento.length === 0 ||
+        filtroEquipamentosDetalhamento.includes(item.equipamento);
+
+      const mesMatch =
+        filtroMesesDetalhamento.length === 0 ||
+        filtroMesesDetalhamento.includes(item.mes);
+
+      return categoriaMatch && equipamentoMatch && mesMatch;
+    });
+
+    const total = filtrados.reduce((sum, item) => sum + item.valor, 0);
+
+    return {
+      filtrados,
+      total,
+      count: filtrados.length
+    };
+  }, [realizado2025, filtroCategoriasDetalhamento, filtroEquipamentosDetalhamento, filtroMesesDetalhamento, equipamentos]);
+
   // Opções para os filtros
   const opcoesClasses = useMemo(() => {
     const classesMap = new Map<string, string>();
@@ -303,6 +338,14 @@ export default function Dashboard() {
     [equipamentos]
   );
 
+  const opcoesMeses = useMemo(() =>
+    MESES.map(mes => ({
+      value: mes,
+      label: mes
+    })),
+    []
+  );
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 flex items-center justify-center">
@@ -329,7 +372,7 @@ export default function Dashboard() {
 
         {/* Tabs */}
         <Tabs defaultValue="planejamento" className="space-y-6">
-          <TabsList className="grid w-full max-w-md grid-cols-2">
+          <TabsList className="grid w-full max-w-3xl grid-cols-3">
             <TabsTrigger value="planejamento" className="flex items-center gap-2">
               <BarChart3 className="h-4 w-4" />
               Planejamento
@@ -337,6 +380,10 @@ export default function Dashboard() {
             <TabsTrigger value="execucao" className="flex items-center gap-2">
               <LineChart className="h-4 w-4" />
               Execução 2026
+            </TabsTrigger>
+            <TabsTrigger value="detalhamento" className="flex items-center gap-2">
+              <List className="h-4 w-4" />
+              Detalhamento
             </TabsTrigger>
           </TabsList>
 
@@ -746,6 +793,112 @@ export default function Dashboard() {
                         ))}
                       </tbody>
                     </table>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </TabsContent>
+
+          {/* ========== ABA DETALHAMENTO ========== */}
+          <TabsContent value="detalhamento" className="space-y-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Detalhamento: Dados Reais 2025</CardTitle>
+                <CardDescription>
+                  Visualização detalhada dos gastos reais de 2025 por equipamento
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
+                      Equipamento
+                    </label>
+                    <MultiSelect
+                      options={opcoesEquipamentos}
+                      selected={filtroEquipamentosDetalhamento}
+                      onChange={setFiltroEquipamentosDetalhamento}
+                      placeholder="Todos os equipamentos"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
+                      Categoria
+                    </label>
+                    <MultiSelect
+                      options={opcoesCategorias}
+                      selected={filtroCategoriasDetalhamento}
+                      onChange={setFiltroCategoriasDetalhamento}
+                      placeholder="Todas as categorias"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
+                      Período
+                    </label>
+                    <MultiSelect
+                      options={opcoesMeses}
+                      selected={filtroMesesDetalhamento}
+                      onChange={setFiltroMesesDetalhamento}
+                      placeholder="Todos os meses"
+                    />
+                  </div>
+                </div>
+
+                {/* KPIs */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <CardDescription>Total de Registros</CardDescription>
+                      <CardTitle className="text-2xl">
+                        {dadosDetalhamento.count.toLocaleString('pt-BR')}
+                      </CardTitle>
+                    </CardHeader>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="pb-2">
+                      <CardDescription>Total Gasto</CardDescription>
+                      <CardTitle className="text-2xl">
+                        {formatCurrency(dadosDetalhamento.total, config || undefined)}
+                      </CardTitle>
+                    </CardHeader>
+                  </Card>
+                </div>
+
+                {/* Tabela Detalhada */}
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Registros Detalhados</h3>
+                  <div className="overflow-x-auto max-h-[600px] overflow-y-auto">
+                    <table className="w-full">
+                      <thead className="sticky top-0 bg-white dark:bg-slate-800">
+                        <tr className="border-b">
+                          <th className="text-left p-2 font-medium">Mês</th>
+                          <th className="text-left p-2 font-medium">Equipamento</th>
+                          <th className="text-left p-2 font-medium">Classe</th>
+                          <th className="text-left p-2 font-medium">Subclasse</th>
+                          <th className="text-right p-2 font-medium">Valor</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {dadosDetalhamento.filtrados.slice(0, 1000).map((item, idx) => (
+                          <tr key={idx} className="border-b hover:bg-slate-50 dark:hover:bg-slate-800">
+                            <td className="p-2">{item.mes}</td>
+                            <td className="p-2">{item.equipamento}</td>
+                            <td className="p-2">{item.classe_codigo}</td>
+                            <td className="p-2">{item.subclasse}</td>
+                            <td className="p-2 text-right">
+                              {formatCurrency(item.valor, config || undefined)}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                    {dadosDetalhamento.filtrados.length > 1000 && (
+                      <p className="text-sm text-slate-600 dark:text-slate-400 mt-4 text-center">
+                        Mostrando 1000 de {dadosDetalhamento.filtrados.length.toLocaleString('pt-BR')} registros
+                      </p>
+                    )}
                   </div>
                 </div>
               </CardContent>

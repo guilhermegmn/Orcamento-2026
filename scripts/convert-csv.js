@@ -42,6 +42,51 @@ function extrairCategoria(codigo) {
   return CATEGORIAS_VALIDAS[prefixo] || null;
 }
 
+// Função para extrair TAG de equipamento do campo "Desc. Classe de Valor"
+function extrairEquipamento(descClasseValor) {
+  if (!descClasseValor || descClasseValor.trim() === '' || descClasseValor === '""') {
+    return 'GERAL';
+  }
+
+  // Remove aspas
+  const desc = descClasseValor.replace(/"/g, '').trim();
+
+  // Procura por padrão TAG-NUMERO (ex: CB-01, VL-20, EH-05)
+  const match = desc.match(/^([A-Z]{2,3})-(\d+)/);
+
+  if (match) {
+    const prefixo = match[1];
+    const numero = match[2];
+
+    // Valida se é uma categoria válida
+    if (CATEGORIAS_VALIDAS[prefixo]) {
+      return `${prefixo}-${numero}`;
+    }
+  }
+
+  // Se não encontrou padrão válido, retorna GERAL
+  return 'GERAL';
+}
+
+// Função para mapear nome do mês em português para abreviação
+function mapearMes(mesCompleto) {
+  const mapa = {
+    'Janeiro': 'Jan',
+    'Fevereiro': 'Fev',
+    'Março': 'Mar',
+    'Abril': 'Abr',
+    'Maio': 'Mai',
+    'Junho': 'Jun',
+    'Julho': 'Jul',
+    'Agosto': 'Ago',
+    'Setembro': 'Set',
+    'Outubro': 'Out',
+    'Novembro': 'Nov',
+    'Dezembro': 'Dez'
+  };
+  return mapa[mesCompleto] || mesCompleto;
+}
+
 // Mapear classe orçamentária para classe e subclasse
 function mapearClasse(classeCodigo, descricao, grupoContas) {
   const mapa = {
@@ -92,6 +137,86 @@ function mapearClasse(classeCodigo, descricao, grupoContas) {
   };
 
   return mapa[classeCodigo] || { classe: 'Outros', subclasse: descricao || 'Diversos' };
+}
+
+// Processar arquivo "RAZÃO CONTÁBIL - ANALÍTICO" para dados reais de 2025
+function processarRazaoContabil() {
+  const arquivo = fs.readFileSync(
+    path.join(__dirname, '../data/RAZÃO CONTÁBIL - ANALÍTICO.csv'),
+    'utf-8'
+  );
+
+  // Usar split manual para respeitar aspas
+  const linhas = arquivo.split('\n');
+  const resultado = [];
+
+  // Pular cabeçalho
+  for (let i = 1; i < linhas.length; i++) {
+    const linha = linhas[i].trim();
+    if (!linha) continue;
+
+    // Parse CSV respeitando aspas e vírgulas
+    const colunas = [];
+    let atual = '';
+    let dentroAspas = false;
+
+    for (let j = 0; j < linha.length; j++) {
+      const char = linha[j];
+
+      if (char === '"') {
+        dentroAspas = !dentroAspas;
+      } else if (char === ',' && !dentroAspas) {
+        colunas.push(atual);
+        atual = '';
+      } else {
+        atual += char;
+      }
+    }
+    colunas.push(atual); // Última coluna
+
+    if (colunas.length < 19) continue;
+
+    const ano = colunas[5]?.trim();
+    const mesCompleto = colunas[6]?.trim();
+    const classeCompleta = colunas[8]?.trim(); // "421301 - CONVENIO MEDICO..."
+    const valorStr = colunas[10]?.trim();
+    const descClasseValor = colunas[18]?.trim();
+
+    // Validar ano 2025
+    if (ano !== '2025') continue;
+
+    // Extrair código da classe (primeiros 6 dígitos)
+    const classeCodigoMatch = classeCompleta?.match(/^(\d{6})/);
+    if (!classeCodigoMatch) continue;
+
+    const classeOrc = classeCodigoMatch[1];
+    const mapeamento = mapearClasse(classeOrc, classeCompleta, '');
+
+    // Parse valor (pode estar com vírgula e negativo)
+    const valor = parseValor(valorStr);
+    if (valor === 0) continue;
+
+    // Extrair equipamento
+    const equipamento = extrairEquipamento(descClasseValor);
+    const categoria = extrairCategoria(equipamento);
+
+    // Mapear mês
+    const mes = mapearMes(mesCompleto);
+
+    resultado.push({
+      ano: parseInt(ano),
+      mes: mes,
+      classe_codigo: classeOrc,
+      classe_orcamentaria: mapeamento.classe,
+      subclasse: mapeamento.subclasse,
+      equipamento: equipamento,
+      categoria: categoria,
+      centro_custo: `CC-${classeOrc.substring(0, 3)}`,
+      valor: valor
+    });
+  }
+
+  return resultado;
 }
 
 // Processar arquivo "orçamento detalhado 2026 - Dashboard - csv.csv"
@@ -178,16 +303,25 @@ function salvarCSV(dados, arquivo) {
 // Executar conversão
 console.log('Iniciando conversão dos arquivos CSV...\n');
 
-console.log('1. Processando Orçamento Detalhado 2025 e 2026...');
-const { resultado2025, resultado2026 } = processarOrcamentoDetalhado();
-console.log(`   - 2025: ${resultado2025.length} registros`);
-console.log(`   - 2026: ${resultado2026.length} registros`);
+console.log('1. Processando Razão Contábil 2025 (dados reais)...');
+const resultado2025 = processarRazaoContabil();
+console.log(`   - ${resultado2025.length} registros processados`);
+
+console.log('\n2. Processando Orçamento Detalhado 2026...');
+const { resultado2026 } = processarOrcamentoDetalhado();
+console.log(`   - ${resultado2026.length} registros processados`);
 
 // Calcular totais para verificação
 const total2025 = resultado2025.reduce((sum, item) => sum + item.valor, 0);
 const total2026 = resultado2026.reduce((sum, item) => sum + item.valor, 0);
-console.log(`\n   Total 2025: R$ ${total2025.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
-console.log(`   Total 2026: R$ ${total2026.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
+
+// Contar equipamentos únicos em 2025
+const equipamentos2025 = new Set(resultado2025.map(item => item.equipamento));
+const equipamentosComTag = Array.from(equipamentos2025).filter(eq => eq !== 'GERAL');
+
+console.log(`\n   Total 2025 (Realizado): R$ ${total2025.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
+console.log(`   Equipamentos identificados: ${equipamentosComTag.length} (${equipamentosComTag.slice(0, 10).join(', ')}...)`);
+console.log(`\n   Total 2026 (Orçamento): R$ ${total2026.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
 
 // Criar diretórios se não existirem
 const dir2025 = path.join(__dirname, '../data/2025');
@@ -197,7 +331,7 @@ if (!fs.existsSync(dir2025)) fs.mkdirSync(dir2025, { recursive: true });
 if (!fs.existsSync(dir2026)) fs.mkdirSync(dir2026, { recursive: true });
 
 // Salvar arquivos
-console.log('\n2. Salvando arquivos...');
+console.log('\n3. Salvando arquivos...');
 salvarCSV(resultado2025, path.join(dir2025, 'realizado.csv'));
 salvarCSV(resultado2026, path.join(dir2026, 'orcado.csv'));
 
