@@ -1,6 +1,7 @@
 export interface BudgetDataRow {
   ano: string;
   mes: string;
+  classe_codigo: string;
   classe_orcamentaria: string;
   subclasse: string;
   equipamento: string;

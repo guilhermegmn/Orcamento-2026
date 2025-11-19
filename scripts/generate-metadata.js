@@ -1,33 +1,43 @@
 const fs = require('fs');
 const path = require('path');
 
+// Categorias válidas conforme especificado
+const CATEGORIAS_VALIDAS = {
+  'CB': 'CAMINHÃO BASCULANTE',
+  'CC': 'CAMINHÃO COMBOIO',
+  'CG': 'CAMINHÃO GUINDAUTO',
+  'CP': 'CAMINHÃO PIPA',
+  'EH': 'ESCAVADEIRA HIDRAULICA',
+  'TE': 'TRATOR DE ESTEIRA',
+  'TP': 'TRATOR DE PNEUS',
+  'PC': 'PA CARREGADEIRA',
+  'VL': 'VEICULO LEVE',
+  'CA': 'COMPRESSOR DE AR',
+  'KSS': 'ORE SORTER',
+  'TC': 'TRANSPORTADOR DE CORREIA',
+  'PM': 'PENEIRA MOVEL',
+  'PV': 'PENEIRA VIBRATORIA',
+  'BM': 'BRITADOR'
+};
+
 // Função para extrair categoria do código de equipamento
 function extrairCategoria(codigo) {
-  if (!codigo || codigo === 'GERAL') return 'Geral';
+  if (!codigo) return null;
 
   const prefixo = codigo.split('-')[0];
-  const categorias = {
-    'CB': 'Caminhão Basculante',
-    'CC': 'Caminhão Comboio',
-    'CG': 'Caminhão Guindauto',
-    'CP': 'Caminhão Pipa',
-    'EH': 'Escavadeira Hidráulica',
-    'TE': 'Trator de Esteira',
-    'TP': 'Trator de Pneus',
-    'PC': 'Pá Carregadeira',
-    'VL': 'Veículo Leve',
-    'CA': 'Compressor de Ar',
-    'KSS': 'Ore Sorter',
-    'TC': 'Transportador de Correia',
-    'PM': 'Peneira Móvel',
-    'PV': 'Peneira Vibratória',
-    'BM': 'Britador',
-    'SD': 'Spray Dust',
-    'RE': 'Retroescavadeira',
-    'MN': 'Motoniveladora'
-  };
+  return CATEGORIAS_VALIDAS[prefixo] || null;
+}
 
-  return categorias[prefixo] || 'Outros';
+// Função para validar se é um equipamento válido (TAG-NUMERO)
+function isEquipamentoValido(codigo) {
+  if (!codigo) return false;
+
+  // Deve ter formato TAG-NUMERO onde TAG é uma das categorias válidas
+  const match = codigo.match(/^([A-Z]+)-(\d+)$/);
+  if (!match) return false;
+
+  const prefixo = match[1];
+  return CATEGORIAS_VALIDAS.hasOwnProperty(prefixo);
 }
 
 // Função para gerar descrição
@@ -56,14 +66,11 @@ function extrairEquipamentos() {
     if (colunas.length < 17) continue;
 
     const equipamento = colunas[16]?.trim();
-    // Só adicionar se for um código válido (letras-números, não começar com -)
-    if (equipamento && equipamento !== '' && /^[A-Z]+/.test(equipamento)) {
+    // Só adicionar se for um equipamento válido (TAG-NUMERO)
+    if (isEquipamentoValido(equipamento)) {
       equipamentosSet.add(equipamento);
     }
   }
-
-  // Sempre incluir GERAL
-  equipamentosSet.add('GERAL');
 
   // Converter para array e ordenar
   const equipamentosArray = Array.from(equipamentosSet).sort();
@@ -71,14 +78,13 @@ function extrairEquipamentos() {
   // Criar objetos de equipamentos
   const equipamentos = equipamentosArray.map((codigo, index) => {
     const categoria = extrairCategoria(codigo);
-    const centroCusto = codigo === 'GERAL' ? 'CC-000' : `CC-${String(index + 1).padStart(3, '0')}`;
 
     return {
       codigo: codigo,
-      nome: categoria,
+      nome: codigo,
       categoria: categoria,
-      descricao: gerarDescricao(codigo, categoria),
-      centro_custo: centroCusto,
+      descricao: `${categoria} ${codigo}`,
+      centro_custo: `CC-${String(index + 1).padStart(3, '0')}`,
       responsavel: 'A definir',
       email: 'equipamentos@empresa.com.br',
       ativo: true
