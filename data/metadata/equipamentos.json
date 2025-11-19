@@ -3,6 +3,7 @@
     {
       "codigo": "EQ-ADM",
       "nome": "Administrativo",
+      "categoria": "Administrativo",
       "descricao": "Departamento Administrativo e Financeiro",
       "centro_custo": "CC-001",
       "responsavel": "João Silva",
@@ -12,6 +13,7 @@
     {
       "codigo": "EQ-OPE",
       "nome": "Operacional",
+      "categoria": "Equipamentos Móveis",
       "descricao": "Departamento de Operações",
       "centro_custo": "CC-002",
       "responsavel": "Maria Santos",
@@ -21,6 +23,7 @@
     {
       "codigo": "EQ-INF",
       "nome": "Infraestrutura",
+      "categoria": "Equipamentos Fixos",
       "descricao": "Departamento de Infraestrutura e Facilities",
       "centro_custo": "CC-003",
       "responsavel": "Carlos Oliveira",
@@ -30,6 +33,7 @@
     {
       "codigo": "EQ-TI",
       "nome": "Tecnologia da Informação",
+      "categoria": "Tecnologia",
       "descricao": "Departamento de TI e Inovação",
       "centro_custo": "CC-004",
       "responsavel": "Ana Costa",
@@ -39,6 +43,7 @@
     {
       "codigo": "EQ-RH",
       "nome": "Recursos Humanos",
+      "categoria": "Administrativo",
       "descricao": "Departamento de Gestão de Pessoas",
       "centro_custo": "CC-005",
       "responsavel": "Pedro Almeida",
@@ -48,6 +53,7 @@
     {
       "codigo": "EQ-COM",
       "nome": "Comercial",
+      "categoria": "Comercial",
       "descricao": "Departamento Comercial e Vendas",
       "centro_custo": "CC-006",
       "responsavel": "Juliana Ferreira",

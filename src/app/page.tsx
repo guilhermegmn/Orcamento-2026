@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { TrendingUp, TrendingDown, AlertTriangle, BarChart3, LineChart } from "lucide-react";
+import { TrendingUp, TrendingDown, BarChart3, LineChart } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -16,13 +16,7 @@ import {
 } from "recharts";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { MultiSelect } from "@/components/ui/multi-select";
 import { loadAllData, formatCurrency, formatPercentage, getVariacaoColor } from "@/lib/data-loader";
 import type {
   BudgetDataRow,
@@ -45,10 +39,15 @@ export default function Dashboard() {
   const [config, setConfig] = useState<Config | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const [filtroClassePlanejamento, setFiltroClassePlanejamento] = useState<string>("Todas");
-  const [filtroEquipamentoPlanejamento, setFiltroEquipamentoPlanejamento] = useState<string>("Todos");
-  const [filtroClasseExecucao, setFiltroClasseExecucao] = useState<string>("Todas");
-  const [filtroEquipamentoExecucao, setFiltroEquipamentoExecucao] = useState<string>("Todos");
+  // Filtros Planejamento (multi-select)
+  const [filtroClassesPlanejamento, setFiltroClassesPlanejamento] = useState<string[]>([]);
+  const [filtroCategoriasPlanejamento, setFiltroCategoriasPlanejamento] = useState<string[]>([]);
+  const [filtroEquipamentosPlanejamento, setFiltroEquipamentosPlanejamento] = useState<string[]>([]);
+
+  // Filtros Execução (multi-select)
+  const [filtroClassesExecucao, setFiltroClassesExecucao] = useState<string[]>([]);
+  const [filtroCategoriasExecucao, setFilterCategoriasExecucao] = useState<string[]>([]);
+  const [filtroEquipamentosExecucao, setFiltroEquipamentosExecucao] = useState<string[]>([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -70,18 +69,32 @@ export default function Dashboard() {
   const dadosPlanejamento = useMemo(() => {
     const filtrado2025 = orcado2025.filter((item) => {
       const classeMatch =
-        filtroClassePlanejamento === "Todas" || item.classe_orcamentaria === filtroClassePlanejamento;
+        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_orcamentaria);
+
+      const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
+      const categoriaMatch =
+        filtroCategoriasPlanejamento.length === 0 ||
+        (equipamentoObj && filtroCategoriasPlanejamento.includes(equipamentoObj.categoria));
+
       const equipamentoMatch =
-        filtroEquipamentoPlanejamento === "Todos" || item.equipamento === filtroEquipamentoPlanejamento;
-      return classeMatch && equipamentoMatch;
+        filtroEquipamentosPlanejamento.length === 0 || filtroEquipamentosPlanejamento.includes(item.equipamento);
+
+      return classeMatch && categoriaMatch && equipamentoMatch;
     });
 
     const filtrado2026 = orcado2026.filter((item) => {
       const classeMatch =
-        filtroClassePlanejamento === "Todas" || item.classe_orcamentaria === filtroClassePlanejamento;
+        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_orcamentaria);
+
+      const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
+      const categoriaMatch =
+        filtroCategoriasPlanejamento.length === 0 ||
+        (equipamentoObj && filtroCategoriasPlanejamento.includes(equipamentoObj.categoria));
+
       const equipamentoMatch =
-        filtroEquipamentoPlanejamento === "Todos" || item.equipamento === filtroEquipamentoPlanejamento;
-      return classeMatch && equipamentoMatch;
+        filtroEquipamentosPlanejamento.length === 0 || filtroEquipamentosPlanejamento.includes(item.equipamento);
+
+      return classeMatch && categoriaMatch && equipamentoMatch;
     });
 
     const total2025 = filtrado2025.reduce((sum, item) => sum + item.valor, 0);
@@ -97,7 +110,7 @@ export default function Dashboard() {
       filtrado2025,
       filtrado2026,
     };
-  }, [orcado2025, orcado2026, filtroClassePlanejamento, filtroEquipamentoPlanejamento]);
+  }, [orcado2025, orcado2026, filtroClassesPlanejamento, filtroCategoriasPlanejamento, filtroEquipamentosPlanejamento, equipamentos]);
 
   const comparativoPorClasse = useMemo((): ComparativoClasse[] => {
     const { filtrado2025, filtrado2026 } = dadosPlanejamento;
@@ -129,53 +142,37 @@ export default function Dashboard() {
     });
   }, [dadosPlanejamento]);
 
-  const comparativoPorEquipamento = useMemo((): ComparativoEquipamento[] => {
-    const { filtrado2025, filtrado2026 } = dadosPlanejamento;
-    const equipamentosMap = new Map<string, { orcado2025: number; orcado2026: number }>();
-
-    filtrado2025.forEach((item) => {
-      const current = equipamentosMap.get(item.equipamento) || { orcado2025: 0, orcado2026: 0 };
-      current.orcado2025 += item.valor;
-      equipamentosMap.set(item.equipamento, current);
-    });
-
-    filtrado2026.forEach((item) => {
-      const current = equipamentosMap.get(item.equipamento) || { orcado2025: 0, orcado2026: 0 };
-      current.orcado2026 += item.valor;
-      equipamentosMap.set(item.equipamento, current);
-    });
-
-    return Array.from(equipamentosMap.entries()).map(([equipamento, values]) => {
-      const variacao = values.orcado2026 - values.orcado2025;
-      const variacaoPercentual =
-        values.orcado2025 > 0 ? (variacao / values.orcado2025) * 100 : 0;
-      return {
-        equipamento,
-        orcado2025: values.orcado2025,
-        orcado2026: values.orcado2026,
-        variacao,
-        variacaoPercentual,
-      };
-    });
-  }, [dadosPlanejamento]);
-
   // ============= ABA EXECUÇÃO: Orçado 2026 vs Realizado 2026 =============
 
   const dadosExecucao = useMemo(() => {
     const filtradoOrcado = orcado2026.filter((item) => {
       const classeMatch =
-        filtroClasseExecucao === "Todas" || item.classe_orcamentaria === filtroClasseExecucao;
+        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(item.classe_orcamentaria);
+
+      const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
+      const categoriaMatch =
+        filtroCategoriasExecucao.length === 0 ||
+        (equipamentoObj && filtroCategoriasExecucao.includes(equipamentoObj.categoria));
+
       const equipamentoMatch =
-        filtroEquipamentoExecucao === "Todos" || item.equipamento === filtroEquipamentoExecucao;
-      return classeMatch && equipamentoMatch;
+        filtroEquipamentosExecucao.length === 0 || filtroEquipamentosExecucao.includes(item.equipamento);
+
+      return classeMatch && categoriaMatch && equipamentoMatch;
     });
 
     const filtradoRealizado = realizado2026.filter((item) => {
       const classeMatch =
-        filtroClasseExecucao === "Todas" || item.classe_orcamentaria === filtroClasseExecucao;
+        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(item.classe_orcamentaria);
+
+      const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
+      const categoriaMatch =
+        filtroCategoriasExecucao.length === 0 ||
+        (equipamentoObj && filtroCategoriasExecucao.includes(equipamentoObj.categoria));
+
       const equipamentoMatch =
-        filtroEquipamentoExecucao === "Todos" || item.equipamento === filtroEquipamentoExecucao;
-      return classeMatch && equipamentoMatch;
+        filtroEquipamentosExecucao.length === 0 || filtroEquipamentosExecucao.includes(item.equipamento);
+
+      return classeMatch && categoriaMatch && equipamentoMatch;
     });
 
     const totalOrcado = filtradoOrcado.reduce((sum, item) => sum + item.valor, 0);
@@ -191,7 +188,7 @@ export default function Dashboard() {
       filtradoOrcado,
       filtradoRealizado,
     };
-  }, [orcado2026, realizado2026, filtroClasseExecucao, filtroEquipamentoExecucao]);
+  }, [orcado2026, realizado2026, filtroClassesExecucao, filtroCategoriasExecucao, filtroEquipamentosExecucao, equipamentos]);
 
   const execucaoMensal = useMemo((): ExecutadoMensal[] => {
     const { filtradoOrcado, filtradoRealizado } = dadosExecucao;
@@ -266,8 +263,30 @@ export default function Dashboard() {
     }));
   }, [dadosExecucao]);
 
-  const listaClasses = useMemo(() => ["Todas", ...Array.from(new Set(orcado2025.map((item) => item.classe_orcamentaria)))], [orcado2025]);
-  const listaEquipamentos = useMemo(() => ["Todos", ...Array.from(new Set(orcado2025.map((item) => item.equipamento)))], [orcado2025]);
+  // Opções para os filtros
+  const opcoesClasses = useMemo(() =>
+    Array.from(new Set(orcado2025.map((item) => item.classe_orcamentaria))).map(c => ({
+      value: c,
+      label: c
+    })),
+    [orcado2025]
+  );
+
+  const opcoesCategorias = useMemo(() =>
+    Array.from(new Set(equipamentos.map((eq) => eq.categoria))).map(c => ({
+      value: c,
+      label: c
+    })),
+    [equipamentos]
+  );
+
+  const opcoesEquipamentos = useMemo(() =>
+    equipamentos.map(eq => ({
+      value: eq.codigo,
+      label: eq.nome
+    })),
+    [equipamentos]
+  );
 
   if (loading) {
     return (
@@ -316,43 +335,39 @@ export default function Dashboard() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-col md:flex-row gap-4 mb-6">
-                  <div className="flex-1">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                  <div>
                     <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
                       Classe Orçamentária
                     </label>
-                    <Select value={filtroClassePlanejamento} onValueChange={setFiltroClassePlanejamento}>
-                      <SelectTrigger>
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {listaClasses.map((classe) => (
-                          <SelectItem key={classe} value={classe}>
-                            {classe}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <MultiSelect
+                      options={opcoesClasses}
+                      selected={filtroClassesPlanejamento}
+                      onChange={setFiltroClassesPlanejamento}
+                      placeholder="Todas as classes"
+                    />
                   </div>
-                  <div className="flex-1">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
+                      Categoria
+                    </label>
+                    <MultiSelect
+                      options={opcoesCategorias}
+                      selected={filtroCategoriasPlanejamento}
+                      onChange={setFiltroCategoriasPlanejamento}
+                      placeholder="Todas as categorias"
+                    />
+                  </div>
+                  <div>
                     <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
                       Equipamento
                     </label>
-                    <Select
-                      value={filtroEquipamentoPlanejamento}
-                      onValueChange={setFiltroEquipamentoPlanejamento}
-                    >
-                      <SelectTrigger>
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {listaEquipamentos.map((eq) => (
-                          <SelectItem key={eq} value={eq}>
-                            {eq}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <MultiSelect
+                      options={opcoesEquipamentos}
+                      selected={filtroEquipamentosPlanejamento}
+                      onChange={setFiltroEquipamentosPlanejamento}
+                      placeholder="Todos os equipamentos"
+                    />
                   </div>
                 </div>
 
@@ -497,43 +512,39 @@ export default function Dashboard() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-col md:flex-row gap-4 mb-6">
-                  <div className="flex-1">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                  <div>
                     <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
                       Classe Orçamentária
                     </label>
-                    <Select value={filtroClasseExecucao} onValueChange={setFiltroClasseExecucao}>
-                      <SelectTrigger>
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {listaClasses.map((classe) => (
-                          <SelectItem key={classe} value={classe}>
-                            {classe}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <MultiSelect
+                      options={opcoesClasses}
+                      selected={filtroClassesExecucao}
+                      onChange={setFiltroClassesExecucao}
+                      placeholder="Todas as classes"
+                    />
                   </div>
-                  <div className="flex-1">
+                  <div>
+                    <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
+                      Categoria
+                    </label>
+                    <MultiSelect
+                      options={opcoesCategorias}
+                      selected={filtroCategoriasExecucao}
+                      onChange={setFilterCategoriasExecucao}
+                      placeholder="Todas as categorias"
+                    />
+                  </div>
+                  <div>
                     <label className="text-sm font-medium text-slate-700 dark:text-slate-300 mb-2 block">
                       Equipamento
                     </label>
-                    <Select
-                      value={filtroEquipamentoExecucao}
-                      onValueChange={setFiltroEquipamentoExecucao}
-                    >
-                      <SelectTrigger>
-                        <SelectValue />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {listaEquipamentos.map((eq) => (
-                          <SelectItem key={eq} value={eq}>
-                            {eq}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <MultiSelect
+                      options={opcoesEquipamentos}
+                      selected={filtroEquipamentosExecucao}
+                      onChange={setFiltroEquipamentosExecucao}
+                      placeholder="Todos os equipamentos"
+                    />
                   </div>
                 </div>
 
