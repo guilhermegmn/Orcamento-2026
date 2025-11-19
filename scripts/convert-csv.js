@@ -94,58 +94,6 @@ function mapearClasse(classeCodigo, descricao, grupoContas) {
   return mapa[classeCodigo] || { classe: 'Outros', subclasse: descricao || 'Diversos' };
 }
 
-// Processar arquivo "Orçamento 2026 -Dashboard - csv.csv"
-function processarOrcamento2026() {
-  const arquivo = fs.readFileSync(
-    path.join(__dirname, '../data/Orçamento 2026 -Dashboard - csv.csv'),
-    'utf-8'
-  );
-
-  const linhas = arquivo.split('\n');
-  const resultado = [];
-
-  // Pular cabeçalho
-  for (let i = 1; i < linhas.length; i++) {
-    const linha = linhas[i].trim();
-    if (!linha) continue;
-
-    const colunas = linha.split(';');
-    if (colunas.length < 17) continue;
-
-    const classeOrc = colunas[0]?.replace(/^\uFEFF/, '').trim();
-    const descricao = colunas[1]?.trim();
-    const grupoContas = colunas[2]?.trim();
-    const equipamento = colunas[16]?.trim() || '';
-
-    if (!classeOrc) continue;
-
-    const mapeamento = mapearClasse(classeOrc, descricao, grupoContas);
-    const categoria = extrairCategoria(equipamento);
-
-    const meses = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
-
-    for (let m = 0; m < 12; m++) {
-      const valor = parseValor(colunas[3 + m]);
-
-      if (valor > 0) {
-        resultado.push({
-          ano: 2026,
-          mes: meses[m],
-          classe_codigo: classeOrc,
-          classe_orcamentaria: mapeamento.classe,
-          subclasse: mapeamento.subclasse,
-          equipamento: equipamento || 'GERAL',
-          categoria: categoria,
-          centro_custo: `CC-${classeOrc.substring(0, 3)}`,
-          valor: valor
-        });
-      }
-    }
-  }
-
-  return resultado;
-}
-
 // Processar arquivo "orçamento detalhado 2026 - Dashboard - csv.csv"
 function processarOrcamentoDetalhado() {
   const arquivo = fs.readFileSync(
@@ -193,9 +141,9 @@ function processarOrcamentoDetalhado() {
       }
     }
 
-    // Processar 2026 (colunas 16-27, pulando 14 e 15 que são totais)
+    // Processar 2026 (colunas 17-28, coluna 16 é separador)
     for (let m = 0; m < 12; m++) {
-      const valor = parseValor(colunas[16 + m]);
+      const valor = parseValor(colunas[17 + m]);
 
       if (valor > 0) {
         resultado2026.push({
@@ -230,19 +178,16 @@ function salvarCSV(dados, arquivo) {
 // Executar conversão
 console.log('Iniciando conversão dos arquivos CSV...\n');
 
-console.log('1. Processando Orçamento 2026 por equipamento...');
-const orcado2026Equipamentos = processarOrcamento2026();
-console.log(`   - ${orcado2026Equipamentos.length} registros processados`);
-
-console.log('\n2. Processando Orçamento Detalhado 2025 e 2026...');
+console.log('1. Processando Orçamento Detalhado 2025 e 2026...');
 const { resultado2025, resultado2026 } = processarOrcamentoDetalhado();
 console.log(`   - 2025: ${resultado2025.length} registros`);
 console.log(`   - 2026: ${resultado2026.length} registros`);
 
-// Combinar dados de 2026 (detalhado + equipamentos)
-console.log('\n3. Combinando dados de 2026...');
-const orcado2026Final = [...resultado2026, ...orcado2026Equipamentos];
-console.log(`   - Total 2026: ${orcado2026Final.length} registros`);
+// Calcular totais para verificação
+const total2025 = resultado2025.reduce((sum, item) => sum + item.valor, 0);
+const total2026 = resultado2026.reduce((sum, item) => sum + item.valor, 0);
+console.log(`\n   Total 2025: R$ ${total2025.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
+console.log(`   Total 2026: R$ ${total2026.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
 
 // Criar diretórios se não existirem
 const dir2025 = path.join(__dirname, '../data/2025');
@@ -252,12 +197,12 @@ if (!fs.existsSync(dir2025)) fs.mkdirSync(dir2025, { recursive: true });
 if (!fs.existsSync(dir2026)) fs.mkdirSync(dir2026, { recursive: true });
 
 // Salvar arquivos
-console.log('\n4. Salvando arquivos...');
-salvarCSV(resultado2025, path.join(dir2025, 'orcado.csv'));
-salvarCSV(orcado2026Final, path.join(dir2026, 'orcado.csv'));
+console.log('\n2. Salvando arquivos...');
+salvarCSV(resultado2025, path.join(dir2025, 'realizado.csv'));
+salvarCSV(resultado2026, path.join(dir2026, 'orcado.csv'));
 
 console.log('\n✓ Conversão concluída com sucesso!');
 console.log('\nArquivos gerados:');
-console.log('  - data/2025/orcado.csv');
+console.log('  - data/2025/realizado.csv');
 console.log('  - data/2026/orcado.csv');
 console.log('\nNota: Para dados realizados de 2026, será necessário fornecer um arquivo adicional.');
