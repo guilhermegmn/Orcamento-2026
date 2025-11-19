@@ -31,7 +31,7 @@ import type {
 const MESES = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
 export default function Dashboard() {
-  const [orcado2025, setOrcado2025] = useState<BudgetDataRow[]>([]);
+  const [realizado2025, setRealizado2025] = useState<BudgetDataRow[]>([]);
   const [orcado2026, setOrcado2026] = useState<BudgetDataRow[]>([]);
   const [realizado2026, setRealizado2026] = useState<BudgetDataRow[]>([]);
   const [classes, setClasses] = useState<ClasseOrcamentaria[]>([]);
@@ -53,7 +53,7 @@ export default function Dashboard() {
     async function fetchData() {
       setLoading(true);
       const data = await loadAllData();
-      setOrcado2025(data.orcado2025);
+      setRealizado2025(data.realizado2025);
       setOrcado2026(data.orcado2026);
       setRealizado2026(data.realizado2026);
       setClasses(data.classes);
@@ -64,10 +64,10 @@ export default function Dashboard() {
     fetchData();
   }, []);
 
-  // ============= ABA PLANEJAMENTO: Orçado 2025 vs Orçado 2026 =============
+  // ============= ABA PLANEJAMENTO: Realizado 2025 vs Orçamento 2026 =============
 
   const dadosPlanejamento = useMemo(() => {
-    const filtrado2025 = orcado2025.filter((item) => {
+    const filtrado2025 = realizado2025.filter((item) => {
       const classeMatch =
         filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_orcamentaria);
 
@@ -110,7 +110,7 @@ export default function Dashboard() {
       filtrado2025,
       filtrado2026,
     };
-  }, [orcado2025, orcado2026, filtroClassesPlanejamento, filtroCategoriasPlanejamento, filtroEquipamentosPlanejamento, equipamentos]);
+  }, [realizado2025, orcado2026, filtroClassesPlanejamento, filtroCategoriasPlanejamento, filtroEquipamentosPlanejamento, equipamentos]);
 
   const comparativoPorClasse = useMemo((): ComparativoClasse[] => {
     const { filtrado2025, filtrado2026 } = dadosPlanejamento;
@@ -265,11 +265,11 @@ export default function Dashboard() {
 
   // Opções para os filtros
   const opcoesClasses = useMemo(() =>
-    Array.from(new Set(orcado2025.map((item) => item.classe_orcamentaria))).map(c => ({
+    Array.from(new Set([...realizado2025, ...orcado2026].map((item) => item.classe_orcamentaria))).map(c => ({
       value: c,
       label: c
     })),
-    [orcado2025]
+    [realizado2025, orcado2026]
   );
 
   const opcoesCategorias = useMemo(() =>
@@ -329,9 +329,9 @@ export default function Dashboard() {
           <TabsContent value="planejamento" className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Comparativo: Orçado 2025 vs Orçado 2026</CardTitle>
+                <CardTitle>Planejamento: Realizado 2025 vs Orçamento 2026</CardTitle>
                 <CardDescription>
-                  Análise das diferenças entre o planejamento orçamentário dos dois anos
+                  Comparação entre gastos efetivos de 2025 e orçamento planejado para 2026
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -375,7 +375,7 @@ export default function Dashboard() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardDescription>Orçado 2025</CardDescription>
+                      <CardDescription>Realizado 2025</CardDescription>
                       <CardTitle className="text-2xl">
                         {formatCurrency(dadosPlanejamento.total2025, config || undefined)}
                       </CardTitle>
@@ -384,7 +384,7 @@ export default function Dashboard() {
 
                   <Card>
                     <CardHeader className="pb-2">
-                      <CardDescription>Orçado 2026</CardDescription>
+                      <CardDescription>Orçamento 2026</CardDescription>
                       <CardTitle className="text-2xl">
                         {formatCurrency(dadosPlanejamento.total2026, config || undefined)}
                       </CardTitle>
@@ -440,8 +440,8 @@ export default function Dashboard() {
                         }}
                       />
                       <Legend />
-                      <Bar dataKey="orcado2025" fill="#3b82f6" name="Orçado 2025" />
-                      <Bar dataKey="orcado2026" fill="#10b981" name="Orçado 2026" />
+                      <Bar dataKey="orcado2025" fill="#3b82f6" name="Realizado 2025" />
+                      <Bar dataKey="orcado2026" fill="#10b981" name="Orçamento 2026" />
                     </BarChart>
                   </ResponsiveContainer>
                 </div>
@@ -454,8 +454,8 @@ export default function Dashboard() {
                       <thead>
                         <tr className="border-b">
                           <th className="text-left p-2 font-medium">Classe</th>
-                          <th className="text-right p-2 font-medium">Orçado 2025</th>
-                          <th className="text-right p-2 font-medium">Orçado 2026</th>
+                          <th className="text-right p-2 font-medium">Realizado 2025</th>
+                          <th className="text-right p-2 font-medium">Orçamento 2026</th>
                           <th className="text-right p-2 font-medium">Variação</th>
                           <th className="text-right p-2 font-medium">%</th>
                         </tr>
@@ -506,9 +506,9 @@ export default function Dashboard() {
           <TabsContent value="execucao" className="space-y-6">
             <Card>
               <CardHeader>
-                <CardTitle>Execução: Orçado 2026 vs Realizado 2026</CardTitle>
+                <CardTitle>Execução 2026: Orçamento vs Realizado</CardTitle>
                 <CardDescription>
-                  Acompanhamento mensal da execução orçamentária de 2026
+                  Acompanhamento mensal comparando orçamento planejado com gastos efetivos de 2026
                 </CardDescription>
               </CardHeader>
               <CardContent>
