@@ -1,97 +1,387 @@
 ano,mes,classe_orcamentaria,subclasse,equipamento,centro_custo,valor
-2025,Jan,Pessoal,Salários,EQ-ADM,CC-001,95000
-2025,Fev,Pessoal,Salários,EQ-ADM,CC-001,98000
-2025,Mar,Pessoal,Salários,EQ-ADM,CC-001,102000
-2025,Abr,Pessoal,Salários,EQ-ADM,CC-001,97000
-2025,Mai,Pessoal,Salários,EQ-ADM,CC-001,99000
-2025,Jun,Pessoal,Salários,EQ-ADM,CC-001,101000
-2025,Jul,Pessoal,Salários,EQ-ADM,CC-001,98500
-2025,Ago,Pessoal,Salários,EQ-ADM,CC-001,100500
-2025,Set,Pessoal,Salários,EQ-ADM,CC-001,99800
-2025,Out,Pessoal,Salários,EQ-ADM,CC-001,102000
-2025,Nov,Pessoal,Salários,EQ-ADM,CC-001,101500
-2025,Dez,Pessoal,Salários,EQ-ADM,CC-001,103000
-2025,Jan,Pessoal,Benefícios,EQ-ADM,CC-001,28000
-2025,Fev,Pessoal,Benefícios,EQ-ADM,CC-001,29500
-2025,Mar,Pessoal,Benefícios,EQ-ADM,CC-001,31000
-2025,Abr,Pessoal,Benefícios,EQ-ADM,CC-001,28500
-2025,Mai,Pessoal,Benefícios,EQ-ADM,CC-001,29800
-2025,Jun,Pessoal,Benefícios,EQ-ADM,CC-001,30200
-2025,Jul,Pessoal,Benefícios,EQ-ADM,CC-001,29000
-2025,Ago,Pessoal,Benefícios,EQ-ADM,CC-001,30500
-2025,Set,Pessoal,Benefícios,EQ-ADM,CC-001,29900
-2025,Out,Pessoal,Benefícios,EQ-ADM,CC-001,31200
-2025,Nov,Pessoal,Benefícios,EQ-ADM,CC-001,30800
-2025,Dez,Pessoal,Benefícios,EQ-ADM,CC-001,32000
-2025,Jan,Operacional,Materiais,EQ-OPE,CC-002,45000
-2025,Fev,Operacional,Materiais,EQ-OPE,CC-002,52000
-2025,Mar,Operacional,Materiais,EQ-OPE,CC-002,48000
-2025,Abr,Operacional,Materiais,EQ-OPE,CC-002,51000
-2025,Mai,Operacional,Materiais,EQ-OPE,CC-002,47000
-2025,Jun,Operacional,Materiais,EQ-OPE,CC-002,53000
-2025,Jul,Operacional,Materiais,EQ-OPE,CC-002,49000
-2025,Ago,Operacional,Materiais,EQ-OPE,CC-002,50500
-2025,Set,Operacional,Materiais,EQ-OPE,CC-002,48500
-2025,Out,Operacional,Materiais,EQ-OPE,CC-002,51500
-2025,Nov,Operacional,Materiais,EQ-OPE,CC-002,49800
-2025,Dez,Operacional,Materiais,EQ-OPE,CC-002,52500
-2025,Jan,Operacional,Serviços,EQ-OPE,CC-002,38000
-2025,Fev,Operacional,Serviços,EQ-OPE,CC-002,42000
-2025,Mar,Operacional,Serviços,EQ-OPE,CC-002,39000
-2025,Abr,Operacional,Serviços,EQ-OPE,CC-002,41000
-2025,Mai,Operacional,Serviços,EQ-OPE,CC-002,38500
-2025,Jun,Operacional,Serviços,EQ-OPE,CC-002,43000
-2025,Jul,Operacional,Serviços,EQ-OPE,CC-002,39500
-2025,Ago,Operacional,Serviços,EQ-OPE,CC-002,40500
-2025,Set,Operacional,Serviços,EQ-OPE,CC-002,39800
-2025,Out,Operacional,Serviços,EQ-OPE,CC-002,41500
-2025,Nov,Operacional,Serviços,EQ-OPE,CC-002,40200
-2025,Dez,Operacional,Serviços,EQ-OPE,CC-002,42500
-2025,Jan,Infraestrutura,Equipamentos,EQ-INF,CC-003,75000
-2025,Fev,Infraestrutura,Equipamentos,EQ-INF,CC-003,82000
-2025,Mar,Infraestrutura,Equipamentos,EQ-INF,CC-003,78000
-2025,Abr,Infraestrutura,Equipamentos,EQ-INF,CC-003,81000
-2025,Mai,Infraestrutura,Equipamentos,EQ-INF,CC-003,77000
-2025,Jun,Infraestrutura,Equipamentos,EQ-INF,CC-003,83000
-2025,Jul,Infraestrutura,Equipamentos,EQ-INF,CC-003,79000
-2025,Ago,Infraestrutura,Equipamentos,EQ-INF,CC-003,80500
-2025,Set,Infraestrutura,Equipamentos,EQ-INF,CC-003,78500
-2025,Out,Infraestrutura,Equipamentos,EQ-INF,CC-003,81500
-2025,Nov,Infraestrutura,Equipamentos,EQ-INF,CC-003,79800
-2025,Dez,Infraestrutura,Equipamentos,EQ-INF,CC-003,82500
-2025,Jan,Infraestrutura,Manutenção,EQ-INF,CC-003,23000
-2025,Fev,Infraestrutura,Manutenção,EQ-INF,CC-003,26000
-2025,Mar,Infraestrutura,Manutenção,EQ-INF,CC-003,24500
-2025,Abr,Infraestrutura,Manutenção,EQ-INF,CC-003,25500
-2025,Mai,Infraestrutura,Manutenção,EQ-INF,CC-003,24000
-2025,Jun,Infraestrutura,Manutenção,EQ-INF,CC-003,26500
-2025,Jul,Infraestrutura,Manutenção,EQ-INF,CC-003,24800
-2025,Ago,Infraestrutura,Manutenção,EQ-INF,CC-003,25300
-2025,Set,Infraestrutura,Manutenção,EQ-INF,CC-003,24600
-2025,Out,Infraestrutura,Manutenção,EQ-INF,CC-003,25800
-2025,Nov,Infraestrutura,Manutenção,EQ-INF,CC-003,25100
-2025,Dez,Infraestrutura,Manutenção,EQ-INF,CC-003,26200
-2025,Jan,Tecnologia,Software,EQ-TI,CC-004,33000
-2025,Fev,Tecnologia,Software,EQ-TI,CC-004,36000
-2025,Mar,Tecnologia,Software,EQ-TI,CC-004,34000
-2025,Abr,Tecnologia,Software,EQ-TI,CC-004,35500
-2025,Mai,Tecnologia,Software,EQ-TI,CC-004,34500
-2025,Jun,Tecnologia,Software,EQ-TI,CC-004,36500
-2025,Jul,Tecnologia,Software,EQ-TI,CC-004,34800
-2025,Ago,Tecnologia,Software,EQ-TI,CC-004,35300
-2025,Set,Tecnologia,Software,EQ-TI,CC-004,34600
-2025,Out,Tecnologia,Software,EQ-TI,CC-004,35800
-2025,Nov,Tecnologia,Software,EQ-TI,CC-004,35100
-2025,Dez,Tecnologia,Software,EQ-TI,CC-004,36200
-2025,Jan,Tecnologia,Hardware,EQ-TI,CC-004,42000
-2025,Fev,Tecnologia,Hardware,EQ-TI,CC-004,47000
-2025,Mar,Tecnologia,Hardware,EQ-TI,CC-004,44000
-2025,Abr,Tecnologia,Hardware,EQ-TI,CC-004,46000
-2025,Mai,Tecnologia,Hardware,EQ-TI,CC-004,43500
-2025,Jun,Tecnologia,Hardware,EQ-TI,CC-004,48000
-2025,Jul,Tecnologia,Hardware,EQ-TI,CC-004,44500
-2025,Ago,Tecnologia,Hardware,EQ-TI,CC-004,45500
-2025,Set,Tecnologia,Hardware,EQ-TI,CC-004,44200
-2025,Out,Tecnologia,Hardware,EQ-TI,CC-004,46500
-2025,Nov,Tecnologia,Hardware,EQ-TI,CC-004,45200
-2025,Dez,Tecnologia,Hardware,EQ-TI,CC-004,47500
+2025,Jan,Pessoal,Salários,GERAL,CC-421,208265.09
+2025,Fev,Pessoal,Salários,GERAL,CC-421,177215.66
+2025,Mar,Pessoal,Salários,GERAL,CC-421,194125.21
+2025,Abr,Pessoal,Salários,GERAL,CC-421,207072.67
+2025,Mai,Pessoal,Salários,GERAL,CC-421,200910.09
+2025,Jun,Pessoal,Salários,GERAL,CC-421,207893.2
+2025,Jul,Pessoal,Salários,GERAL,CC-421,262002.36
+2025,Ago,Pessoal,Salários,GERAL,CC-421,207336.91
+2025,Set,Pessoal,Salários,GERAL,CC-421,181562.46
+2025,Out,Pessoal,Salários,GERAL,CC-421,205153.74
+2025,Nov,Pessoal,Salários,GERAL,CC-421,205153.74
+2025,Dez,Pessoal,Salários,GERAL,CC-421,205153.74
+2025,Jan,Pessoal,INSS,GERAL,CC-421,51960.59
+2025,Fev,Pessoal,INSS,GERAL,CC-421,47312.43
+2025,Mar,Pessoal,INSS,GERAL,CC-421,50133
+2025,Abr,Pessoal,INSS,GERAL,CC-421,52043.31
+2025,Mai,Pessoal,INSS,GERAL,CC-421,51066.77
+2025,Jun,Pessoal,INSS,GERAL,CC-421,50984.87
+2025,Jul,Pessoal,INSS,GERAL,CC-421,68726.35
+2025,Ago,Pessoal,INSS,GERAL,CC-421,52455.26
+2025,Set,Pessoal,INSS,GERAL,CC-421,49318.66
+2025,Out,Pessoal,INSS,GERAL,CC-421,52666.8
+2025,Nov,Pessoal,INSS,GERAL,CC-421,52666.8
+2025,Dez,Pessoal,INSS,GERAL,CC-421,52666.8
+2025,Jan,Pessoal,FGTS,GERAL,CC-421,15176.83
+2025,Fev,Pessoal,FGTS,GERAL,CC-421,14687.39
+2025,Mar,Pessoal,FGTS,GERAL,CC-421,15038.17
+2025,Abr,Pessoal,FGTS,GERAL,CC-421,19871.42
+2025,Mai,Pessoal,FGTS,GERAL,CC-421,16829.71
+2025,Jun,Pessoal,FGTS,GERAL,CC-421,20874.31
+2025,Jul,Pessoal,FGTS,GERAL,CC-421,20139.37
+2025,Ago,Pessoal,FGTS,GERAL,CC-421,18473.5
+2025,Set,Pessoal,FGTS,GERAL,CC-421,18449.26
+2025,Out,Pessoal,FGTS,GERAL,CC-421,17726.66
+2025,Nov,Pessoal,FGTS,GERAL,CC-421,17726.66
+2025,Dez,Pessoal,FGTS,GERAL,CC-421,17726.66
+2025,Jan,Pessoal,Vale Transporte,GERAL,CC-421,32369.88
+2025,Fev,Pessoal,Vale Transporte,GERAL,CC-421,32369.88
+2025,Mar,Pessoal,Vale Transporte,GERAL,CC-421,41001.86
+2025,Abr,Pessoal,Vale Transporte,GERAL,CC-421,32369.88
+2025,Mai,Pessoal,Vale Transporte,GERAL,CC-421,34190.35
+2025,Jun,Pessoal,Vale Transporte,GERAL,CC-421,34190.35
+2025,Jul,Pessoal,Vale Transporte,GERAL,CC-421,34190.35
+2025,Ago,Pessoal,Vale Transporte,GERAL,CC-421,36129.03
+2025,Set,Pessoal,Vale Transporte,GERAL,CC-421,36792.19
+2025,Out,Pessoal,Vale Transporte,GERAL,CC-421,34844.86
+2025,Nov,Pessoal,Vale Transporte,GERAL,CC-421,34844.86
+2025,Dez,Pessoal,Vale Transporte,GERAL,CC-421,34844.86
+2025,Jan,Pessoal,Convênio Médico,GERAL,CC-421,30460.82
+2025,Fev,Pessoal,Convênio Médico,GERAL,CC-421,2489.15
+2025,Mar,Pessoal,Convênio Médico,GERAL,CC-421,32878.3
+2025,Abr,Pessoal,Convênio Médico,GERAL,CC-421,18666.9
+2025,Mai,Pessoal,Convênio Médico,GERAL,CC-421,1222.09
+2025,Jun,Pessoal,Convênio Médico,GERAL,CC-421,18061.95
+2025,Jul,Pessoal,Convênio Médico,GERAL,CC-421,17568.92
+2025,Ago,Pessoal,Convênio Médico,GERAL,CC-421,20619.86
+2025,Set,Pessoal,Convênio Médico,GERAL,CC-421,16978.68
+2025,Out,Pessoal,Convênio Médico,GERAL,CC-421,17660.74
+2025,Nov,Pessoal,Convênio Médico,GERAL,CC-421,17660.74
+2025,Dez,Pessoal,Convênio Médico,GERAL,CC-421,17660.74
+2025,Jan,Pessoal,Alimentação,GERAL,CC-421,28907.29
+2025,Fev,Pessoal,Alimentação,GERAL,CC-421,31565.95
+2025,Mar,Pessoal,Alimentação,GERAL,CC-421,31155.24
+2025,Abr,Pessoal,Alimentação,GERAL,CC-421,30686.75
+2025,Mai,Pessoal,Alimentação,GERAL,CC-421,30054.11
+2025,Jun,Pessoal,Alimentação,GERAL,CC-421,26292.17
+2025,Jul,Pessoal,Alimentação,GERAL,CC-421,30484.73
+2025,Ago,Pessoal,Alimentação,GERAL,CC-421,30740.88
+2025,Set,Pessoal,Alimentação,GERAL,CC-421,29440.15
+2025,Out,Pessoal,Alimentação,GERAL,CC-421,29925.25
+2025,Nov,Pessoal,Alimentação,GERAL,CC-421,29925.25
+2025,Dez,Pessoal,Alimentação,GERAL,CC-421,29925.25
+2025,Jan,Pessoal,Saúde Ocupacional,GERAL,CC-421,290.04
+2025,Fev,Pessoal,Saúde Ocupacional,GERAL,CC-421,3188.52
+2025,Mar,Pessoal,Saúde Ocupacional,GERAL,CC-421,1872.13
+2025,Abr,Pessoal,Saúde Ocupacional,GERAL,CC-421,1700.9
+2025,Mai,Pessoal,Saúde Ocupacional,GERAL,CC-421,1853.47
+2025,Jun,Pessoal,Saúde Ocupacional,GERAL,CC-421,3044.86
+2025,Jul,Pessoal,Saúde Ocupacional,GERAL,CC-421,1341.67
+2025,Ago,Pessoal,Saúde Ocupacional,GERAL,CC-421,1807.53
+2025,Set,Pessoal,Saúde Ocupacional,GERAL,CC-421,1342.19
+2025,Out,Pessoal,Saúde Ocupacional,GERAL,CC-421,1826.81
+2025,Nov,Pessoal,Saúde Ocupacional,GERAL,CC-421,1826.81
+2025,Dez,Pessoal,Saúde Ocupacional,GERAL,CC-421,1826.81
+2025,Fev,Pessoal,Treinamentos,GERAL,CC-421,3017.2
+2025,Jun,Pessoal,Treinamentos,GERAL,CC-421,750
+2025,Out,Pessoal,Treinamentos,GERAL,CC-421,418.58
+2025,Nov,Pessoal,Treinamentos,GERAL,CC-421,418.58
+2025,Dez,Pessoal,Treinamentos,GERAL,CC-421,418.58
+2025,Jan,Pessoal,Uniformes e EPI,GERAL,CC-421,15141.87
+2025,Fev,Pessoal,Uniformes e EPI,GERAL,CC-421,15320.1
+2025,Mar,Pessoal,Uniformes e EPI,GERAL,CC-421,22299.16
+2025,Abr,Pessoal,Uniformes e EPI,GERAL,CC-421,14247.92
+2025,Mai,Pessoal,Uniformes e EPI,GERAL,CC-421,19876.91
+2025,Jun,Pessoal,Uniformes e EPI,GERAL,CC-421,16353.6
+2025,Jul,Pessoal,Uniformes e EPI,GERAL,CC-421,16276.88
+2025,Ago,Pessoal,Uniformes e EPI,GERAL,CC-421,20401.5
+2025,Set,Pessoal,Uniformes e EPI,GERAL,CC-421,18609.9
+2025,Out,Pessoal,Uniformes e EPI,GERAL,CC-421,17614.2
+2025,Nov,Pessoal,Uniformes e EPI,GERAL,CC-421,17614.2
+2025,Dez,Pessoal,Uniformes e EPI,GERAL,CC-421,17614.2
+2025,Jan,Operacional,Aluguel de Equipamentos,GERAL,CC-422,34591.13
+2025,Fev,Operacional,Aluguel de Equipamentos,GERAL,CC-422,33446.13
+2025,Mar,Operacional,Aluguel de Equipamentos,GERAL,CC-422,36379.63
+2025,Abr,Operacional,Aluguel de Equipamentos,GERAL,CC-422,33446.13
+2025,Mai,Operacional,Aluguel de Equipamentos,GERAL,CC-422,33446.13
+2025,Jun,Operacional,Aluguel de Equipamentos,GERAL,CC-422,32450.39
+2025,Jul,Operacional,Aluguel de Equipamentos,GERAL,CC-422,24970.81
+2025,Ago,Operacional,Aluguel de Equipamentos,GERAL,CC-422,16604.62
+2025,Set,Operacional,Aluguel de Equipamentos,GERAL,CC-422,20375.2
+2025,Out,Operacional,Aluguel de Equipamentos,GERAL,CC-422,29523.35
+2025,Nov,Operacional,Aluguel de Equipamentos,GERAL,CC-422,29523.35
+2025,Dez,Operacional,Aluguel de Equipamentos,GERAL,CC-422,29523.35
+2025,Jan,Operacional,Combustíveis,GERAL,CC-422,16674.8
+2025,Fev,Operacional,Combustíveis,GERAL,CC-422,36863.54
+2025,Mar,Operacional,Combustíveis,GERAL,CC-422,38452.49
+2025,Abr,Operacional,Combustíveis,GERAL,CC-422,96236.88
+2025,Mai,Operacional,Combustíveis,GERAL,CC-422,36950.63
+2025,Jun,Operacional,Combustíveis,GERAL,CC-422,23540.89
+2025,Jul,Operacional,Combustíveis,GERAL,CC-422,67633.53
+2025,Ago,Operacional,Combustíveis,GERAL,CC-422,119946.03
+2025,Set,Operacional,Combustíveis,GERAL,CC-422,87673.33
+2025,Out,Operacional,Combustíveis,GERAL,CC-422,58219.12
+2025,Nov,Operacional,Combustíveis,GERAL,CC-422,58219.12
+2025,Dez,Operacional,Combustíveis,GERAL,CC-422,58219.12
+2025,Jan,Operacional,Manutenção de Equipamentos,GERAL,CC-422,216566.88
+2025,Fev,Operacional,Manutenção de Equipamentos,GERAL,CC-422,174764.81
+2025,Mar,Operacional,Manutenção de Equipamentos,GERAL,CC-422,231221.21
+2025,Abr,Operacional,Manutenção de Equipamentos,GERAL,CC-422,394685.32
+2025,Mai,Operacional,Manutenção de Equipamentos,GERAL,CC-422,279046.04
+2025,Jun,Operacional,Manutenção de Equipamentos,GERAL,CC-422,205513.53
+2025,Jul,Operacional,Manutenção de Equipamentos,GERAL,CC-422,286684.98
+2025,Ago,Operacional,Manutenção de Equipamentos,GERAL,CC-422,367752.29
+2025,Set,Operacional,Manutenção de Equipamentos,GERAL,CC-422,201155.15
+2025,Out,Operacional,Manutenção de Equipamentos,GERAL,CC-422,261932.25
+2025,Nov,Operacional,Manutenção de Equipamentos,GERAL,CC-422,261932.25
+2025,Dez,Operacional,Manutenção de Equipamentos,GERAL,CC-422,261932.25
+2025,Jan,Operacional,Manutenção de Edificações,GERAL,CC-422,8294.33
+2025,Fev,Operacional,Manutenção de Edificações,GERAL,CC-422,4226.33
+2025,Mar,Operacional,Manutenção de Edificações,GERAL,CC-422,12751.01
+2025,Abr,Operacional,Manutenção de Edificações,GERAL,CC-422,9710.7
+2025,Mai,Operacional,Manutenção de Edificações,GERAL,CC-422,5599.9
+2025,Jun,Operacional,Manutenção de Edificações,GERAL,CC-422,8102.25
+2025,Jul,Operacional,Manutenção de Edificações,GERAL,CC-422,12543.73
+2025,Ago,Operacional,Manutenção de Edificações,GERAL,CC-422,8345.16
+2025,Set,Operacional,Manutenção de Edificações,GERAL,CC-422,13203.97
+2025,Out,Operacional,Manutenção de Edificações,GERAL,CC-422,9197.49
+2025,Nov,Operacional,Manutenção de Edificações,GERAL,CC-422,9197.49
+2025,Dez,Operacional,Manutenção de Edificações,GERAL,CC-422,9197.49
+2025,Jan,Operacional,Serviços Gerais,GERAL,CC-422,46152.71
+2025,Fev,Operacional,Serviços Gerais,GERAL,CC-422,50424.21
+2025,Mar,Operacional,Serviços Gerais,GERAL,CC-422,47575.07
+2025,Abr,Operacional,Serviços Gerais,GERAL,CC-422,52257.13
+2025,Mai,Operacional,Serviços Gerais,GERAL,CC-422,47445.43
+2025,Jun,Operacional,Serviços Gerais,GERAL,CC-422,55745.43
+2025,Jul,Operacional,Serviços Gerais,GERAL,CC-422,39595.27
+2025,Ago,Operacional,Serviços Gerais,GERAL,CC-422,36935.82
+2025,Set,Operacional,Serviços Gerais,GERAL,CC-422,28924.95
+2025,Out,Operacional,Serviços Gerais,GERAL,CC-422,45006.22
+2025,Nov,Operacional,Serviços Gerais,GERAL,CC-422,45006.22
+2025,Dez,Operacional,Serviços Gerais,GERAL,CC-422,45006.22
+2025,Jan,Operacional,Pneus,GERAL,CC-422,93672.26
+2025,Fev,Operacional,Pneus,GERAL,CC-422,43989.38
+2025,Mar,Operacional,Pneus,GERAL,CC-422,18955.02
+2025,Abr,Operacional,Pneus,GERAL,CC-422,125750.69
+2025,Mai,Operacional,Pneus,GERAL,CC-422,166339.24
+2025,Jun,Operacional,Pneus,GERAL,CC-422,39997.03
+2025,Jul,Operacional,Pneus,GERAL,CC-422,79229.08
+2025,Ago,Operacional,Pneus,GERAL,CC-422,68056.92
+2025,Set,Operacional,Pneus,GERAL,CC-422,79312.31
+2025,Out,Operacional,Pneus,GERAL,CC-422,79477.99
+2025,Nov,Operacional,Pneus,GERAL,CC-422,79477.99
+2025,Dez,Operacional,Pneus,GERAL,CC-422,79477.99
+2025,Jan,Operacional,Embalagens,GERAL,CC-422,7
+2025,Fev,Operacional,Embalagens,GERAL,CC-422,3.5
+2025,Mar,Operacional,Embalagens,GERAL,CC-422,3.5
+2025,Abr,Operacional,Embalagens,GERAL,CC-422,33.9
+2025,Out,Operacional,Embalagens,GERAL,CC-422,5.32
+2025,Nov,Operacional,Embalagens,GERAL,CC-422,5.32
+2025,Dez,Operacional,Embalagens,GERAL,CC-422,5.32
+2025,Mar,Operacional,Limpeza e Conservação,GERAL,CC-422,49.5
+2025,Mai,Operacional,Limpeza e Conservação,GERAL,CC-422,960.12
+2025,Jun,Operacional,Limpeza e Conservação,GERAL,CC-422,480.06
+2025,Jul,Operacional,Limpeza e Conservação,GERAL,CC-422,1440.19
+2025,Ago,Operacional,Limpeza e Conservação,GERAL,CC-422,960.12
+2025,Set,Operacional,Limpeza e Conservação,GERAL,CC-422,11.75
+2025,Out,Operacional,Limpeza e Conservação,GERAL,CC-422,433.53
+2025,Nov,Operacional,Limpeza e Conservação,GERAL,CC-422,433.53
+2025,Dez,Operacional,Limpeza e Conservação,GERAL,CC-422,433.53
+2025,Jan,Operacional,Ferramentas,GERAL,CC-422,3045.31
+2025,Fev,Operacional,Ferramentas,GERAL,CC-422,3769.32
+2025,Mar,Operacional,Ferramentas,GERAL,CC-422,5947.42
+2025,Abr,Operacional,Ferramentas,GERAL,CC-422,2541.78
+2025,Mai,Operacional,Ferramentas,GERAL,CC-422,4124.71
+2025,Jun,Operacional,Ferramentas,GERAL,CC-422,4866.46
+2025,Jul,Operacional,Ferramentas,GERAL,CC-422,2631.16
+2025,Ago,Operacional,Ferramentas,GERAL,CC-422,2461.83
+2025,Set,Operacional,Ferramentas,GERAL,CC-422,9630
+2025,Out,Operacional,Ferramentas,GERAL,CC-422,4335.33
+2025,Nov,Operacional,Ferramentas,GERAL,CC-422,4335.33
+2025,Dez,Operacional,Ferramentas,GERAL,CC-422,4335.33
+2025,Jan,Operacional,Energia Elétrica,GERAL,CC-422,6627.43
+2025,Fev,Operacional,Energia Elétrica,GERAL,CC-422,6249.84
+2025,Mar,Operacional,Energia Elétrica,GERAL,CC-422,5984.63
+2025,Abr,Operacional,Energia Elétrica,GERAL,CC-422,6957.02
+2025,Mai,Operacional,Energia Elétrica,GERAL,CC-422,8110.2
+2025,Jul,Operacional,Energia Elétrica,GERAL,CC-422,1076.01
+2025,Ago,Operacional,Energia Elétrica,GERAL,CC-422,302.46
+2025,Set,Operacional,Energia Elétrica,GERAL,CC-422,1108.55
+2025,Out,Operacional,Energia Elétrica,GERAL,CC-422,4046.24
+2025,Nov,Operacional,Energia Elétrica,GERAL,CC-422,4046.24
+2025,Dez,Operacional,Energia Elétrica,GERAL,CC-422,4046.24
+2025,Jan,Operacional,Comunicações,GERAL,CC-422,2.67
+2025,Fev,Operacional,Comunicações,GERAL,CC-422,5148.81
+2025,Mar,Operacional,Comunicações,GERAL,CC-422,734.8
+2025,Abr,Operacional,Comunicações,GERAL,CC-422,1598.49
+2025,Mai,Operacional,Comunicações,GERAL,CC-422,1922.35
+2025,Jun,Operacional,Comunicações,GERAL,CC-422,703.9
+2025,Jul,Operacional,Comunicações,GERAL,CC-422,2200.41
+2025,Ago,Operacional,Comunicações,GERAL,CC-422,1909.41
+2025,Set,Operacional,Comunicações,GERAL,CC-422,3677.58
+2025,Out,Operacional,Comunicações,GERAL,CC-422,1988.71
+2025,Nov,Operacional,Comunicações,GERAL,CC-422,1988.71
+2025,Dez,Operacional,Comunicações,GERAL,CC-422,1988.71
+2025,Jun,Operacional,Exames e Análises,GERAL,CC-422,11500
+2025,Out,Operacional,Exames e Análises,GERAL,CC-422,1277.78
+2025,Nov,Operacional,Exames e Análises,GERAL,CC-422,1277.78
+2025,Dez,Operacional,Exames e Análises,GERAL,CC-422,1277.78
+2025,Fev,Operacional,Insumos Laboratoriais,GERAL,CC-422,135.5
+2025,Jun,Operacional,Insumos Laboratoriais,GERAL,CC-422,58
+2025,Set,Operacional,Insumos Laboratoriais,GERAL,CC-422,200
+2025,Out,Operacional,Insumos Laboratoriais,GERAL,CC-422,43.72
+2025,Nov,Operacional,Insumos Laboratoriais,GERAL,CC-422,43.72
+2025,Dez,Operacional,Insumos Laboratoriais,GERAL,CC-422,43.72
+2025,Jan,Tecnologia,Software,GERAL,CC-422,18674
+2025,Fev,Tecnologia,Software,GERAL,CC-422,28674
+2025,Mar,Tecnologia,Software,GERAL,CC-422,28674
+2025,Abr,Tecnologia,Software,GERAL,CC-422,18674
+2025,Mai,Tecnologia,Software,GERAL,CC-422,33674
+2025,Jun,Tecnologia,Software,GERAL,CC-422,28674
+2025,Jul,Tecnologia,Software,GERAL,CC-422,28674
+2025,Ago,Tecnologia,Software,GERAL,CC-422,28674
+2025,Set,Tecnologia,Software,GERAL,CC-422,28674
+2025,Out,Tecnologia,Software,GERAL,CC-422,27007.33
+2025,Nov,Tecnologia,Software,GERAL,CC-422,27007.33
+2025,Dez,Tecnologia,Software,GERAL,CC-422,27007.33
+2025,Jan,Operacional,Fretes e Carretos,GERAL,CC-422,1201.97
+2025,Fev,Operacional,Fretes e Carretos,GERAL,CC-422,5991.27
+2025,Mar,Operacional,Fretes e Carretos,GERAL,CC-422,489.5
+2025,Abr,Operacional,Fretes e Carretos,GERAL,CC-422,11463.02
+2025,Mai,Operacional,Fretes e Carretos,GERAL,CC-422,906.11
+2025,Jun,Operacional,Fretes e Carretos,GERAL,CC-422,1029.74
+2025,Jul,Operacional,Fretes e Carretos,GERAL,CC-422,285.02
+2025,Ago,Operacional,Fretes e Carretos,GERAL,CC-422,1577.77
+2025,Set,Operacional,Fretes e Carretos,GERAL,CC-422,2289.04
+2025,Out,Operacional,Fretes e Carretos,GERAL,CC-422,2803.72
+2025,Nov,Operacional,Fretes e Carretos,GERAL,CC-422,2803.72
+2025,Dez,Operacional,Fretes e Carretos,GERAL,CC-422,2803.72
+2025,Jan,Operacional,Viagens,GERAL,CC-422,3033.21
+2025,Fev,Operacional,Viagens,GERAL,CC-422,199.46
+2025,Mar,Operacional,Viagens,GERAL,CC-422,4293.17
+2025,Abr,Operacional,Viagens,GERAL,CC-422,519.6
+2025,Mai,Operacional,Viagens,GERAL,CC-422,385.5
+2025,Jun,Operacional,Viagens,GERAL,CC-422,14311.84
+2025,Jul,Operacional,Viagens,GERAL,CC-422,150.75
+2025,Ago,Operacional,Viagens,GERAL,CC-422,117.9
+2025,Set,Operacional,Viagens,GERAL,CC-422,1418.75
+2025,Out,Operacional,Viagens,GERAL,CC-422,2714.46
+2025,Nov,Operacional,Viagens,GERAL,CC-422,2714.46
+2025,Dez,Operacional,Viagens,GERAL,CC-422,2714.46
+2025,Jan,Tecnologia,Material de Escritório,GERAL,CC-422,304.36
+2025,Fev,Tecnologia,Material de Escritório,GERAL,CC-422,171.76
+2025,Mar,Tecnologia,Material de Escritório,GERAL,CC-422,1415.63
+2025,Abr,Tecnologia,Material de Escritório,GERAL,CC-422,1743.63
+2025,Mai,Tecnologia,Material de Escritório,GERAL,CC-422,1797.41
+2025,Jun,Tecnologia,Material de Escritório,GERAL,CC-422,727.93
+2025,Jul,Tecnologia,Material de Escritório,GERAL,CC-422,1440.38
+2025,Ago,Tecnologia,Material de Escritório,GERAL,CC-422,1554.65
+2025,Set,Tecnologia,Material de Escritório,GERAL,CC-422,1032.16
+2025,Out,Tecnologia,Material de Escritório,GERAL,CC-422,1131.99
+2025,Nov,Tecnologia,Material de Escritório,GERAL,CC-422,1131.99
+2025,Dez,Tecnologia,Material de Escritório,GERAL,CC-422,1131.99
+2025,Jan,Operacional,Material de Limpeza,GERAL,CC-422,1699.11
+2025,Fev,Operacional,Material de Limpeza,GERAL,CC-422,1189.61
+2025,Mar,Operacional,Material de Limpeza,GERAL,CC-422,2679.18
+2025,Abr,Operacional,Material de Limpeza,GERAL,CC-422,2480.23
+2025,Mai,Operacional,Material de Limpeza,GERAL,CC-422,1446.62
+2025,Jun,Operacional,Material de Limpeza,GERAL,CC-422,1685.77
+2025,Jul,Operacional,Material de Limpeza,GERAL,CC-422,2526.65
+2025,Ago,Operacional,Material de Limpeza,GERAL,CC-422,2016.92
+2025,Set,Operacional,Material de Limpeza,GERAL,CC-422,2437.59
+2025,Out,Operacional,Material de Limpeza,GERAL,CC-422,2017.96
+2025,Nov,Operacional,Material de Limpeza,GERAL,CC-422,2017.96
+2025,Dez,Operacional,Material de Limpeza,GERAL,CC-422,2017.96
+2025,Jan,Operacional,Lanches e Refeições,GERAL,CC-422,14344.99
+2025,Fev,Operacional,Lanches e Refeições,GERAL,CC-422,16357.38
+2025,Mar,Operacional,Lanches e Refeições,GERAL,CC-422,15612.88
+2025,Abr,Operacional,Lanches e Refeições,GERAL,CC-422,17716.49
+2025,Mai,Operacional,Lanches e Refeições,GERAL,CC-422,16524.16
+2025,Jun,Operacional,Lanches e Refeições,GERAL,CC-422,19003.55
+2025,Jul,Operacional,Lanches e Refeições,GERAL,CC-422,19497.68
+2025,Ago,Operacional,Lanches e Refeições,GERAL,CC-422,20825.67
+2025,Set,Operacional,Lanches e Refeições,GERAL,CC-422,20808.71
+2025,Out,Operacional,Lanches e Refeições,GERAL,CC-422,17854.61
+2025,Nov,Operacional,Lanches e Refeições,GERAL,CC-422,17854.61
+2025,Dez,Operacional,Lanches e Refeições,GERAL,CC-422,17854.61
+2025,Mai,Operacional,Custas Cartoriais,GERAL,CC-422,106.3
+2025,Out,Operacional,Custas Cartoriais,GERAL,CC-422,11.81
+2025,Nov,Operacional,Custas Cartoriais,GERAL,CC-422,11.81
+2025,Dez,Operacional,Custas Cartoriais,GERAL,CC-422,11.81
+2025,Jan,Operacional,Taxas,GERAL,CC-422,6623.48
+2025,Out,Operacional,Taxas,GERAL,CC-422,735.94
+2025,Nov,Operacional,Taxas,GERAL,CC-422,735.94
+2025,Dez,Operacional,Taxas,GERAL,CC-422,735.94
+2025,Jan,Operacional,Assessoria Jurídica,GERAL,CC-422,7500
+2025,Fev,Operacional,Assessoria Jurídica,GERAL,CC-422,7500
+2025,Mar,Operacional,Assessoria Jurídica,GERAL,CC-422,7500
+2025,Abr,Operacional,Assessoria Jurídica,GERAL,CC-422,7500
+2025,Mai,Operacional,Assessoria Jurídica,GERAL,CC-422,7500
+2025,Jun,Operacional,Assessoria Jurídica,GERAL,CC-422,7500
+2025,Jul,Operacional,Assessoria Jurídica,GERAL,CC-422,7500
+2025,Ago,Operacional,Assessoria Jurídica,GERAL,CC-422,7500
+2025,Set,Operacional,Assessoria Jurídica,GERAL,CC-422,8350
+2025,Out,Operacional,Assessoria Jurídica,GERAL,CC-422,7594.44
+2025,Nov,Operacional,Assessoria Jurídica,GERAL,CC-422,7594.44
+2025,Dez,Operacional,Assessoria Jurídica,GERAL,CC-422,7594.44
+2025,Jul,Outros,BRINDES, DONATIVOS / PATROCINIO,GERAL,CC-422,70.76
+2025,Set,Outros,BRINDES, DONATIVOS / PATROCINIO,GERAL,CC-422,100
+2025,Out,Outros,BRINDES, DONATIVOS / PATROCINIO,GERAL,CC-422,18.97
+2025,Nov,Outros,BRINDES, DONATIVOS / PATROCINIO,GERAL,CC-422,18.97
+2025,Dez,Outros,BRINDES, DONATIVOS / PATROCINIO,GERAL,CC-422,18.97
+2025,Jan,Operacional,Seguros,GERAL,CC-422,1488.52
+2025,Fev,Operacional,Seguros,GERAL,CC-422,1488.52
+2025,Mar,Operacional,Seguros,GERAL,CC-422,1488.52
+2025,Abr,Operacional,Seguros,GERAL,CC-422,1488.52
+2025,Mai,Operacional,Seguros,GERAL,CC-422,1528.84
+2025,Jun,Operacional,Seguros,GERAL,CC-422,1796.24
+2025,Jul,Operacional,Seguros,GERAL,CC-422,1618.86
+2025,Ago,Operacional,Seguros,GERAL,CC-422,1618.86
+2025,Set,Operacional,Seguros,GERAL,CC-422,1618.86
+2025,Out,Operacional,Seguros,GERAL,CC-422,1570.64
+2025,Nov,Operacional,Seguros,GERAL,CC-422,1570.64
+2025,Dez,Operacional,Seguros,GERAL,CC-422,1570.64
+2025,Set,Outros,FERRAM E UTENS P/ AMBULATORIO-LABORATORI,GERAL,CC-422,300
+2025,Out,Outros,FERRAM E UTENS P/ AMBULATORIO-LABORATORI,GERAL,CC-422,33.33
+2025,Nov,Outros,FERRAM E UTENS P/ AMBULATORIO-LABORATORI,GERAL,CC-422,33.33
+2025,Dez,Outros,FERRAM E UTENS P/ AMBULATORIO-LABORATORI,GERAL,CC-422,33.33
+2025,Jan,Operacional,Móveis e Utensílios,GERAL,CC-422,614.74
+2025,Fev,Operacional,Móveis e Utensílios,GERAL,CC-422,326.5
+2025,Mar,Operacional,Móveis e Utensílios,GERAL,CC-422,504.6
+2025,Abr,Operacional,Móveis e Utensílios,GERAL,CC-422,749.45
+2025,Mai,Operacional,Móveis e Utensílios,GERAL,CC-422,5089.53
+2025,Jul,Operacional,Móveis e Utensílios,GERAL,CC-422,6.8
+2025,Ago,Operacional,Móveis e Utensílios,GERAL,CC-422,219.67
+2025,Set,Operacional,Móveis e Utensílios,GERAL,CC-422,15.34
+2025,Out,Operacional,Móveis e Utensílios,GERAL,CC-422,836.29
+2025,Nov,Operacional,Móveis e Utensílios,GERAL,CC-422,836.29
+2025,Dez,Operacional,Móveis e Utensílios,GERAL,CC-422,836.29
+2025,Jan,Operacional,Equipamentos de Segurança,GERAL,CC-422,8.72
+2025,Fev,Operacional,Equipamentos de Segurança,GERAL,CC-422,95.75
+2025,Mar,Operacional,Equipamentos de Segurança,GERAL,CC-422,140
+2025,Abr,Operacional,Equipamentos de Segurança,GERAL,CC-422,46.6
+2025,Mai,Operacional,Equipamentos de Segurança,GERAL,CC-422,289.9
+2025,Jul,Operacional,Equipamentos de Segurança,GERAL,CC-422,590.76
+2025,Ago,Operacional,Equipamentos de Segurança,GERAL,CC-422,97.64
+2025,Set,Operacional,Equipamentos de Segurança,GERAL,CC-422,880.35
+2025,Out,Operacional,Equipamentos de Segurança,GERAL,CC-422,238.86
+2025,Nov,Operacional,Equipamentos de Segurança,GERAL,CC-422,238.86
+2025,Dez,Operacional,Equipamentos de Segurança,GERAL,CC-422,238.86
+2025,Ago,Operacional,IPVA,GERAL,CC-422,1326.32
+2025,Set,Operacional,IPVA,GERAL,CC-422,499.17
+2025,Out,Operacional,IPVA,GERAL,CC-422,202.83
+2025,Nov,Operacional,IPVA,GERAL,CC-422,202.83
+2025,Dez,Operacional,IPVA,GERAL,CC-422,202.83
+2025,Jan,Operacional,Peças,GERAL,CC-422,785390.89
+2025,Fev,Operacional,Peças,GERAL,CC-422,822515.38
+2025,Mar,Operacional,Peças,GERAL,CC-422,716095.52
+2025,Abr,Operacional,Peças,GERAL,CC-422,776350.91
+2025,Mai,Operacional,Peças,GERAL,CC-422,776015.17
+2025,Jun,Operacional,Peças,GERAL,CC-422,606828.28
+2025,Jul,Operacional,Peças,GERAL,CC-422,697130.66
+2025,Ago,Operacional,Peças,GERAL,CC-422,631391.11
+2025,Set,Operacional,Peças,GERAL,CC-422,617940.84
+2025,Out,Operacional,Peças,GERAL,CC-422,714406.53
+2025,Nov,Operacional,Peças,GERAL,CC-422,714406.53
+2025,Dez,Operacional,Peças,GERAL,CC-422,714406.53
