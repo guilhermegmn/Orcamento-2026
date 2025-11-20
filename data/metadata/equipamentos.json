@@ -1,11 +1,21 @@
 {
   "equipamentos": [
     {
+      "codigo": "AMB-001",
+      "nome": "AMB-001",
+      "categoria": "AMBULANCIA",
+      "descricao": "AMBULANCIA AMB-001",
+      "centro_custo": "CC-001",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
       "codigo": "BM-01",
       "nome": "BM-01",
       "categoria": "BRITADOR",
       "descricao": "BRITADOR BM-01",
-      "centro_custo": "CC-001",
+      "centro_custo": "CC-002",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -15,7 +25,7 @@
       "nome": "BM-02",
       "categoria": "BRITADOR",
       "descricao": "BRITADOR BM-02",
-      "centro_custo": "CC-002",
+      "centro_custo": "CC-003",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -25,7 +35,7 @@
       "nome": "BM-03",
       "categoria": "BRITADOR",
       "descricao": "BRITADOR BM-03",
-      "centro_custo": "CC-003",
+      "centro_custo": "CC-004",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -35,7 +45,7 @@
       "nome": "BM-04",
       "categoria": "BRITADOR",
       "descricao": "BRITADOR BM-04",
-      "centro_custo": "CC-004",
+      "centro_custo": "CC-005",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -45,7 +55,47 @@
       "nome": "CA-01",
       "categoria": "COMPRESSOR DE AR",
       "descricao": "COMPRESSOR DE AR CA-01",
-      "centro_custo": "CC-005",
+      "centro_custo": "CC-006",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "CA-02",
+      "nome": "CA-02",
+      "categoria": "COMPRESSOR DE AR",
+      "descricao": "COMPRESSOR DE AR CA-02",
+      "centro_custo": "CC-007",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "CA-03",
+      "nome": "CA-03",
+      "categoria": "COMPRESSOR DE AR",
+      "descricao": "COMPRESSOR DE AR CA-03",
+      "centro_custo": "CC-008",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "CA-04",
+      "nome": "CA-04",
+      "categoria": "COMPRESSOR DE AR",
+      "descricao": "COMPRESSOR DE AR CA-04",
+      "centro_custo": "CC-009",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "CA-05",
+      "nome": "CA-05",
+      "categoria": "COMPRESSOR DE AR",
+      "descricao": "COMPRESSOR DE AR CA-05",
+      "centro_custo": "CC-010",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -55,7 +105,7 @@
       "nome": "CA-06",
       "categoria": "COMPRESSOR DE AR",
       "descricao": "COMPRESSOR DE AR CA-06",
-      "centro_custo": "CC-006",
+      "centro_custo": "CC-011",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -65,7 +115,7 @@
       "nome": "CA-07",
       "categoria": "COMPRESSOR DE AR",
       "descricao": "COMPRESSOR DE AR CA-07",
-      "centro_custo": "CC-007",
+      "centro_custo": "CC-012",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -75,7 +125,7 @@
       "nome": "CA-08",
       "categoria": "COMPRESSOR DE AR",
       "descricao": "COMPRESSOR DE AR CA-08",
-      "centro_custo": "CC-008",
+      "centro_custo": "CC-013",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -85,7 +135,7 @@
       "nome": "CB-01",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-01",
-      "centro_custo": "CC-009",
+      "centro_custo": "CC-014",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -95,7 +145,7 @@
       "nome": "CB-02",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-02",
-      "centro_custo": "CC-010",
+      "centro_custo": "CC-015",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -105,7 +155,7 @@
       "nome": "CB-03",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-03",
-      "centro_custo": "CC-011",
+      "centro_custo": "CC-016",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -115,7 +165,7 @@
       "nome": "CB-04",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-04",
-      "centro_custo": "CC-012",
+      "centro_custo": "CC-017",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -125,7 +175,7 @@
       "nome": "CB-05",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-05",
-      "centro_custo": "CC-013",
+      "centro_custo": "CC-018",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -135,7 +185,7 @@
       "nome": "CB-06",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-06",
-      "centro_custo": "CC-014",
+      "centro_custo": "CC-019",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -145,7 +195,7 @@
       "nome": "CB-07",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-07",
-      "centro_custo": "CC-015",
+      "centro_custo": "CC-020",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -155,7 +205,7 @@
       "nome": "CB-08",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-08",
-      "centro_custo": "CC-016",
+      "centro_custo": "CC-021",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -165,7 +215,7 @@
       "nome": "CB-09",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-09",
-      "centro_custo": "CC-017",
+      "centro_custo": "CC-022",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -175,7 +225,7 @@
       "nome": "CB-12",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-12",
-      "centro_custo": "CC-018",
+      "centro_custo": "CC-023",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -185,7 +235,7 @@
       "nome": "CB-13",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-13",
-      "centro_custo": "CC-019",
+      "centro_custo": "CC-024",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -195,7 +245,7 @@
       "nome": "CB-14",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-14",
-      "centro_custo": "CC-020",
+      "centro_custo": "CC-025",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -205,7 +255,7 @@
       "nome": "CB-15",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-15",
-      "centro_custo": "CC-021",
+      "centro_custo": "CC-026",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -215,7 +265,7 @@
       "nome": "CB-16",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-16",
-      "centro_custo": "CC-022",
+      "centro_custo": "CC-027",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -225,7 +275,7 @@
       "nome": "CB-17",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-17",
-      "centro_custo": "CC-023",
+      "centro_custo": "CC-028",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -235,7 +285,7 @@
       "nome": "CB-18",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-18",
-      "centro_custo": "CC-024",
+      "centro_custo": "CC-029",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -245,7 +295,7 @@
       "nome": "CB-19",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-19",
-      "centro_custo": "CC-025",
+      "centro_custo": "CC-030",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -255,7 +305,7 @@
       "nome": "CB-20",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-20",
-      "centro_custo": "CC-026",
+      "centro_custo": "CC-031",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -265,7 +315,7 @@
       "nome": "CB-21",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-21",
-      "centro_custo": "CC-027",
+      "centro_custo": "CC-032",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -275,7 +325,7 @@
       "nome": "CB-22",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-22",
-      "centro_custo": "CC-028",
+      "centro_custo": "CC-033",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -285,7 +335,7 @@
       "nome": "CB-23",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-23",
-      "centro_custo": "CC-029",
+      "centro_custo": "CC-034",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -295,7 +345,7 @@
       "nome": "CB-24",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-24",
-      "centro_custo": "CC-030",
+      "centro_custo": "CC-035",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -305,7 +355,7 @@
       "nome": "CB-25",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-25",
-      "centro_custo": "CC-031",
+      "centro_custo": "CC-036",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -315,7 +365,7 @@
       "nome": "CB-26",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-26",
-      "centro_custo": "CC-032",
+      "centro_custo": "CC-037",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -325,7 +375,7 @@
       "nome": "CB-27",
       "categoria": "CAMINHÃO BASCULANTE",
       "descricao": "CAMINHÃO BASCULANTE CB-27",
-      "centro_custo": "CC-033",
+      "centro_custo": "CC-038",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -335,7 +385,7 @@
       "nome": "CC-01",
       "categoria": "CAMINHÃO COMBOIO",
       "descricao": "CAMINHÃO COMBOIO CC-01",
-      "centro_custo": "CC-034",
+      "centro_custo": "CC-039",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -345,7 +395,7 @@
       "nome": "CC-02",
       "categoria": "CAMINHÃO COMBOIO",
       "descricao": "CAMINHÃO COMBOIO CC-02",
-      "centro_custo": "CC-035",
+      "centro_custo": "CC-040",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -355,7 +405,7 @@
       "nome": "CG-01",
       "categoria": "CAMINHÃO GUINDAUTO",
       "descricao": "CAMINHÃO GUINDAUTO CG-01",
-      "centro_custo": "CC-036",
+      "centro_custo": "CC-041",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -365,7 +415,7 @@
       "nome": "CP-01",
       "categoria": "CAMINHÃO PIPA",
       "descricao": "CAMINHÃO PIPA CP-01",
-      "centro_custo": "CC-037",
+      "centro_custo": "CC-042",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -375,7 +425,7 @@
       "nome": "CP-02",
       "categoria": "CAMINHÃO PIPA",
       "descricao": "CAMINHÃO PIPA CP-02",
-      "centro_custo": "CC-038",
+      "centro_custo": "CC-043",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -385,7 +435,17 @@
       "nome": "CP-03",
       "categoria": "CAMINHÃO PIPA",
       "descricao": "CAMINHÃO PIPA CP-03",
-      "centro_custo": "CC-039",
+      "centro_custo": "CC-044",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "EH-05",
+      "nome": "EH-05",
+      "categoria": "ESCAVADEIRA HIDRAULICA",
+      "descricao": "ESCAVADEIRA HIDRAULICA EH-05",
+      "centro_custo": "CC-045",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -395,7 +455,7 @@
       "nome": "EH-06",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-06",
-      "centro_custo": "CC-040",
+      "centro_custo": "CC-046",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -405,7 +465,7 @@
       "nome": "EH-07",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-07",
-      "centro_custo": "CC-041",
+      "centro_custo": "CC-047",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -415,7 +475,7 @@
       "nome": "EH-08",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-08",
-      "centro_custo": "CC-042",
+      "centro_custo": "CC-048",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -425,7 +485,7 @@
       "nome": "EH-09",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-09",
-      "centro_custo": "CC-043",
+      "centro_custo": "CC-049",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -435,7 +495,7 @@
       "nome": "EH-10",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-10",
-      "centro_custo": "CC-044",
+      "centro_custo": "CC-050",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -445,7 +505,7 @@
       "nome": "EH-11",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-11",
-      "centro_custo": "CC-045",
+      "centro_custo": "CC-051",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -455,7 +515,7 @@
       "nome": "EH-12",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-12",
-      "centro_custo": "CC-046",
+      "centro_custo": "CC-052",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -465,7 +525,7 @@
       "nome": "EH-13",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-13",
-      "centro_custo": "CC-047",
+      "centro_custo": "CC-053",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -475,7 +535,7 @@
       "nome": "EH-14",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-14",
-      "centro_custo": "CC-048",
+      "centro_custo": "CC-054",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -485,7 +545,7 @@
       "nome": "EH-15",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-15",
-      "centro_custo": "CC-049",
+      "centro_custo": "CC-055",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -495,7 +555,7 @@
       "nome": "EH-16",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-16",
-      "centro_custo": "CC-050",
+      "centro_custo": "CC-056",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -505,7 +565,107 @@
       "nome": "EH-17",
       "categoria": "ESCAVADEIRA HIDRAULICA",
       "descricao": "ESCAVADEIRA HIDRAULICA EH-17",
-      "centro_custo": "CC-051",
+      "centro_custo": "CC-057",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-01",
+      "nome": "GE-01",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-01",
+      "centro_custo": "CC-058",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-02",
+      "nome": "GE-02",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-02",
+      "centro_custo": "CC-059",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-03",
+      "nome": "GE-03",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-03",
+      "centro_custo": "CC-060",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-04",
+      "nome": "GE-04",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-04",
+      "centro_custo": "CC-061",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-05",
+      "nome": "GE-05",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-05",
+      "centro_custo": "CC-062",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-06",
+      "nome": "GE-06",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-06",
+      "centro_custo": "CC-063",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-07",
+      "nome": "GE-07",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-07",
+      "centro_custo": "CC-064",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-08",
+      "nome": "GE-08",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-08",
+      "centro_custo": "CC-065",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "GE-336",
+      "nome": "GE-336",
+      "categoria": "GRUPO GERADOR",
+      "descricao": "GRUPO GERADOR GE-336",
+      "centro_custo": "CC-066",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "MN-01",
+      "nome": "MN-01",
+      "categoria": "MOTONIVELADORA",
+      "descricao": "MOTONIVELADORA MN-01",
+      "centro_custo": "CC-067",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -515,7 +675,7 @@
       "nome": "PC-01",
       "categoria": "PA CARREGADEIRA",
       "descricao": "PA CARREGADEIRA PC-01",
-      "centro_custo": "CC-052",
+      "centro_custo": "CC-068",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -525,7 +685,7 @@
       "nome": "PC-02",
       "categoria": "PA CARREGADEIRA",
       "descricao": "PA CARREGADEIRA PC-02",
-      "centro_custo": "CC-053",
+      "centro_custo": "CC-069",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -535,7 +695,7 @@
       "nome": "PC-03",
       "categoria": "PA CARREGADEIRA",
       "descricao": "PA CARREGADEIRA PC-03",
-      "centro_custo": "CC-054",
+      "centro_custo": "CC-070",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -545,7 +705,7 @@
       "nome": "PC-04",
       "categoria": "PA CARREGADEIRA",
       "descricao": "PA CARREGADEIRA PC-04",
-      "centro_custo": "CC-055",
+      "centro_custo": "CC-071",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -555,7 +715,7 @@
       "nome": "PC-05",
       "categoria": "PA CARREGADEIRA",
       "descricao": "PA CARREGADEIRA PC-05",
-      "centro_custo": "CC-056",
+      "centro_custo": "CC-072",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -565,7 +725,7 @@
       "nome": "PC-08",
       "categoria": "PA CARREGADEIRA",
       "descricao": "PA CARREGADEIRA PC-08",
-      "centro_custo": "CC-057",
+      "centro_custo": "CC-073",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -575,7 +735,7 @@
       "nome": "PC-09",
       "categoria": "PA CARREGADEIRA",
       "descricao": "PA CARREGADEIRA PC-09",
-      "centro_custo": "CC-058",
+      "centro_custo": "CC-074",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -585,7 +745,7 @@
       "nome": "PC-10",
       "categoria": "PA CARREGADEIRA",
       "descricao": "PA CARREGADEIRA PC-10",
-      "centro_custo": "CC-059",
+      "centro_custo": "CC-075",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -595,7 +755,7 @@
       "nome": "PM-01",
       "categoria": "PENEIRA MOVEL",
       "descricao": "PENEIRA MOVEL PM-01",
-      "centro_custo": "CC-060",
+      "centro_custo": "CC-076",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -605,7 +765,17 @@
       "nome": "PM-02",
       "categoria": "PENEIRA MOVEL",
       "descricao": "PENEIRA MOVEL PM-02",
-      "centro_custo": "CC-061",
+      "centro_custo": "CC-077",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "PTA-001",
+      "nome": "PTA-001",
+      "categoria": "EQUIPAMENTO LOCADO",
+      "descricao": "EQUIPAMENTO LOCADO PTA-001",
+      "centro_custo": "CC-078",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -615,7 +785,77 @@
       "nome": "PV-01",
       "categoria": "PENEIRA VIBRATORIA",
       "descricao": "PENEIRA VIBRATORIA PV-01",
-      "centro_custo": "CC-062",
+      "centro_custo": "CC-079",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "RE-01",
+      "nome": "RE-01",
+      "categoria": "RETROESCAVADEIRA",
+      "descricao": "RETROESCAVADEIRA RE-01",
+      "centro_custo": "CC-080",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "RP-01",
+      "nome": "RP-01",
+      "categoria": "ROMPEDOR",
+      "descricao": "ROMPEDOR RP-01",
+      "centro_custo": "CC-081",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "TC-01",
+      "nome": "TC-01",
+      "categoria": "TRANSPORTADOR DE CORREIA",
+      "descricao": "TRANSPORTADOR DE CORREIA TC-01",
+      "centro_custo": "CC-082",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "TC-02",
+      "nome": "TC-02",
+      "categoria": "TRANSPORTADOR DE CORREIA",
+      "descricao": "TRANSPORTADOR DE CORREIA TC-02",
+      "centro_custo": "CC-083",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "TC-03",
+      "nome": "TC-03",
+      "categoria": "TRANSPORTADOR DE CORREIA",
+      "descricao": "TRANSPORTADOR DE CORREIA TC-03",
+      "centro_custo": "CC-084",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "TC-04",
+      "nome": "TC-04",
+      "categoria": "TRANSPORTADOR DE CORREIA",
+      "descricao": "TRANSPORTADOR DE CORREIA TC-04",
+      "centro_custo": "CC-085",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "TC-05",
+      "nome": "TC-05",
+      "categoria": "TRANSPORTADOR DE CORREIA",
+      "descricao": "TRANSPORTADOR DE CORREIA TC-05",
+      "centro_custo": "CC-086",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -625,7 +865,7 @@
       "nome": "TE-02",
       "categoria": "TRATOR DE ESTEIRA",
       "descricao": "TRATOR DE ESTEIRA TE-02",
-      "centro_custo": "CC-063",
+      "centro_custo": "CC-087",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -635,7 +875,7 @@
       "nome": "TE-03",
       "categoria": "TRATOR DE ESTEIRA",
       "descricao": "TRATOR DE ESTEIRA TE-03",
-      "centro_custo": "CC-064",
+      "centro_custo": "CC-088",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -645,7 +885,7 @@
       "nome": "TE-04",
       "categoria": "TRATOR DE ESTEIRA",
       "descricao": "TRATOR DE ESTEIRA TE-04",
-      "centro_custo": "CC-065",
+      "centro_custo": "CC-089",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -655,7 +895,7 @@
       "nome": "TE-05",
       "categoria": "TRATOR DE ESTEIRA",
       "descricao": "TRATOR DE ESTEIRA TE-05",
-      "centro_custo": "CC-066",
+      "centro_custo": "CC-090",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -665,7 +905,7 @@
       "nome": "TE-06",
       "categoria": "TRATOR DE ESTEIRA",
       "descricao": "TRATOR DE ESTEIRA TE-06",
-      "centro_custo": "CC-067",
+      "centro_custo": "CC-091",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -675,7 +915,37 @@
       "nome": "TE-08",
       "categoria": "TRATOR DE ESTEIRA",
       "descricao": "TRATOR DE ESTEIRA TE-08",
-      "centro_custo": "CC-068",
+      "centro_custo": "CC-092",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "TI-02",
+      "nome": "TI-02",
+      "categoria": "TRATOR INDUSTRIAL",
+      "descricao": "TRATOR INDUSTRIAL TI-02",
+      "centro_custo": "CC-093",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "TI-03",
+      "nome": "TI-03",
+      "categoria": "TRATOR INDUSTRIAL",
+      "descricao": "TRATOR INDUSTRIAL TI-03",
+      "centro_custo": "CC-094",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "TI-04",
+      "nome": "TI-04",
+      "categoria": "TRATOR INDUSTRIAL",
+      "descricao": "TRATOR INDUSTRIAL TI-04",
+      "centro_custo": "CC-095",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -685,7 +955,7 @@
       "nome": "TP-01",
       "categoria": "TRATOR DE PNEUS",
       "descricao": "TRATOR DE PNEUS TP-01",
-      "centro_custo": "CC-069",
+      "centro_custo": "CC-096",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -695,7 +965,7 @@
       "nome": "TP-02",
       "categoria": "TRATOR DE PNEUS",
       "descricao": "TRATOR DE PNEUS TP-02",
-      "centro_custo": "CC-070",
+      "centro_custo": "CC-097",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -705,7 +975,37 @@
       "nome": "TP-03",
       "categoria": "TRATOR DE PNEUS",
       "descricao": "TRATOR DE PNEUS TP-03",
-      "centro_custo": "CC-071",
+      "centro_custo": "CC-098",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-01",
+      "nome": "VL-01",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-01",
+      "centro_custo": "CC-099",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-02",
+      "nome": "VL-02",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-02",
+      "centro_custo": "CC-100",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-03",
+      "nome": "VL-03",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-03",
+      "centro_custo": "CC-101",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -715,7 +1015,17 @@
       "nome": "VL-05",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-05",
-      "centro_custo": "CC-072",
+      "centro_custo": "CC-102",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-07",
+      "nome": "VL-07",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-07",
+      "centro_custo": "CC-103",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -725,7 +1035,147 @@
       "nome": "VL-09",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-09",
-      "centro_custo": "CC-073",
+      "centro_custo": "CC-104",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-101",
+      "nome": "VL-101",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-101",
+      "centro_custo": "CC-105",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-102",
+      "nome": "VL-102",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-102",
+      "centro_custo": "CC-106",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-103",
+      "nome": "VL-103",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-103",
+      "centro_custo": "CC-107",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-104",
+      "nome": "VL-104",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-104",
+      "centro_custo": "CC-108",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-105",
+      "nome": "VL-105",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-105",
+      "centro_custo": "CC-109",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-106",
+      "nome": "VL-106",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-106",
+      "centro_custo": "CC-110",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-107",
+      "nome": "VL-107",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-107",
+      "centro_custo": "CC-111",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-109",
+      "nome": "VL-109",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-109",
+      "centro_custo": "CC-112",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-11",
+      "nome": "VL-11",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-11",
+      "centro_custo": "CC-113",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-110",
+      "nome": "VL-110",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-110",
+      "centro_custo": "CC-114",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-111",
+      "nome": "VL-111",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-111",
+      "centro_custo": "CC-115",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-112",
+      "nome": "VL-112",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-112",
+      "centro_custo": "CC-116",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-115",
+      "nome": "VL-115",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-115",
+      "centro_custo": "CC-117",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-116",
+      "nome": "VL-116",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-116",
+      "centro_custo": "CC-118",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -735,7 +1185,7 @@
       "nome": "VL-12",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-12",
-      "centro_custo": "CC-074",
+      "centro_custo": "CC-119",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -745,7 +1195,17 @@
       "nome": "VL-13",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-13",
-      "centro_custo": "CC-075",
+      "centro_custo": "CC-120",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-14",
+      "nome": "VL-14",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-14",
+      "centro_custo": "CC-121",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -755,7 +1215,7 @@
       "nome": "VL-16",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-16",
-      "centro_custo": "CC-076",
+      "centro_custo": "CC-122",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -765,7 +1225,7 @@
       "nome": "VL-17",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-17",
-      "centro_custo": "CC-077",
+      "centro_custo": "CC-123",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -775,7 +1235,17 @@
       "nome": "VL-18",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-18",
-      "centro_custo": "CC-078",
+      "centro_custo": "CC-124",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-19",
+      "nome": "VL-19",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-19",
+      "centro_custo": "CC-125",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -785,7 +1255,27 @@
       "nome": "VL-20",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-20",
-      "centro_custo": "CC-079",
+      "centro_custo": "CC-126",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-21",
+      "nome": "VL-21",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-21",
+      "centro_custo": "CC-127",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-22",
+      "nome": "VL-22",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-22",
+      "centro_custo": "CC-128",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -795,7 +1285,37 @@
       "nome": "VL-23",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-23",
-      "centro_custo": "CC-080",
+      "centro_custo": "CC-129",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-24",
+      "nome": "VL-24",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-24",
+      "centro_custo": "CC-130",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-25",
+      "nome": "VL-25",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-25",
+      "centro_custo": "CC-131",
+      "responsavel": "A definir",
+      "email": "equipamentos@empresa.com.br",
+      "ativo": true
+    },
+    {
+      "codigo": "VL-26",
+      "nome": "VL-26",
+      "categoria": "VEICULO LEVE",
+      "descricao": "VEICULO LEVE VL-26",
+      "centro_custo": "CC-132",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -805,7 +1325,7 @@
       "nome": "VL-27",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-27",
-      "centro_custo": "CC-081",
+      "centro_custo": "CC-133",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
@@ -815,7 +1335,7 @@
       "nome": "VL-28",
       "categoria": "VEICULO LEVE",
       "descricao": "VEICULO LEVE VL-28",
-      "centro_custo": "CC-082",
+      "centro_custo": "CC-134",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
       "ativo": true
