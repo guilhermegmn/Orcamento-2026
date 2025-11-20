@@ -80,6 +80,9 @@ export default function Dashboard() {
   const [filtroCategoriasDetalhamento, setFiltroCategoriasDetalhamento] = useState<string[]>([]);
   const [filtroMesesDetalhamento, setFiltroMesesDetalhamento] = useState<string[]>([]);
 
+  // Categoria selecionada para drill-down
+  const [categoriaSelecionada, setCategoriaSelecionada] = useState<string | null>(null);
+
   useEffect(() => {
     async function fetchData() {
       setLoading(true);
@@ -363,6 +366,32 @@ export default function Dashboard() {
       }))
       .sort((a, b) => b.total - a.total); // Ordenar por total decrescente
   }, [dadosDetalhamento, equipamentos]);
+
+  // Calcular gastos por equipamento dentro da categoria selecionada
+  const gastosPorEquipamento = useMemo(() => {
+    if (!categoriaSelecionada) return [];
+
+    const { filtrados } = dadosDetalhamento;
+    const equipamentosMap = new Map<string, number>();
+
+    filtrados.forEach((item) => {
+      const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
+      const categoria = equipamentoObj?.categoria || 'SEM CATEGORIA';
+
+      // Filtrar apenas equipamentos da categoria selecionada
+      if (categoria === categoriaSelecionada) {
+        const current = equipamentosMap.get(item.equipamento) || 0;
+        equipamentosMap.set(item.equipamento, current + item.valorTotal);
+      }
+    });
+
+    return Array.from(equipamentosMap.entries())
+      .map(([equipamento, total]) => ({
+        equipamento,
+        total
+      }))
+      .sort((a, b) => b.total - a.total); // Ordenar por total decrescente
+  }, [dadosDetalhamento, equipamentos, categoriaSelecionada]);
 
   // Opções para os filtros (usando classes agrupadas)
   const opcoesClasses = useMemo(() => {
@@ -937,6 +966,7 @@ export default function Dashboard() {
                           <th className="text-left p-3 font-medium">Categoria</th>
                           <th className="text-right p-3 font-medium">Total Gasto</th>
                           <th className="text-right p-3 font-medium">% do Total</th>
+                          <th className="text-center p-3 font-medium">Ação</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -944,15 +974,33 @@ export default function Dashboard() {
                           const percentual = dadosDetalhamento.total > 0
                             ? (item.total / dadosDetalhamento.total) * 100
                             : 0;
+                          const isSelecionada = categoriaSelecionada === item.categoria;
 
                           return (
-                            <tr key={idx} className="border-b hover:bg-slate-50 dark:hover:bg-slate-800">
+                            <tr
+                              key={idx}
+                              className={`border-b hover:bg-slate-50 dark:hover:bg-slate-800 ${isSelecionada ? 'bg-blue-50 dark:bg-blue-900' : ''}`}
+                            >
                               <td className="p-3 font-medium">{item.categoria}</td>
                               <td className="p-3 text-right">
                                 {formatCurrency(item.total, config || undefined)}
                               </td>
                               <td className="p-3 text-right">
                                 {formatPercentage(percentual)}
+                              </td>
+                              <td className="p-3 text-center">
+                                <button
+                                  onClick={() => {
+                                    setCategoriaSelecionada(isSelecionada ? null : item.categoria);
+                                  }}
+                                  className={`px-3 py-1 text-sm rounded ${
+                                    isSelecionada
+                                      ? 'bg-red-500 text-white hover:bg-red-600'
+                                      : 'bg-blue-500 text-white hover:bg-blue-600'
+                                  }`}
+                                >
+                                  {isSelecionada ? 'Ocultar' : 'Ver Detalhes'}
+                                </button>
                               </td>
                             </tr>
                           );
@@ -965,11 +1013,74 @@ export default function Dashboard() {
                             {formatCurrency(dadosDetalhamento.total, config || undefined)}
                           </td>
                           <td className="p-3 text-right">100,00%</td>
+                          <td className="p-3"></td>
                         </tr>
                       </tfoot>
                     </table>
                   </div>
                 </div>
+
+                {/* Tabela de Gastos por Equipamento (quando categoria selecionada) */}
+                {categoriaSelecionada && gastosPorEquipamento.length > 0 && (
+                  <div className="mb-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-lg font-semibold">
+                        Gastos por Equipamento: {categoriaSelecionada}
+                      </h3>
+                      <button
+                        onClick={() => setCategoriaSelecionada(null)}
+                        className="text-sm text-slate-600 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
+                      >
+                        ✕ Fechar
+                      </button>
+                    </div>
+                    <div className="overflow-x-auto border border-slate-200 dark:border-slate-700 rounded-lg">
+                      <table className="w-full">
+                        <thead className="bg-slate-50 dark:bg-slate-800">
+                          <tr className="border-b">
+                            <th className="text-left p-3 font-medium">Equipamento</th>
+                            <th className="text-right p-3 font-medium">Total Gasto</th>
+                            <th className="text-right p-3 font-medium">% da Categoria</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {gastosPorEquipamento.map((item, idx) => {
+                            const totalCategoria = gastosPorCategoria.find(
+                              c => c.categoria === categoriaSelecionada
+                            )?.total || 0;
+                            const percentual = totalCategoria > 0
+                              ? (item.total / totalCategoria) * 100
+                              : 0;
+
+                            return (
+                              <tr key={idx} className="border-b hover:bg-slate-50 dark:hover:bg-slate-800">
+                                <td className="p-3 font-medium">{item.equipamento}</td>
+                                <td className="p-3 text-right">
+                                  {formatCurrency(item.total, config || undefined)}
+                                </td>
+                                <td className="p-3 text-right">
+                                  {formatPercentage(percentual)}
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                        <tfoot className="bg-slate-50 dark:bg-slate-800">
+                          <tr className="border-t-2 font-bold">
+                            <td className="p-3">TOTAL</td>
+                            <td className="p-3 text-right">
+                              {formatCurrency(
+                                gastosPorEquipamento.reduce((sum, item) => sum + item.total, 0),
+                                config || undefined
+                              )}
+                            </td>
+                            <td className="p-3 text-right">100,00%</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                )}
 
                 {/* Tabela Detalhada */}
                 <div>
