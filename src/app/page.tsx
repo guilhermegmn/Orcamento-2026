@@ -46,6 +46,11 @@ function agruparClasse(classeCodigo: string, subclasse: string): string {
     return "RECEITAS";
   }
 
+  // Custos Operacionais: classes que começam com 5
+  if (classeCodigo.startsWith('5')) {
+    return "CUSTOS OPERACIONAIS";
+  }
+
   // Outras classes: manter formato original
   return `${classeCodigo} - ${subclasse}`;
 }
@@ -95,8 +100,9 @@ export default function Dashboard() {
 
   const dadosPlanejamento = useMemo(() => {
     const filtrado2025 = realizado2025.filter((item) => {
+      const classeAgrupada = agruparClasse(item.classe_codigo, item.subclasse);
       const classeMatch =
-        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_codigo);
+        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(classeAgrupada);
 
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
       const categoriaMatch =
@@ -110,8 +116,9 @@ export default function Dashboard() {
     });
 
     const filtrado2026 = orcado2026.filter((item) => {
+      const classeAgrupada = agruparClasse(item.classe_codigo, item.subclasse);
       const classeMatch =
-        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(item.classe_codigo);
+        filtroClassesPlanejamento.length === 0 || filtroClassesPlanejamento.includes(classeAgrupada);
 
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
       const categoriaMatch =
@@ -175,8 +182,9 @@ export default function Dashboard() {
 
   const dadosExecucao = useMemo(() => {
     const filtradoOrcado = orcado2026.filter((item) => {
+      const classeAgrupada = agruparClasse(item.classe_codigo, item.subclasse);
       const classeMatch =
-        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(item.classe_codigo);
+        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(classeAgrupada);
 
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
       const categoriaMatch =
@@ -190,8 +198,9 @@ export default function Dashboard() {
     });
 
     const filtradoRealizado = realizado2026.filter((item) => {
+      const classeAgrupada = agruparClasse(item.classe_codigo, item.subclasse);
       const classeMatch =
-        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(item.classe_codigo);
+        filtroClassesExecucao.length === 0 || filtroClassesExecucao.includes(classeAgrupada);
 
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
       const categoriaMatch =
@@ -247,14 +256,14 @@ export default function Dashboard() {
     const classesMap = new Map<string, { orcado: number; realizado: number }>();
 
     filtradoOrcado.forEach((item) => {
-      const key = `${item.classe_codigo} - ${item.subclasse}`;
+      const key = agruparClasse(item.classe_codigo, item.subclasse);
       const current = classesMap.get(key) || { orcado: 0, realizado: 0 };
       current.orcado += item.valor;
       classesMap.set(key, current);
     });
 
     filtradoRealizado.forEach((item) => {
-      const key = `${item.classe_codigo} - ${item.subclasse}`;
+      const key = agruparClasse(item.classe_codigo, item.subclasse);
       const current = classesMap.get(key) || { orcado: 0, realizado: 0 };
       current.realizado += item.valor;
       classesMap.set(key, current);
@@ -334,18 +343,17 @@ export default function Dashboard() {
     };
   }, [detalhamento2025, filtroCategoriasDetalhamento, filtroEquipamentosDetalhamento, filtroMesesDetalhamento, equipamentos]);
 
-  // Opções para os filtros
+  // Opções para os filtros (usando classes agrupadas)
   const opcoesClasses = useMemo(() => {
-    const classesMap = new Map<string, string>();
+    const classesSet = new Set<string>();
     [...realizado2025, ...orcado2026].forEach(item => {
-      const key = item.classe_codigo;
-      const label = `${item.classe_codigo} - ${item.subclasse}`;
-      classesMap.set(key, label);
+      const classeAgrupada = agruparClasse(item.classe_codigo, item.subclasse);
+      classesSet.add(classeAgrupada);
     });
-    return Array.from(classesMap.entries()).map(([value, label]) => ({
-      value,
-      label
-    })).sort((a, b) => a.value.localeCompare(b.value));
+    return Array.from(classesSet).map(classe => ({
+      value: classe,
+      label: classe
+    })).sort((a, b) => a.label.localeCompare(b.label));
   }, [realizado2025, orcado2026]);
 
   const opcoesCategorias = useMemo(() =>
