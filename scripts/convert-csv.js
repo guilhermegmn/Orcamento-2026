@@ -289,11 +289,93 @@ function processarOrcamentoDetalhado() {
   return { resultado2025, resultado2026 };
 }
 
+// Processar arquivo "RAZÃO CLASSE DE VALOR 2025" para detalhamento
+function processarDetalhamento2025() {
+  const arquivo = fs.readFileSync(
+    path.join(__dirname, '../data/RAZÃO CLASSE DE VALOR 2025.csv'),
+    'utf-8'
+  );
+
+  const linhas = arquivo.split('\n');
+  const resultado = [];
+
+  // Pular cabeçalho
+  for (let i = 1; i < linhas.length; i++) {
+    const linha = linhas[i].trim();
+    if (!linha) continue;
+
+    // Parse CSV respeitando aspas e vírgulas
+    const colunas = [];
+    let atual = '';
+    let dentroAspas = false;
+
+    for (let j = 0; j < linha.length; j++) {
+      const char = linha[j];
+
+      if (char === '"') {
+        dentroAspas = !dentroAspas;
+      } else if (char === ',' && !dentroAspas) {
+        colunas.push(atual);
+        atual = '';
+      } else {
+        atual += char;
+      }
+    }
+    colunas.push(atual); // Última coluna
+
+    if (colunas.length < 22) continue;
+
+    const dtEmissao = colunas[3]?.trim(); // 2025-04-10 00:00:00
+    const descProduto = colunas[6]?.trim();
+    const qtde = colunas[7]?.trim();
+    const vlrUnit = colunas[8]?.trim();
+    const rTotal = colunas[9]?.trim();
+    const descClasseValor = colunas[18]?.trim(); // Equipamento
+    const descFornecedor = colunas[21]?.trim();
+
+    // Extrair equipamento válido
+    const equipamento = extrairEquipamento(descClasseValor);
+
+    // Filtrar apenas equipamentos válidos (não GERAL)
+    if (equipamento === 'GERAL') continue;
+
+    // Parse valores
+    const quantidade = parseFloat(qtde?.replace(',', '.') || '0');
+    const valorUnitario = parseFloat(vlrUnit?.replace(',', '.') || '0');
+    const valorTotal = parseFloat(rTotal?.replace(',', '.') || '0');
+
+    if (valorTotal === 0) continue;
+
+    resultado.push({
+      data: dtEmissao,
+      equipamento: equipamento,
+      produto: descProduto || '',
+      quantidade: quantidade,
+      valorUnitario: Math.abs(valorUnitario),
+      valorTotal: Math.abs(valorTotal),
+      fornecedor: descFornecedor || ''
+    });
+  }
+
+  return resultado;
+}
+
 // Salvar arquivos CSV
 function salvarCSV(dados, arquivo) {
   const cabecalho = 'ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,valor\n';
   const linhas = dados.map(d =>
     `${d.ano},${d.mes},${d.classe_codigo},${d.classe_orcamentaria},${d.subclasse},${d.equipamento},${d.centro_custo},${d.valor}`
+  ).join('\n');
+
+  fs.writeFileSync(arquivo, cabecalho + linhas, 'utf-8');
+  console.log(`✓ Arquivo salvo: ${arquivo}`);
+}
+
+// Salvar CSV de detalhamento
+function salvarDetalhamentoCSV(dados, arquivo) {
+  const cabecalho = 'data,equipamento,produto,quantidade,valorUnitario,valorTotal,fornecedor\n';
+  const linhas = dados.map(d =>
+    `${d.data},${d.equipamento},"${d.produto.replace(/"/g, '""')}",${d.quantidade},${d.valorUnitario},${d.valorTotal},"${d.fornecedor.replace(/"/g, '""')}"`
   ).join('\n');
 
   fs.writeFileSync(arquivo, cabecalho + linhas, 'utf-8');
@@ -311,17 +393,26 @@ console.log('\n2. Processando Orçamento Detalhado 2026...');
 const { resultado2026 } = processarOrcamentoDetalhado();
 console.log(`   - ${resultado2026.length} registros processados`);
 
+console.log('\n3. Processando Detalhamento 2025 (Classe de Valor)...');
+const detalhamento2025 = processarDetalhamento2025();
+console.log(`   - ${detalhamento2025.length} registros processados`);
+
 // Calcular totais para verificação
 const total2025 = resultado2025.reduce((sum, item) => sum + item.valor, 0);
 const total2026 = resultado2026.reduce((sum, item) => sum + item.valor, 0);
+const totalDetalhamento = detalhamento2025.reduce((sum, item) => sum + item.valorTotal, 0);
 
 // Contar equipamentos únicos em 2025
 const equipamentos2025 = new Set(resultado2025.map(item => item.equipamento));
 const equipamentosComTag = Array.from(equipamentos2025).filter(eq => eq !== 'GERAL');
 
+const equipamentosDetalhamento = new Set(detalhamento2025.map(item => item.equipamento));
+
 console.log(`\n   Total 2025 (Realizado): R$ ${total2025.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
 console.log(`   Equipamentos identificados: ${equipamentosComTag.length} (${equipamentosComTag.slice(0, 10).join(', ')}...)`);
 console.log(`\n   Total 2026 (Orçamento): R$ ${total2026.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
+console.log(`\n   Total Detalhamento 2025: R$ ${totalDetalhamento.toLocaleString('pt-BR', {minimumFractionDigits: 2})}`);
+console.log(`   Equipamentos no detalhamento: ${equipamentosDetalhamento.size}`);
 
 // Criar diretórios se não existirem
 const dir2025 = path.join(__dirname, '../data/2025');
@@ -331,12 +422,14 @@ if (!fs.existsSync(dir2025)) fs.mkdirSync(dir2025, { recursive: true });
 if (!fs.existsSync(dir2026)) fs.mkdirSync(dir2026, { recursive: true });
 
 // Salvar arquivos
-console.log('\n3. Salvando arquivos...');
+console.log('\n4. Salvando arquivos...');
 salvarCSV(resultado2025, path.join(dir2025, 'realizado.csv'));
 salvarCSV(resultado2026, path.join(dir2026, 'orcado.csv'));
+salvarDetalhamentoCSV(detalhamento2025, path.join(dir2025, 'detalhamento.csv'));
 
 console.log('\n✓ Conversão concluída com sucesso!');
 console.log('\nArquivos gerados:');
 console.log('  - data/2025/realizado.csv');
 console.log('  - data/2026/orcado.csv');
+console.log('  - data/2025/detalhamento.csv');
 console.log('\nNota: Para dados realizados de 2026, será necessário fornecer um arquivo adicional.');

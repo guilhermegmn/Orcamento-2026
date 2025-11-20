@@ -101,3 +101,13 @@ export interface Config {
     prefixo_moeda: string;
   };
 }
+
+export interface DetalhamentoRow {
+  data: string;
+  equipamento: string;
+  produto: string;
+  quantidade: number;
+  valorUnitario: number;
+  valorTotal: number;
+  fornecedor: string;
+}
