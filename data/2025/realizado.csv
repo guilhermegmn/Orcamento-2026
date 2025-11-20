@@ -18,7 +18,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422137,Operacional,Seguros,VL-103,CC-422,91.83
 2025,Jan,422144,Operacional,Peças,EH-12,CC-422,767.2
 2025,Jan,421301,Pessoal,Convênio Médico,GERAL,CC-421,3141.01
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,258.64
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,258.64
 2025,Jan,422103,Operacional,Combustíveis,VL-22,CC-422,295.35
 2025,Jan,422144,Operacional,Peças,GERAL,CC-422,1233
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,PM-02,CC-422,4130
@@ -26,7 +26,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422103,Operacional,Combustíveis,VL-19,CC-422,173.7
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,VL-19,CC-422,160
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,VL-19,CC-422,300
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,402.86
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,GE-06,CC-422,402.86
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,2000
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,PC-01,CC-422,2000
 2025,Jan,422113,Operacional,Ferramentas,GERAL,CC-422,161.63
@@ -49,12 +49,12 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422144,Operacional,Peças,PC-08,CC-422,548.27
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,EH-17,CC-422,81.5
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,EH-07,CC-422,76.12
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,106.47
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,106.47
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,EH-17,CC-422,3570.28
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,2112.06
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,2112.06
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,EH-07,CC-422,2359.53
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,EH-07,CC-422,365.92
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1820.82
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,1820.82
 2025,Jan,422147,Outros,422147 - MANUTENCAO DE VEICULOS,CC-02,CC-422,145.2
 2025,Jan,422103,Operacional,Combustíveis,VL-13,CC-422,228.13
 2025,Jan,422103,Operacional,Combustíveis,VL-19,CC-422,242.6
@@ -76,8 +76,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422130,Operacional,Taxas,GERAL,CC-422,251.22
 2025,Jan,422130,Operacional,Taxas,GERAL,CC-422,251.22
 2025,Jan,422130,Operacional,Taxas,GERAL,CC-422,251.22
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,800
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,775
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,GE-03,CC-422,800
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,GE-03,CC-422,775
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,BM-03,CC-422,1850
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,PM-01,CC-422,4545
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,PM-02,CC-422,4545
@@ -95,13 +95,13 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,311302,Outros,311302 - (-) COFINS SOBRE VENDAS,GERAL,CC-311,1.22
 2025,Jan,311304,Outros,311304 - (-) ICMS VENDAS,GERAL,CC-311,9.5
 2025,Jan,311306,Outros,311306 - (-) PIS SOBRE VENDAS,GERAL,CC-311,0.26
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,5068.39
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,5068.39
 2025,Jan,422147,Outros,422147 - MANUTENCAO DE VEICULOS,EH-16,CC-422,4931.33
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,PC-03,CC-422,5650.47
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,EH-08,CC-422,6324.65
 2025,Jan,422123,Operacional,Fretes e Carretos,GERAL,CC-422,1201.97
-2025,Jan,422144,Operacional,Peças,GERAL,CC-422,106.07
-2025,Jan,422144,Operacional,Peças,GERAL,CC-422,3437.09
+2025,Jan,422144,Operacional,Peças,GE-03,CC-422,106.07
+2025,Jan,422144,Operacional,Peças,GE-03,CC-422,3437.09
 2025,Jan,422147,Outros,422147 - MANUTENCAO DE VEICULOS,PC-05,CC-422,5805.73
 2025,Jan,422102,Operacional,Serviços Gerais,GERAL,CC-422,15
 2025,Jan,422103,Operacional,Combustíveis,VL-13,CC-422,225
@@ -137,9 +137,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422147,Outros,422147 - MANUTENCAO DE VEICULOS,CB-20,CC-422,816.75
 2025,Jan,422147,Outros,422147 - MANUTENCAO DE VEICULOS,CG-01,CC-422,816.75
 2025,Jan,422147,Outros,422147 - MANUTENCAO DE VEICULOS,TE-03,CC-422,12323.83
-2025,Jan,422101,Operacional,Aluguel de Equipamentos,GERAL,CC-422,15000
+2025,Jan,422101,Operacional,Aluguel de Equipamentos,PTA-001,CC-422,15000
 2025,Jan,422103,Operacional,Combustíveis,VL-19,CC-422,237.57
-2025,Jan,422156,Outros,422156 - RECAPAGEM,GERAL,CC-422,10097.57
+2025,Jan,422156,Outros,422156 - RECAPAGEM,MN-01,CC-422,10097.57
 2025,Jan,421301,Pessoal,Convênio Médico,GERAL,CC-421,1135.68
 2025,Jan,421405,Pessoal,Saúde Ocupacional,GERAL,CC-421,135
 2025,Jan,422101,Operacional,Aluguel de Equipamentos,VL-101,CC-422,6148.71
@@ -161,7 +161,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422144,Operacional,Peças,BM-02,CC-422,255
 2025,Jan,422144,Operacional,Peças,BM-03,CC-422,45176.16
 2025,Jan,422144,Operacional,Peças,BM-02,CC-422,2682.99
-2025,Jan,422101,Operacional,Aluguel de Equipamentos,GERAL,CC-422,1145
+2025,Jan,422101,Operacional,Aluguel de Equipamentos,GE-04,CC-422,1145
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,PC-01,CC-422,9502.69
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,CB-24,CC-422,9205.79
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,CB-24,CC-422,1939.82
@@ -186,9 +186,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,421301,Pessoal,Convênio Médico,GERAL,CC-421,315.48
 2025,Jan,422102,Operacional,Serviços Gerais,GERAL,CC-422,10948.31
 2025,Jan,422130,Operacional,Taxas,GERAL,CC-422,90.09
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,77.14
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,77.14
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,EH-17,CC-422,4190.11
-2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1106.06
+2025,Jan,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,1106.06
 2025,Jan,422147,Outros,422147 - MANUTENCAO DE VEICULOS,CC-02,CC-422,145.2
 2025,Jan,421204,Pessoal,Vale Transporte,GERAL,CC-421,22541.6
 2025,Jan,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,1246.8
@@ -952,7 +952,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422103,Operacional,Combustíveis,BM-04,CC-422,1342.48
 2025,Jan,422103,Operacional,Combustíveis,CA-01,CC-422,406.39
 2025,Jan,422103,Operacional,Combustíveis,CG-01,CC-422,353.99
-2025,Jan,422103,Operacional,Combustíveis,GERAL,CC-422,549.23
+2025,Jan,422103,Operacional,Combustíveis,GE-06,CC-422,549.23
 2025,Jan,422103,Operacional,Combustíveis,CC-02,CC-422,7.07
 2025,Jan,422103,Operacional,Combustíveis,VL-09,CC-422,345.07
 2025,Jan,422103,Operacional,Combustíveis,VL-23,CC-422,1334.27
@@ -988,7 +988,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,6.21
 2025,Jan,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,1882.4
 2025,Jan,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,61.76
-2025,Jan,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,41.17
+2025,Jan,422105,Operacional,Manutenção de Edificações,GE-04,CC-422,41.17
 2025,Jan,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,61.76
 2025,Jan,422105,Operacional,Manutenção de Edificações,BM-01,CC-422,55.92
 2025,Jan,422105,Operacional,Manutenção de Edificações,EH-17,CC-422,27.96
@@ -1022,13 +1022,13 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422144,Operacional,Peças,GERAL,CC-422,34.97
 2025,Jan,422144,Operacional,Peças,GERAL,CC-422,9.06
 2025,Jan,422144,Operacional,Peças,GERAL,CC-422,18.11
-2025,Jan,422144,Operacional,Peças,GERAL,CC-422,333.06
+2025,Jan,422144,Operacional,Peças,GE-03,CC-422,333.06
 2025,Jan,422144,Operacional,Peças,CA-01,CC-422,67.32
 2025,Jan,422144,Operacional,Peças,EH-17,CC-422,1592.73
 2025,Jan,422144,Operacional,Peças,BM-04,CC-422,340.41
 2025,Jan,422144,Operacional,Peças,BM-04,CC-422,924.59
-2025,Jan,422144,Operacional,Peças,GERAL,CC-422,123.63
-2025,Jan,422144,Operacional,Peças,GERAL,CC-422,165.89
+2025,Jan,422144,Operacional,Peças,GE-03,CC-422,123.63
+2025,Jan,422144,Operacional,Peças,GE-03,CC-422,165.89
 2025,Jan,422144,Operacional,Peças,TE-02,CC-422,2246.6
 2025,Jan,422144,Operacional,Peças,BM-01,CC-422,4748.02
 2025,Jan,422144,Operacional,Peças,TC-01,CC-422,1962.11
@@ -1041,7 +1041,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422144,Operacional,Peças,BM-04,CC-422,27.74
 2025,Jan,422144,Operacional,Peças,CB-05,CC-422,818.77
 2025,Jan,422144,Operacional,Peças,CB-09,CC-422,818.77
-2025,Jan,422144,Operacional,Peças,GERAL,CC-422,64.86
+2025,Jan,422144,Operacional,Peças,GE-03,CC-422,64.86
 2025,Jan,422144,Operacional,Peças,CB-06,CC-422,71.48
 2025,Jan,422144,Operacional,Peças,CB-06,CC-422,7.31
 2025,Jan,422144,Operacional,Peças,CB-06,CC-422,18.12
@@ -1049,7 +1049,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422144,Operacional,Peças,TC-02,CC-422,118.54
 2025,Jan,422144,Operacional,Peças,TC-02,CC-422,163.89
 2025,Jan,422144,Operacional,Peças,BM-01,CC-422,6.41
-2025,Jan,422144,Operacional,Peças,GERAL,CC-422,108.2
+2025,Jan,422144,Operacional,Peças,GE-03,CC-422,108.2
 2025,Jan,422144,Operacional,Peças,TE-06,CC-422,145.32
 2025,Jan,422144,Operacional,Peças,GERAL,CC-422,3684
 2025,Jan,422144,Operacional,Peças,CG-01,CC-422,117.18
@@ -1141,7 +1141,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,422144,Operacional,Peças,BM-04,CC-422,562.52
 2025,Jan,422144,Operacional,Peças,BM-04,CC-422,4413.55
 2025,Jan,422144,Operacional,Peças,BM-04,CC-422,537.26
-2025,Jan,422144,Operacional,Peças,GERAL,CC-422,713.46
+2025,Jan,422144,Operacional,Peças,GE-03,CC-422,713.46
 2025,Jan,422144,Operacional,Peças,CB-02,CC-422,2882.46
 2025,Jan,422144,Operacional,Peças,PC-03,CC-422,19.8
 2025,Jan,422144,Operacional,Peças,VL-18,CC-422,15.85
@@ -1382,7 +1382,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jan,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,511.92
 2025,Jan,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,28.39
 2025,Jan,422103,Operacional,Combustíveis,CG-01,CC-422,354.02
-2025,Jan,422103,Operacional,Combustíveis,GERAL,CC-422,549.29
+2025,Jan,422103,Operacional,Combustíveis,GE-06,CC-422,549.29
 2025,Jan,422103,Operacional,Combustíveis,CC-02,CC-422,7.07
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,93.09
 2025,Jan,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,502.4
@@ -1542,7 +1542,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422137,Operacional,Seguros,VL-102,CC-422,92.05
 2025,Fev,422137,Operacional,Seguros,VL-103,CC-422,91.83
 2025,Fev,421405,Pessoal,Saúde Ocupacional,GERAL,CC-421,2344.94
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,402.86
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,GE-06,CC-422,402.86
 2025,Fev,422102,Operacional,Serviços Gerais,GERAL,CC-422,600
 2025,Fev,421406,Pessoal,Treinamentos,GERAL,CC-421,1597.2
 2025,Fev,422103,Operacional,Combustíveis,VL-19,CC-422,247.86
@@ -1589,7 +1589,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422128,Operacional,Lanches e Refeições,GERAL,CC-422,2056.43
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,EH-15,CC-422,1063.83
 2025,Fev,422147,Outros,422147 - MANUTENCAO DE VEICULOS,TE-08,CC-422,12366.98
-2025,Fev,422147,Outros,422147 - MANUTENCAO DE VEICULOS,GERAL,CC-422,10975.81
+2025,Fev,422147,Outros,422147 - MANUTENCAO DE VEICULOS,MN-01,CC-422,10975.81
 2025,Fev,422147,Outros,422147 - MANUTENCAO DE VEICULOS,EH-07,CC-422,5174.53
 2025,Fev,422103,Operacional,Combustíveis,VL-19,CC-422,237.81
 2025,Fev,422103,Operacional,Combustíveis,VL-22,CC-422,269.06
@@ -1600,10 +1600,10 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,330
 2025,Fev,422144,Operacional,Peças,CB-02,CC-422,160
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,PV-01,CC-422,3450
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,71.7
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,71.7
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,TE-03,CC-422,420.82
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CB-14,CC-422,830.13
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,328.98
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,328.98
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,EH-12,CC-422,12470.61
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,PC-08,CC-422,8558.84
 2025,Fev,422102,Operacional,Serviços Gerais,GERAL,CC-422,3244.8
@@ -1700,7 +1700,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,TE-03,CC-422,5372.73
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,TE-03,CC-422,3544.39
 2025,Fev,421204,Pessoal,Vale Transporte,GERAL,CC-421,22541.6
-2025,Fev,422101,Operacional,Aluguel de Equipamentos,GERAL,CC-422,15000
+2025,Fev,422101,Operacional,Aluguel de Equipamentos,PTA-001,CC-422,15000
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,PC-02,CC-422,10877.57
 2025,Fev,422116,Operacional,Comunicações,GERAL,CC-422,2998
 2025,Fev,422124,Operacional,Viagens,GERAL,CC-422,18.77
@@ -1710,8 +1710,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422128,Operacional,Lanches e Refeições,GERAL,CC-422,1755
 2025,Fev,422144,Operacional,Peças,PC-09,CC-422,364.93
 2025,Fev,422144,Operacional,Peças,PC-09,CC-422,11824
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,74.42
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1007.32
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,RP-01,CC-422,74.42
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,RP-01,CC-422,1007.32
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,TE-04,CC-422,24.77
 2025,Fev,422119,Tecnologia,Software,GERAL,CC-422,7500
 2025,Fev,422103,Operacional,Combustíveis,VL-22,CC-422,231.48
@@ -1729,8 +1729,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422144,Operacional,Peças,CB-07,CC-422,188.5
 2025,Fev,422144,Operacional,Peças,PC-01,CC-422,360
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,TE-03,CC-422,77.14
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,77.14
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1170.67
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,RP-01,CC-422,77.14
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,RP-01,CC-422,1170.67
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,EH-09,CC-422,1071.23
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CP-01,CC-422,1756.01
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CP-02,CC-422,1756.01
@@ -1751,22 +1751,22 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422144,Operacional,Peças,VL-14,CC-422,170
 2025,Fev,422144,Operacional,Peças,BM-02,CC-422,144
 2025,Fev,422144,Operacional,Peças,PC-01,CC-422,22378.75
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,2325
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,GE-03,CC-422,2325
 2025,Fev,422105,Operacional,Manutenção de Edificações,EH-07,CC-422,1.76
 2025,Fev,422125,Tecnologia,Material de Escritório,EH-07,CC-422,11
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,6200
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,116516.55
+2025,Fev,422144,Operacional,Peças,GE-03,CC-422,6200
+2025,Fev,422144,Operacional,Peças,GE-04,CC-422,116516.55
 2025,Fev,422144,Operacional,Peças,EH-07,CC-422,19.12
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,73.5
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1170.67
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,RP-01,CC-422,73.5
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,RP-01,CC-422,1170.67
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CB-15,CC-422,100.5
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CB-17,CC-422,100.5
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CP-02,CC-422,10767.88
 2025,Fev,422103,Operacional,Combustíveis,VL-22,CC-422,216.26
 2025,Fev,422103,Operacional,Combustíveis,GERAL,CC-422,30.45
 2025,Fev,422103,Operacional,Combustíveis,VL-19,CC-422,202.98
-2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,11.49
-2025,Fev,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,53.39
+2025,Fev,422104,Operacional,Manutenção de Equipamentos,GE-03,CC-422,11.49
+2025,Fev,422105,Operacional,Manutenção de Edificações,GE-03,CC-422,53.39
 2025,Fev,422125,Tecnologia,Material de Escritório,GERAL,CC-422,42.9
 2025,Fev,422144,Operacional,Peças,PC-01,CC-422,3900
 2025,Fev,422144,Operacional,Peças,BM-02,CC-422,197.25
@@ -2436,15 +2436,15 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422103,Operacional,Combustíveis,CA-01,CC-422,684.77
 2025,Fev,422103,Operacional,Combustíveis,CC-01,CC-422,134.47
 2025,Fev,422103,Operacional,Combustíveis,CG-01,CC-422,30.84
-2025,Fev,422103,Operacional,Combustíveis,GERAL,CC-422,587.65
-2025,Fev,422103,Operacional,Combustíveis,GERAL,CC-422,692.07
+2025,Fev,422103,Operacional,Combustíveis,GE-06,CC-422,587.65
+2025,Fev,422103,Operacional,Combustíveis,GE-07,CC-422,692.07
 2025,Fev,422103,Operacional,Combustíveis,CP-02,CC-422,14.02
 2025,Fev,422103,Operacional,Combustíveis,VL-09,CC-422,674.16
 2025,Fev,422103,Operacional,Combustíveis,VL-23,CC-422,865.09
 2025,Fev,422103,Operacional,Combustíveis,VL-101,CC-422,387.79
 2025,Fev,422103,Operacional,Combustíveis,VL-102,CC-422,1485.56
 2025,Fev,422103,Operacional,Combustíveis,VL-103,CC-422,871.04
-2025,Fev,422103,Operacional,Combustíveis,GERAL,CC-422,270.78
+2025,Fev,422103,Operacional,Combustíveis,PTA-001,CC-422,270.78
 2025,Fev,422103,Operacional,Combustíveis,VL-09,CC-422,406.17
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,829.06
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CC-01,CC-422,3801.62
@@ -2528,15 +2528,15 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422139,Operacional,Móveis e Utensílios,GERAL,CC-422,91.25
 2025,Fev,422141,Operacional,Equipamentos de Segurança,VL-103,CC-422,95.75
 2025,Fev,422144,Operacional,Peças,GERAL,CC-422,364.63
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,14.3
+2025,Fev,422144,Operacional,Peças,RE-01,CC-422,14.3
 2025,Fev,422144,Operacional,Peças,TE-06,CC-422,43.45
 2025,Fev,422144,Operacional,Peças,GERAL,CC-422,14585.4
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,531.83
+2025,Fev,422144,Operacional,Peças,RE-01,CC-422,531.83
 2025,Fev,422144,Operacional,Peças,BM-01,CC-422,151.01
 2025,Fev,422144,Operacional,Peças,BM-02,CC-422,151.01
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,68.12
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,381.25
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,333.06
+2025,Fev,422144,Operacional,Peças,GE-08,CC-422,68.12
+2025,Fev,422144,Operacional,Peças,GE-08,CC-422,381.25
+2025,Fev,422144,Operacional,Peças,GE-04,CC-422,333.06
 2025,Fev,422144,Operacional,Peças,CA-01,CC-422,67.32
 2025,Fev,422144,Operacional,Peças,PC-09,CC-422,239.55
 2025,Fev,422144,Operacional,Peças,TE-06,CC-422,239.55
@@ -2550,14 +2550,14 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422144,Operacional,Peças,TC-03,CC-422,2104
 2025,Fev,422144,Operacional,Peças,PC-05,CC-422,190.17
 2025,Fev,422144,Operacional,Peças,PM-02,CC-422,13438.64
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,3815.37
+2025,Fev,422144,Operacional,Peças,MN-01,CC-422,3815.37
 2025,Fev,422144,Operacional,Peças,EH-17,CC-422,26.23
 2025,Fev,422144,Operacional,Peças,GERAL,CC-422,13.14
 2025,Fev,422144,Operacional,Peças,GERAL,CC-422,105.13
 2025,Fev,422144,Operacional,Peças,PV-01,CC-422,12781.04
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,687.07
+2025,Fev,422144,Operacional,Peças,MN-01,CC-422,687.07
 2025,Fev,422144,Operacional,Peças,BM-01,CC-422,253.95
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,32.24
+2025,Fev,422144,Operacional,Peças,RE-01,CC-422,32.24
 2025,Fev,422144,Operacional,Peças,PM-02,CC-422,3612.57
 2025,Fev,422144,Operacional,Peças,BM-01,CC-422,112.76
 2025,Fev,422144,Operacional,Peças,PV-01,CC-422,169.13
@@ -2580,7 +2580,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422144,Operacional,Peças,PM-02,CC-422,129.29
 2025,Fev,422144,Operacional,Peças,BM-03,CC-422,171.25
 2025,Fev,422144,Operacional,Peças,EH-12,CC-422,1138.95
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,230.2
+2025,Fev,422144,Operacional,Peças,GE-08,CC-422,230.2
 2025,Fev,422144,Operacional,Peças,EH-17,CC-422,12.69
 2025,Fev,422144,Operacional,Peças,BM-01,CC-422,19.62
 2025,Fev,422144,Operacional,Peças,BM-02,CC-422,19.62
@@ -2599,15 +2599,15 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422144,Operacional,Peças,GERAL,CC-422,206.96
 2025,Fev,422144,Operacional,Peças,TE-05,CC-422,246.82
 2025,Fev,422144,Operacional,Peças,TE-05,CC-422,318.81
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,61.95
+2025,Fev,422144,Operacional,Peças,RE-01,CC-422,61.95
 2025,Fev,422144,Operacional,Peças,TE-05,CC-422,893.15
 2025,Fev,422144,Operacional,Peças,EH-14,CC-422,381.59
 2025,Fev,422144,Operacional,Peças,EH-16,CC-422,381.59
 2025,Fev,422144,Operacional,Peças,TE-06,CC-422,478.46
 2025,Fev,422144,Operacional,Peças,TE-06,CC-422,319.63
 2025,Fev,422144,Operacional,Peças,TE-06,CC-422,448.11
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,73.92
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,525.05
+2025,Fev,422144,Operacional,Peças,GE-08,CC-422,73.92
+2025,Fev,422144,Operacional,Peças,MN-01,CC-422,525.05
 2025,Fev,422144,Operacional,Peças,TE-03,CC-422,49.5
 2025,Fev,422144,Operacional,Peças,TE-03,CC-422,8070.14
 2025,Fev,422144,Operacional,Peças,TE-03,CC-422,247.88
@@ -2637,7 +2637,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422144,Operacional,Peças,CB-18,CC-422,556.92
 2025,Fev,422144,Operacional,Peças,CB-24,CC-422,1805.96
 2025,Fev,422144,Operacional,Peças,PC-01,CC-422,2166.1
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,82.71
+2025,Fev,422144,Operacional,Peças,RE-01,CC-422,82.71
 2025,Fev,422144,Operacional,Peças,CB-07,CC-422,195.8
 2025,Fev,422144,Operacional,Peças,CB-23,CC-422,97.9
 2025,Fev,422144,Operacional,Peças,CB-18,CC-422,9.69
@@ -2724,9 +2724,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,422144,Operacional,Peças,TE-05,CC-422,681.01
 2025,Fev,422144,Operacional,Peças,BM-01,CC-422,1120.86
 2025,Fev,422144,Operacional,Peças,BM-01,CC-422,836.56
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,407.46
+2025,Fev,422144,Operacional,Peças,GE-08,CC-422,407.46
 2025,Fev,422144,Operacional,Peças,BM-02,CC-422,1722.26
-2025,Fev,422144,Operacional,Peças,GERAL,CC-422,768.14
+2025,Fev,422144,Operacional,Peças,MN-01,CC-422,768.14
 2025,Fev,422144,Operacional,Peças,PC-02,CC-422,555.82
 2025,Fev,422144,Operacional,Peças,CA-01,CC-422,229.49
 2025,Fev,422144,Operacional,Peças,PC-09,CC-422,704.58
@@ -2959,8 +2959,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Fev,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,18.63
 2025,Fev,422103,Operacional,Combustíveis,CC-01,CC-422,133.65
 2025,Fev,422103,Operacional,Combustíveis,CG-01,CC-422,30.66
-2025,Fev,422103,Operacional,Combustíveis,GERAL,CC-422,584.01
-2025,Fev,422103,Operacional,Combustíveis,GERAL,CC-422,687.77
+2025,Fev,422103,Operacional,Combustíveis,GE-06,CC-422,584.01
+2025,Fev,422103,Operacional,Combustíveis,GE-07,CC-422,687.77
 2025,Fev,422103,Operacional,Combustíveis,CP-02,CC-422,13.94
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CC-01,CC-422,119.31
 2025,Fev,422104,Operacional,Manutenção de Equipamentos,CC-02,CC-422,238.62
@@ -3209,7 +3209,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422144,Operacional,Peças,GERAL,CC-422,79
 2025,Mar,422144,Operacional,Peças,EH-07,CC-422,6804
 2025,Mar,422144,Operacional,Peças,PC-03,CC-422,21.63
-2025,Mar,422144,Operacional,Peças,GERAL,CC-422,117.74
+2025,Mar,422144,Operacional,Peças,GE-04,CC-422,117.74
 2025,Mar,422144,Operacional,Peças,GERAL,CC-422,767
 2025,Mar,422102,Operacional,Serviços Gerais,CB-16,CC-422,363
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,TE-05,CC-422,200.59
@@ -3239,7 +3239,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422144,Operacional,Peças,PC-04,CC-422,40
 2025,Mar,422144,Operacional,Peças,PC-09,CC-422,1655.83
 2025,Mar,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.05
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,81.67
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,RP-01,CC-422,81.67
 2025,Mar,421301,Pessoal,Convênio Médico,GERAL,CC-421,10861.25
 2025,Mar,422103,Operacional,Combustíveis,VL-22,CC-422,275.6
 2025,Mar,422102,Operacional,Serviços Gerais,GERAL,CC-422,600
@@ -3252,8 +3252,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422144,Operacional,Peças,VL-107,CC-422,126
 2025,Mar,422144,Operacional,Peças,BM-02,CC-422,75
 2025,Mar,422144,Operacional,Peças,GERAL,CC-422,276.9
-2025,Mar,422101,Operacional,Aluguel de Equipamentos,GERAL,CC-422,1466.75
-2025,Mar,422101,Operacional,Aluguel de Equipamentos,GERAL,CC-422,1466.75
+2025,Mar,422101,Operacional,Aluguel de Equipamentos,GE-03,CC-422,1466.75
+2025,Mar,422101,Operacional,Aluguel de Equipamentos,GE-04,CC-422,1466.75
 2025,Mar,422144,Operacional,Peças,PC-09,CC-422,78
 2025,Mar,422144,Operacional,Peças,PC-09,CC-422,540.64
 2025,Mar,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.01
@@ -3269,8 +3269,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,TE-03,CC-422,5439.99
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,TE-05,CC-422,4079.99
 2025,Mar,422103,Operacional,Combustíveis,VL-19,CC-422,295.72
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1574.97
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,402.86
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,1574.97
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,GE-06,CC-422,402.86
 2025,Mar,422128,Operacional,Lanches e Refeições,GERAL,CC-422,5801.72
 2025,Mar,422144,Operacional,Peças,CG-01,CC-422,77
 2025,Mar,422144,Operacional,Peças,GERAL,CC-422,384
@@ -3305,7 +3305,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422144,Operacional,Peças,BM-03,CC-422,356.4
 2025,Mar,422144,Operacional,Peças,BM-01,CC-422,1100
 2025,Mar,522401,Outros,522401 - JUROS SOBRE FORNECEDORES,PC-01,CC-522,0.1
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,948.34
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,948.34
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,TC-03,CC-422,1200
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,BM-02,CC-422,1240
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,EH-10,CC-422,6667.57
@@ -3314,7 +3314,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422147,Outros,422147 - MANUTENCAO DE VEICULOS,TE-02,CC-422,12251.25
 2025,Mar,422147,Outros,422147 - MANUTENCAO DE VEICULOS,TE-04,CC-422,11143.58
 2025,Mar,422147,Outros,422147 - MANUTENCAO DE VEICULOS,EH-17,CC-422,6204.31
-2025,Mar,422147,Outros,422147 - MANUTENCAO DE VEICULOS,GERAL,CC-422,10975.81
+2025,Mar,422147,Outros,422147 - MANUTENCAO DE VEICULOS,MN-01,CC-422,10975.81
 2025,Mar,422147,Outros,422147 - MANUTENCAO DE VEICULOS,EH-15,CC-422,6133.95
 2025,Mar,422147,Outros,422147 - MANUTENCAO DE VEICULOS,EH-14,CC-422,6360.82
 2025,Mar,422103,Operacional,Combustíveis,VL-20,CC-422,280.02
@@ -3375,7 +3375,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.02
 2025,Mar,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.02
 2025,Mar,421405,Pessoal,Saúde Ocupacional,GERAL,CC-421,246
-2025,Mar,422101,Operacional,Aluguel de Equipamentos,GERAL,CC-422,15000
+2025,Mar,422101,Operacional,Aluguel de Equipamentos,PTA-001,CC-422,15000
 2025,Mar,422102,Operacional,Serviços Gerais,GERAL,CC-422,600
 2025,Mar,421405,Pessoal,Saúde Ocupacional,GERAL,CC-421,31
 2025,Mar,422119,Tecnologia,Software,GERAL,CC-422,7500
@@ -3395,13 +3395,13 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422101,Operacional,Aluguel de Equipamentos,VL-102,CC-422,6148.71
 2025,Mar,422101,Operacional,Aluguel de Equipamentos,VL-103,CC-422,6148.71
 2025,Mar,422103,Operacional,Combustíveis,VL-19,CC-422,183.53
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,955.26
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,GE-08,CC-422,955.26
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,700
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,3591
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,GE-08,CC-422,3591
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,TE-06,CC-422,14426.32
 2025,Mar,422144,Operacional,Peças,VL-17,CC-422,900
 2025,Mar,422144,Operacional,Peças,VL-16,CC-422,900
-2025,Mar,422144,Operacional,Peças,GERAL,CC-422,2989.29
+2025,Mar,422144,Operacional,Peças,GE-08,CC-422,2989.29
 2025,Mar,312102,Outros,312102 - RECEITAS FINANCEIRAS,GERAL,CC-312,0.06
 2025,Mar,422144,Operacional,Peças,BM-03,CC-422,114.22
 2025,Mar,422144,Operacional,Peças,BM-04,CC-422,144.03
@@ -3416,8 +3416,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422139,Operacional,Móveis e Utensílios,GERAL,CC-422,169.8
 2025,Mar,422144,Operacional,Peças,BM-02,CC-422,6651.35
 2025,Mar,422102,Operacional,Serviços Gerais,GERAL,CC-422,1336.74
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,74.42
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,931.73
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,74.42
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,931.73
 2025,Mar,422147,Outros,422147 - MANUTENCAO DE VEICULOS,EH-17,CC-422,6204.31
 2025,Mar,312102,Outros,312102 - RECEITAS FINANCEIRAS,GERAL,CC-312,0.08
 2025,Mar,312102,Outros,312102 - RECEITAS FINANCEIRAS,GERAL,CC-312,0.02
@@ -3430,7 +3430,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422116,Operacional,Comunicações,GERAL,CC-422,400
 2025,Mar,422144,Operacional,Peças,VL-09,CC-422,2560.5
 2025,Mar,422144,Operacional,Peças,VL-28,CC-422,175.54
-2025,Mar,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,3450
+2025,Mar,422105,Operacional,Manutenção de Edificações,GE-03,CC-422,3450
 2025,Mar,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.01
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,TE-08,CC-422,76.23
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,TE-02,CC-422,127.05
@@ -4125,7 +4125,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422103,Operacional,Combustíveis,GERAL,CC-422,490.67
 2025,Mar,422103,Operacional,Combustíveis,CA-01,CC-422,684.77
 2025,Mar,422103,Operacional,Combustíveis,PM-01,CC-422,416.72
-2025,Mar,422103,Operacional,Combustíveis,GERAL,CC-422,139.33
+2025,Mar,422103,Operacional,Combustíveis,GE-07,CC-422,139.33
 2025,Mar,422103,Operacional,Combustíveis,CP-02,CC-422,63.73
 2025,Mar,422103,Operacional,Combustíveis,CC-02,CC-422,17.92
 2025,Mar,422103,Operacional,Combustíveis,VL-09,CC-422,1102.8
@@ -4133,7 +4133,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422103,Operacional,Combustíveis,VL-101,CC-422,343.88
 2025,Mar,422103,Operacional,Combustíveis,VL-102,CC-422,1357.73
 2025,Mar,422103,Operacional,Combustíveis,VL-103,CC-422,1013.86
-2025,Mar,422103,Operacional,Combustíveis,GERAL,CC-422,200.83
+2025,Mar,422103,Operacional,Combustíveis,PTA-001,CC-422,200.83
 2025,Mar,422103,Operacional,Combustíveis,VL-09,CC-422,251.03
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,CC-01,CC-422,3829.24
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,CC-02,CC-422,3829.24
@@ -4234,7 +4234,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422137,Operacional,Seguros,VL-23,CC-422,298.1
 2025,Mar,422144,Operacional,Peças,GERAL,CC-422,588
 2025,Mar,422144,Operacional,Peças,BM-01,CC-422,3638
-2025,Mar,422144,Operacional,Peças,GERAL,CC-422,333.06
+2025,Mar,422144,Operacional,Peças,GE-04,CC-422,333.06
 2025,Mar,422144,Operacional,Peças,CA-01,CC-422,67.32
 2025,Mar,422144,Operacional,Peças,GERAL,CC-422,650.36
 2025,Mar,422144,Operacional,Peças,TE-06,CC-422,239.55
@@ -4265,7 +4265,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422144,Operacional,Peças,GERAL,CC-422,72.8
 2025,Mar,422144,Operacional,Peças,GERAL,CC-422,53.98
 2025,Mar,422144,Operacional,Peças,CP-03,CC-422,59.52
-2025,Mar,422144,Operacional,Peças,GERAL,CC-422,64.86
+2025,Mar,422144,Operacional,Peças,GE-04,CC-422,64.86
 2025,Mar,422144,Operacional,Peças,CB-13,CC-422,74.11
 2025,Mar,422144,Operacional,Peças,CB-21,CC-422,357.84
 2025,Mar,422144,Operacional,Peças,CB-13,CC-422,6.76
@@ -4338,7 +4338,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422144,Operacional,Peças,PC-03,CC-422,1185.21
 2025,Mar,422144,Operacional,Peças,TE-02,CC-422,172.17
 2025,Mar,422144,Operacional,Peças,CB-04,CC-422,215.55
-2025,Mar,422144,Operacional,Peças,GERAL,CC-422,4701.72
+2025,Mar,422144,Operacional,Peças,TI-03,CC-422,4701.72
 2025,Mar,422144,Operacional,Peças,BM-03,CC-422,95897.8
 2025,Mar,422144,Operacional,Peças,CB-14,CC-422,64.13
 2025,Mar,422144,Operacional,Peças,CB-06,CC-422,69.48
@@ -4391,7 +4391,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422144,Operacional,Peças,BM-04,CC-422,635.5
 2025,Mar,422144,Operacional,Peças,BM-04,CC-422,2132.76
 2025,Mar,422144,Operacional,Peças,BM-04,CC-422,521.73
-2025,Mar,422144,Operacional,Peças,GERAL,CC-422,713.46
+2025,Mar,422144,Operacional,Peças,GE-04,CC-422,713.46
 2025,Mar,422144,Operacional,Peças,PM-01,CC-422,100.24
 2025,Mar,422144,Operacional,Peças,PM-01,CC-422,2151.96
 2025,Mar,422144,Operacional,Peças,PM-01,CC-422,215.69
@@ -4640,7 +4640,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,341.28
 2025,Mar,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,18.63
 2025,Mar,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,73.5
-2025,Mar,422103,Operacional,Combustíveis,GERAL,CC-422,139.22
+2025,Mar,422103,Operacional,Combustíveis,GE-07,CC-422,139.22
 2025,Mar,422103,Operacional,Combustíveis,CP-02,CC-422,63.68
 2025,Mar,422103,Operacional,Combustíveis,CC-02,CC-422,17.9
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,VL-28,CC-422,1000
@@ -4837,7 +4837,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,CB-19,CC-422,131.34
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,CB-21,CC-422,262.68
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,CP-03,CC-422,131.34
-2025,Mar,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,465.38
+2025,Mar,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,465.38
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,CB-05,CC-422,191.6
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,CB-16,CC-422,191.6
 2025,Mar,422104,Operacional,Manutenção de Equipamentos,CB-21,CC-422,191.6
@@ -4914,11 +4914,11 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422156,Outros,422156 - RECAPAGEM,CB-14,CC-422,6225.45
 2025,Abr,422103,Operacional,Combustíveis,VL-20,CC-422,301.55
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,298
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1574.97
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,402.86
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,1574.97
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,GE-06,CC-422,402.86
 2025,Abr,422105,Operacional,Manutenção de Edificações,BM-01,CC-422,162
 2025,Abr,422102,Operacional,Serviços Gerais,GERAL,CC-422,600
-2025,Abr,422102,Operacional,Serviços Gerais,GERAL,CC-422,60
+2025,Abr,422102,Operacional,Serviços Gerais,TI-02,CC-422,60
 2025,Abr,422102,Operacional,Serviços Gerais,GERAL,CC-422,300
 2025,Abr,422139,Operacional,Móveis e Utensílios,GERAL,CC-422,129.8
 2025,Abr,422144,Operacional,Peças,VL-12,CC-422,630
@@ -4982,8 +4982,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.02
 2025,Abr,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.01
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,EH-16,CC-422,439.1
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,90.48
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,2251.3
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,90.48
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,2251.3
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,EH-16,CC-422,7152.24
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,EH-16,CC-422,3257
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,EH-16,CC-422,516.98
@@ -5011,8 +5011,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,TE-03,CC-422,2084.14
 2025,Abr,422144,Operacional,Peças,TE-06,CC-422,302.13
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,833.6
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,625.2
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,625.2
+2025,Abr,422144,Operacional,Peças,TI-03,CC-422,625.2
+2025,Abr,422144,Operacional,Peças,TI-04,CC-422,625.2
 2025,Abr,422144,Operacional,Peças,TE-03,CC-422,68629.32
 2025,Abr,422144,Operacional,Peças,TE-06,CC-422,8739.85
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,PC-01,CC-422,3400
@@ -5062,13 +5062,13 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422113,Operacional,Ferramentas,GERAL,CC-422,6
 2025,Abr,422102,Operacional,Serviços Gerais,GERAL,CC-422,130
 2025,Abr,422102,Operacional,Serviços Gerais,BM-02,CC-422,275
-2025,Abr,422102,Operacional,Serviços Gerais,GERAL,CC-422,70
-2025,Abr,422102,Operacional,Serviços Gerais,GERAL,CC-422,120
+2025,Abr,422102,Operacional,Serviços Gerais,TI-02,CC-422,70
+2025,Abr,422102,Operacional,Serviços Gerais,GE-05,CC-422,120
 2025,Abr,422102,Operacional,Serviços Gerais,BM-04,CC-422,335
 2025,Abr,422102,Operacional,Serviços Gerais,GERAL,CC-422,185
 2025,Abr,422144,Operacional,Peças,BM-02,CC-422,195
 2025,Abr,422144,Operacional,Peças,BM-02,CC-422,299.46
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,30
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,30
 2025,Abr,422144,Operacional,Peças,BM-04,CC-422,30
 2025,Abr,422144,Operacional,Peças,PV-01,CC-422,2560
 2025,Abr,422144,Operacional,Peças,PV-01,CC-422,13643.4
@@ -5132,7 +5132,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,522106,Outros,522106 - JUROS SOBRE FORNECEDORES,TE-03,CC-522,0.12
 2025,Abr,522106,Outros,522106 - JUROS SOBRE FORNECEDORES,PC-05,CC-522,46.62
 2025,Abr,421202,Pessoal,FGTS,GERAL,CC-421,3933.88
-2025,Abr,422101,Operacional,Aluguel de Equipamentos,GERAL,CC-422,15000
+2025,Abr,422101,Operacional,Aluguel de Equipamentos,PTA-001,CC-422,15000
 2025,Abr,422101,Operacional,Aluguel de Equipamentos,VL-101,CC-422,6148.71
 2025,Abr,422101,Operacional,Aluguel de Equipamentos,VL-102,CC-422,6148.71
 2025,Abr,422101,Operacional,Aluguel de Equipamentos,VL-103,CC-422,6148.71
@@ -5218,24 +5218,24 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,TE-04,CC-422,233.95
 2025,Abr,422115,Operacional,Energia Elétrica,GERAL,CC-422,6043.32
 2025,Abr,422115,Operacional,Energia Elétrica,GERAL,CC-422,913.7
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,852.44
+2025,Abr,422103,Operacional,Combustíveis,GE-08,CC-422,852.44
 2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,206.33
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,123.45
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,GE-08,CC-422,123.45
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,PC-08,CC-422,17259.6
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,50938.96
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,3314.37
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,760
-2025,Abr,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,421.45
-2025,Abr,422113,Operacional,Ferramentas,GERAL,CC-422,964.03
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,GE-08,CC-422,50938.96
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,GE-08,CC-422,3314.37
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,760
+2025,Abr,422105,Operacional,Manutenção de Edificações,GE-08,CC-422,421.45
+2025,Abr,422113,Operacional,Ferramentas,GE-08,CC-422,964.03
 2025,Abr,422123,Operacional,Fretes e Carretos,GERAL,CC-422,1750
 2025,Abr,422123,Operacional,Fretes e Carretos,GERAL,CC-422,6540
-2025,Abr,422139,Operacional,Móveis e Utensílios,GERAL,CC-422,142.45
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,25230.05
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,11351.33
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,2269.25
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,2191.95
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,380
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,1140
+2025,Abr,422139,Operacional,Móveis e Utensílios,GE-08,CC-422,142.45
+2025,Abr,422144,Operacional,Peças,GE-08,CC-422,25230.05
+2025,Abr,422144,Operacional,Peças,GE-08,CC-422,11351.33
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,2269.25
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,2191.95
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,380
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,1140
 2025,Abr,422124,Operacional,Viagens,GERAL,CC-422,15.3
 2025,Abr,422124,Operacional,Viagens,GERAL,CC-422,15.3
 2025,Abr,422124,Operacional,Viagens,GERAL,CC-422,15.3
@@ -5977,15 +5977,15 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422103,Operacional,Combustíveis,EH-05,CC-422,34.08
 2025,Abr,422103,Operacional,Combustíveis,EH-06,CC-422,40.58
 2025,Abr,422103,Operacional,Combustíveis,EH-07,CC-422,93.64
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,64.83
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,1.05
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,0.35
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,175.86
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,202.57
+2025,Abr,422103,Operacional,Combustíveis,GE-01,CC-422,64.83
+2025,Abr,422103,Operacional,Combustíveis,GE-02,CC-422,1.05
+2025,Abr,422103,Operacional,Combustíveis,GE-03,CC-422,0.35
+2025,Abr,422103,Operacional,Combustíveis,GE-04,CC-422,175.86
+2025,Abr,422103,Operacional,Combustíveis,MN-01,CC-422,202.57
 2025,Abr,422103,Operacional,Combustíveis,PC-01,CC-422,460.66
 2025,Abr,422103,Operacional,Combustíveis,PC-02,CC-422,422.18
 2025,Abr,422103,Operacional,Combustíveis,PV-01,CC-422,151.62
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,4.39
+2025,Abr,422103,Operacional,Combustíveis,RE-01,CC-422,4.39
 2025,Abr,422103,Operacional,Combustíveis,TE-02,CC-422,112.97
 2025,Abr,422103,Operacional,Combustíveis,TE-03,CC-422,170.59
 2025,Abr,422103,Operacional,Combustíveis,TE-04,CC-422,69.4
@@ -6000,9 +6000,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422103,Operacional,Combustíveis,EH-09,CC-422,246.49
 2025,Abr,422103,Operacional,Combustíveis,PC-03,CC-422,180.43
 2025,Abr,422103,Operacional,Combustíveis,BM-03,CC-422,159.35
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,342.77
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,1.93
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,9.31
+2025,Abr,422103,Operacional,Combustíveis,GE-05,CC-422,342.77
+2025,Abr,422103,Operacional,Combustíveis,GE-06,CC-422,1.93
+2025,Abr,422103,Operacional,Combustíveis,GE-07,CC-422,9.31
 2025,Abr,422103,Operacional,Combustíveis,EH-10,CC-422,226.29
 2025,Abr,422103,Operacional,Combustíveis,EH-11,CC-422,159.88
 2025,Abr,422103,Operacional,Combustíveis,EH-12,CC-422,359.64
@@ -6026,7 +6026,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422103,Operacional,Combustíveis,CB-22,CC-422,238.41
 2025,Abr,422103,Operacional,Combustíveis,CB-23,CC-422,235.07
 2025,Abr,422103,Operacional,Combustíveis,CB-24,CC-422,247.19
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,189.39
+2025,Abr,422103,Operacional,Combustíveis,GE-08,CC-422,189.39
 2025,Abr,422103,Operacional,Combustíveis,TE-06,CC-422,359.64
 2025,Abr,422103,Operacional,Combustíveis,CB-25,CC-422,240.69
 2025,Abr,422103,Operacional,Combustíveis,CB-26,CC-422,192.2
@@ -6054,15 +6054,15 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422103,Operacional,Combustíveis,EH-05,CC-422,70.33
 2025,Abr,422103,Operacional,Combustíveis,EH-06,CC-422,84.07
 2025,Abr,422103,Operacional,Combustíveis,EH-07,CC-422,193.46
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,133.98
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,2.35
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,0.72
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,363.24
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,418.56
+2025,Abr,422103,Operacional,Combustíveis,GE-01,CC-422,133.98
+2025,Abr,422103,Operacional,Combustíveis,GE-02,CC-422,2.35
+2025,Abr,422103,Operacional,Combustíveis,GE-03,CC-422,0.72
+2025,Abr,422103,Operacional,Combustíveis,GE-04,CC-422,363.24
+2025,Abr,422103,Operacional,Combustíveis,MN-01,CC-422,418.56
 2025,Abr,422103,Operacional,Combustíveis,PC-01,CC-422,951.94
 2025,Abr,422103,Operacional,Combustíveis,PC-02,CC-422,872.38
 2025,Abr,422103,Operacional,Combustíveis,PV-01,CC-422,313.15
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,9.04
+2025,Abr,422103,Operacional,Combustíveis,RE-01,CC-422,9.04
 2025,Abr,422103,Operacional,Combustíveis,TE-02,CC-422,233.42
 2025,Abr,422103,Operacional,Combustíveis,TE-03,CC-422,352.57
 2025,Abr,422103,Operacional,Combustíveis,TE-04,CC-422,143.56
@@ -6077,9 +6077,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422103,Operacional,Combustíveis,EH-09,CC-422,509.15
 2025,Abr,422103,Operacional,Combustíveis,PC-03,CC-422,372.82
 2025,Abr,422103,Operacional,Combustíveis,BM-03,CC-422,723.58
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,708.39
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,4.16
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,19.35
+2025,Abr,422103,Operacional,Combustíveis,GE-05,CC-422,708.39
+2025,Abr,422103,Operacional,Combustíveis,GE-06,CC-422,4.16
+2025,Abr,422103,Operacional,Combustíveis,GE-07,CC-422,19.35
 2025,Abr,422103,Operacional,Combustíveis,EH-10,CC-422,467.38
 2025,Abr,422103,Operacional,Combustíveis,EH-11,CC-422,330.33
 2025,Abr,422103,Operacional,Combustíveis,EH-12,CC-422,743.11
@@ -6103,7 +6103,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422103,Operacional,Combustíveis,CB-22,CC-422,492.69
 2025,Abr,422103,Operacional,Combustíveis,CB-23,CC-422,485.82
 2025,Abr,422103,Operacional,Combustíveis,CB-24,CC-422,510.77
-2025,Abr,422103,Operacional,Combustíveis,GERAL,CC-422,391.08
+2025,Abr,422103,Operacional,Combustíveis,GE-08,CC-422,391.08
 2025,Abr,422103,Operacional,Combustíveis,TE-06,CC-422,743.11
 2025,Abr,422103,Operacional,Combustíveis,CB-25,CC-422,497.21
 2025,Abr,422103,Operacional,Combustíveis,CB-26,CC-422,397.23
@@ -6147,7 +6147,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,2275.88
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,8101.84
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,EH-07,CC-422,29.57
-2025,Abr,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,29.57
+2025,Abr,422104,Operacional,Manutenção de Equipamentos,GE-03,CC-422,29.57
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,BM-03,CC-422,61.29
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,PV-01,CC-422,23.34
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,BM-03,CC-422,23.34
@@ -6219,9 +6219,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,CB-04,CC-422,8448
 2025,Abr,422144,Operacional,Peças,TE-06,CC-422,1951.49
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,212.86
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,34.06
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,381.25
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,407.69
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,34.06
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,381.25
+2025,Abr,422144,Operacional,Peças,GE-03,CC-422,407.69
 2025,Abr,422144,Operacional,Peças,TE-06,CC-422,480.32
 2025,Abr,422144,Operacional,Peças,PC-08,CC-422,1043.28
 2025,Abr,422144,Operacional,Peças,CB-05,CC-422,142.7
@@ -6242,7 +6242,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,CB-07,CC-422,74.11
 2025,Abr,422144,Operacional,Peças,CB-20,CC-422,325.89
 2025,Abr,422144,Operacional,Peças,CB-07,CC-422,18.12
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,108.44
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,108.44
 2025,Abr,422144,Operacional,Peças,PM-01,CC-422,129.29
 2025,Abr,422144,Operacional,Peças,PM-02,CC-422,129.29
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,214.21
@@ -6261,7 +6261,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,EH-09,CC-422,508.61
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,5477.97
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,1412.05
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,36.96
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,36.96
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,76333.34
 2025,Abr,422144,Operacional,Peças,PC-09,CC-422,31.2
 2025,Abr,422144,Operacional,Peças,CB-17,CC-422,6679.52
@@ -6269,7 +6269,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,TE-05,CC-422,46.75
 2025,Abr,422144,Operacional,Peças,TE-05,CC-422,68.02
 2025,Abr,422144,Operacional,Peças,CC-01,CC-422,57.23
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,57.23
+2025,Abr,422144,Operacional,Peças,MN-01,CC-422,57.23
 2025,Abr,422144,Operacional,Peças,CB-13,CC-422,114.46
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,57.23
 2025,Abr,422144,Operacional,Peças,CB-15,CC-422,171.69
@@ -6281,7 +6281,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,TE-04,CC-422,53.37
 2025,Abr,422144,Operacional,Peças,TE-04,CC-422,102.04
 2025,Abr,422144,Operacional,Peças,TE-03,CC-422,181.89
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,155.29
+2025,Abr,422144,Operacional,Peças,MN-01,CC-422,155.29
 2025,Abr,422144,Operacional,Peças,TC-04,CC-422,2049.07
 2025,Abr,422144,Operacional,Peças,TE-04,CC-422,1000.78
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,195.18
@@ -6363,7 +6363,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,GERAL,CC-422,802.42
 2025,Abr,422144,Operacional,Peças,GERAL,CC-422,797.35
 2025,Abr,422144,Operacional,Peças,GERAL,CC-422,614.67
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,46.52
+2025,Abr,422144,Operacional,Peças,GE-03,CC-422,46.52
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,500.31
 2025,Abr,422144,Operacional,Peças,BM-02,CC-422,500.31
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,500.31
@@ -6372,7 +6372,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,BM-02,CC-422,233.83
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,349.46
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,349.46
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,120
+2025,Abr,422144,Operacional,Peças,MN-01,CC-422,120
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,407.29
 2025,Abr,422144,Operacional,Peças,BM-02,CC-422,407.29
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,407.29
@@ -6391,8 +6391,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,1067.18
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,820.8
 2025,Abr,422144,Operacional,Peças,BM-03,CC-422,820.8
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,418.17
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,203.73
+2025,Abr,422144,Operacional,Peças,MN-01,CC-422,418.17
+2025,Abr,422144,Operacional,Peças,GE-05,CC-422,203.73
 2025,Abr,422144,Operacional,Peças,BM-01,CC-422,1722.26
 2025,Abr,422144,Operacional,Peças,CG-01,CC-422,44.33
 2025,Abr,422144,Operacional,Peças,CG-01,CC-422,125.39
@@ -6403,7 +6403,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422144,Operacional,Peças,CB-19,CC-422,20.6
 2025,Abr,422144,Operacional,Peças,TE-06,CC-422,143.99
 2025,Abr,422144,Operacional,Peças,CB-09,CC-422,6.71
-2025,Abr,422144,Operacional,Peças,GERAL,CC-422,39.6
+2025,Abr,422144,Operacional,Peças,MN-01,CC-422,39.6
 2025,Abr,422144,Operacional,Peças,PC-03,CC-422,39.6
 2025,Abr,422144,Operacional,Peças,CB-19,CC-422,34.88
 2025,Abr,422144,Operacional,Peças,CB-05,CC-422,55.87
@@ -6875,7 +6875,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,TE-06,CC-422,1724.25
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,CB-18,CC-422,111.51
 2025,Abr,422104,Operacional,Manutenção de Equipamentos,TE-04,CC-422,6709
-2025,Abr,422156,Outros,422156 - RECAPAGEM,GERAL,CC-422,14883
+2025,Abr,422156,Outros,422156 - RECAPAGEM,MN-01,CC-422,14883
 2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,189.23
 2025,Mai,422119,Tecnologia,Software,GERAL,CC-422,19953
 2025,Mai,422119,Tecnologia,Software,GERAL,CC-422,8721
@@ -6907,7 +6907,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422147,Outros,422147 - MANUTENCAO DE VEICULOS,CB-20,CC-422,1200
 2025,Mai,421405,Pessoal,Saúde Ocupacional,GERAL,CC-421,1187.72
 2025,Mai,422103,Operacional,Combustíveis,VL-28,CC-422,240.03
-2025,Mai,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1574.97
+2025,Mai,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,1574.97
 2025,Mai,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,330
 2025,Mai,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,110
 2025,Mai,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,420
@@ -7003,8 +7003,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422139,Operacional,Móveis e Utensílios,GERAL,CC-422,4245
 2025,Mai,422144,Operacional,Peças,PC-01,CC-422,77
 2025,Mai,422144,Operacional,Peças,PC-01,CC-422,103.54
-2025,Mai,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,27.39
-2025,Mai,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,6.94
+2025,Mai,422104,Operacional,Manutenção de Equipamentos,GE-03,CC-422,27.39
+2025,Mai,422105,Operacional,Manutenção de Edificações,GE-03,CC-422,6.94
 2025,Mai,422109,Operacional,Pneus,CB-02,CC-422,6400
 2025,Mai,422124,Operacional,Viagens,GERAL,CC-422,14.1
 2025,Mai,422124,Operacional,Viagens,GERAL,CC-422,14.1
@@ -7137,12 +7137,12 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422109,Operacional,Pneus,CB-04,CC-422,6300
 2025,Mai,422139,Operacional,Móveis e Utensílios,GERAL,CC-422,292.34
 2025,Mai,422144,Operacional,Peças,CG-01,CC-422,1400
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,80
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,611
+2025,Mai,422144,Operacional,Peças,GE-03,CC-422,80
+2025,Mai,422144,Operacional,Peças,GE-03,CC-422,611
 2025,Mai,422144,Operacional,Peças,PV-01,CC-422,1156.1
 2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,205.12
 2025,Mai,422109,Operacional,Pneus,VL-11,CC-422,5540
-2025,Mai,422113,Operacional,Ferramentas,GERAL,CC-422,900
+2025,Mai,422113,Operacional,Ferramentas,AMB-001,CC-422,900
 2025,Mai,422144,Operacional,Peças,BM-02,CC-422,1636.57
 2025,Mai,422144,Operacional,Peças,BM-02,CC-422,26185.23
 2025,Mai,422144,Operacional,Peças,BM-02,CC-422,290
@@ -8038,17 +8038,17 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422103,Operacional,Combustíveis,BM-04,CC-422,1658.78
 2025,Mai,422103,Operacional,Combustíveis,BM-02,CC-422,471.5
 2025,Mai,422103,Operacional,Combustíveis,EH-07,CC-422,174.63
-2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,681.06
+2025,Mai,422103,Operacional,Combustíveis,GE-03,CC-422,681.06
 2025,Mai,422103,Operacional,Combustíveis,TE-05,CC-422,104.78
 2025,Mai,422103,Operacional,Combustíveis,EH-12,CC-422,52.39
 2025,Mai,422103,Operacional,Combustíveis,PC-09,CC-422,69.85
-2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,401.65
+2025,Mai,422103,Operacional,Combustíveis,GE-08,CC-422,401.65
 2025,Mai,422103,Operacional,Combustíveis,BM-04,CC-422,69.85
 2025,Mai,422103,Operacional,Combustíveis,EH-17,CC-422,69.85
-2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,52.39
+2025,Mai,422103,Operacional,Combustíveis,GE-336,CC-422,52.39
 2025,Mai,422103,Operacional,Combustíveis,PM-01,CC-422,419.3
-2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,596.97
-2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,348.23
+2025,Mai,422103,Operacional,Combustíveis,GE-06,CC-422,596.97
+2025,Mai,422103,Operacional,Combustíveis,GE-07,CC-422,348.23
 2025,Mai,422103,Operacional,Combustíveis,CP-01,CC-422,51.4
 2025,Mai,422103,Operacional,Combustíveis,CP-03,CC-422,25.36
 2025,Mai,422103,Operacional,Combustíveis,VL-23,CC-422,1293.44
@@ -8133,20 +8133,20 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422113,Operacional,Ferramentas,GERAL,CC-422,53.58
 2025,Mai,422113,Operacional,Ferramentas,GERAL,CC-422,32.59
 2025,Mai,422113,Operacional,Ferramentas,BM-01,CC-422,17.89
-2025,Mai,422116,Operacional,Comunicações,GERAL,CC-422,483.47
-2025,Mai,422116,Operacional,Comunicações,GERAL,CC-422,340.25
+2025,Mai,422116,Operacional,Comunicações,RE-01,CC-422,483.47
+2025,Mai,422116,Operacional,Comunicações,RE-01,CC-422,340.25
 2025,Mai,422116,Operacional,Comunicações,CB-12,CC-422,340.25
 2025,Mai,422116,Operacional,Comunicações,CB-20,CC-422,340.25
-2025,Mai,422116,Operacional,Comunicações,GERAL,CC-422,220.43
+2025,Mai,422116,Operacional,Comunicações,RE-01,CC-422,220.43
 2025,Mai,422125,Tecnologia,Material de Escritório,GERAL,CC-422,1590.08
 2025,Mai,422125,Tecnologia,Material de Escritório,GERAL,CC-422,12.76
 2025,Mai,422137,Operacional,Seguros,VL-19,CC-422,236.51
 2025,Mai,422137,Operacional,Seguros,VL-20,CC-422,217.73
 2025,Mai,422137,Operacional,Seguros,VL-23,CC-422,298.1
 2025,Mai,422144,Operacional,Peças,BM-02,CC-422,224.5
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,31.43
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,771.34
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,407.69
+2025,Mai,422144,Operacional,Peças,GE-08,CC-422,31.43
+2025,Mai,422144,Operacional,Peças,GE-08,CC-422,771.34
+2025,Mai,422144,Operacional,Peças,GE-03,CC-422,407.69
 2025,Mai,422144,Operacional,Peças,EH-13,CC-422,1378.19
 2025,Mai,422144,Operacional,Peças,PC-08,CC-422,467.02
 2025,Mai,422144,Operacional,Peças,PC-02,CC-422,636.18
@@ -8154,7 +8154,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,TE-06,CC-422,809.52
 2025,Mai,422144,Operacional,Peças,BM-04,CC-422,802.06
 2025,Mai,422144,Operacional,Peças,BM-04,CC-422,1987.34
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,190.17
+2025,Mai,422144,Operacional,Peças,MN-01,CC-422,190.17
 2025,Mai,422144,Operacional,Peças,EH-10,CC-422,1498.63
 2025,Mai,422144,Operacional,Peças,BM-03,CC-422,3972.87
 2025,Mai,422144,Operacional,Peças,PM-02,CC-422,2480.08
@@ -8174,7 +8174,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,TC-03,CC-422,214.31
 2025,Mai,422144,Operacional,Peças,TE-02,CC-422,145.61
 2025,Mai,422144,Operacional,Peças,GERAL,CC-422,53.98
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,80.22
+2025,Mai,422144,Operacional,Peças,GE-03,CC-422,80.22
 2025,Mai,422144,Operacional,Peças,CB-01,CC-422,74.11
 2025,Mai,422144,Operacional,Peças,GERAL,CC-422,54.95
 2025,Mai,422144,Operacional,Peças,TE-02,CC-422,300
@@ -8190,7 +8190,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,TE-02,CC-422,1145.34
 2025,Mai,422144,Operacional,Peças,CB-09,CC-422,10.39
 2025,Mai,422144,Operacional,Peças,TC-04,CC-422,161.84
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,230.2
+2025,Mai,422144,Operacional,Peças,GE-08,CC-422,230.2
 2025,Mai,422144,Operacional,Peças,GERAL,CC-422,102.33
 2025,Mai,422144,Operacional,Peças,TE-02,CC-422,654.9
 2025,Mai,422144,Operacional,Peças,TC-04,CC-422,295.84
@@ -8213,14 +8213,14 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,EH-16,CC-422,451.89
 2025,Mai,422144,Operacional,Peças,EH-17,CC-422,451.89
 2025,Mai,422144,Operacional,Peças,EH-13,CC-422,525.67
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,45.58
+2025,Mai,422144,Operacional,Peças,GE-08,CC-422,45.58
 2025,Mai,422144,Operacional,Peças,TE-03,CC-422,2690.05
 2025,Mai,422144,Operacional,Peças,TE-05,CC-422,58.44
 2025,Mai,422144,Operacional,Peças,TE-05,CC-422,85.03
 2025,Mai,422144,Operacional,Peças,TE-02,CC-422,132.25
 2025,Mai,422144,Operacional,Peças,TE-02,CC-422,86.03
 2025,Mai,422144,Operacional,Peças,BM-03,CC-422,14064.7
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,1391.61
+2025,Mai,422144,Operacional,Peças,GE-03,CC-422,1391.61
 2025,Mai,422144,Operacional,Peças,BM-02,CC-422,175.55
 2025,Mai,422144,Operacional,Peças,CB-07,CC-422,58.52
 2025,Mai,422144,Operacional,Peças,EH-07,CC-422,58.52
@@ -8296,7 +8296,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,CB-14,CC-422,68.29
 2025,Mai,422144,Operacional,Peças,CB-18,CC-422,68.29
 2025,Mai,422144,Operacional,Peças,CB-19,CC-422,68.29
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,373.1
+2025,Mai,422144,Operacional,Peças,GE-08,CC-422,373.1
 2025,Mai,422144,Operacional,Peças,CC-02,CC-422,103.04
 2025,Mai,422144,Operacional,Peças,CC-02,CC-422,5.26
 2025,Mai,422144,Operacional,Peças,CB-18,CC-422,64.13
@@ -8345,7 +8345,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,TE-02,CC-422,60
 2025,Mai,422144,Operacional,Peças,GERAL,CC-422,54.38
 2025,Mai,422144,Operacional,Peças,GERAL,CC-422,204.26
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,427.02
+2025,Mai,422144,Operacional,Peças,MN-01,CC-422,427.02
 2025,Mai,422144,Operacional,Peças,BM-02,CC-422,204.49
 2025,Mai,422144,Operacional,Peças,GERAL,CC-422,297.9
 2025,Mai,422144,Operacional,Peças,BM-04,CC-422,595.8
@@ -8365,10 +8365,10 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,TE-03,CC-422,493.87
 2025,Mai,422144,Operacional,Peças,GERAL,CC-422,1067.18
 2025,Mai,422144,Operacional,Peças,GERAL,CC-422,820.8
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,203.73
+2025,Mai,422144,Operacional,Peças,GE-08,CC-422,203.73
 2025,Mai,422144,Operacional,Peças,CB-02,CC-422,82.02
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,768.14
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,542.41
+2025,Mai,422144,Operacional,Peças,MN-01,CC-422,768.14
+2025,Mai,422144,Operacional,Peças,MN-01,CC-422,542.41
 2025,Mai,422144,Operacional,Peças,EH-12,CC-422,241.44
 2025,Mai,422144,Operacional,Peças,PC-02,CC-422,555.82
 2025,Mai,422144,Operacional,Peças,CB-15,CC-422,391.1
@@ -8380,11 +8380,11 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,CB-18,CC-422,26.61
 2025,Mai,422144,Operacional,Peças,BM-04,CC-422,1271
 2025,Mai,422144,Operacional,Peças,BM-04,CC-422,1041.18
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,713.46
+2025,Mai,422144,Operacional,Peças,GE-03,CC-422,713.46
 2025,Mai,422144,Operacional,Peças,PM-01,CC-422,100.24
 2025,Mai,422144,Operacional,Peças,PM-02,CC-422,100.24
 2025,Mai,422144,Operacional,Peças,PM-01,CC-422,2151.96
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,300.08
+2025,Mai,422144,Operacional,Peças,TI-04,CC-422,300.08
 2025,Mai,422144,Operacional,Peças,PC-02,CC-422,1527.7
 2025,Mai,422144,Operacional,Peças,CB-27,CC-422,1527.7
 2025,Mai,422144,Operacional,Peças,VL-14,CC-422,223.38
@@ -8395,7 +8395,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,CC-01,CC-422,9.58
 2025,Mai,422144,Operacional,Peças,CB-19,CC-422,4.79
 2025,Mai,422144,Operacional,Peças,CB-22,CC-422,9.59
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,19.23
+2025,Mai,422144,Operacional,Peças,MN-01,CC-422,19.23
 2025,Mai,422144,Operacional,Peças,TE-03,CC-422,19.23
 2025,Mai,422144,Operacional,Peças,TE-05,CC-422,38.46
 2025,Mai,422144,Operacional,Peças,PC-03,CC-422,19.23
@@ -8417,14 +8417,14 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422144,Operacional,Peças,CB-18,CC-422,63.92
 2025,Mai,422144,Operacional,Peças,CB-21,CC-422,63.92
 2025,Mai,422144,Operacional,Peças,CB-27,CC-422,31.96
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,15.68
+2025,Mai,422144,Operacional,Peças,MN-01,CC-422,15.68
 2025,Mai,422144,Operacional,Peças,CB-12,CC-422,2.61
 2025,Mai,422144,Operacional,Peças,CB-25,CC-422,2.61
 2025,Mai,422144,Operacional,Peças,CB-12,CC-422,7.55
 2025,Mai,422144,Operacional,Peças,PC-05,CC-422,3.78
 2025,Mai,422144,Operacional,Peças,CP-02,CC-422,3.78
 2025,Mai,422144,Operacional,Peças,CB-19,CC-422,3.78
-2025,Mai,422144,Operacional,Peças,GERAL,CC-422,13.1
+2025,Mai,422144,Operacional,Peças,MN-01,CC-422,13.1
 2025,Mai,422144,Operacional,Peças,BM-03,CC-422,14.95
 2025,Mai,422144,Operacional,Peças,CB-27,CC-422,0.45
 2025,Mai,422144,Operacional,Peças,BM-03,CC-422,2.04
@@ -8477,8 +8477,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,18.63
 2025,Mai,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,155.02
 2025,Mai,422103,Operacional,Combustíveis,CB-01,CC-422,133.35
-2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,595.1
-2025,Mai,422103,Operacional,Combustíveis,GERAL,CC-422,347.14
+2025,Mai,422103,Operacional,Combustíveis,GE-06,CC-422,595.1
+2025,Mai,422103,Operacional,Combustíveis,GE-07,CC-422,347.14
 2025,Mai,422103,Operacional,Combustíveis,CP-01,CC-422,51.25
 2025,Mai,422103,Operacional,Combustíveis,CP-03,CC-422,25.3
 2025,Mai,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,367.68
@@ -8715,7 +8715,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Mai,422104,Operacional,Manutenção de Equipamentos,CP-02,CC-422,133.25
 2025,Mai,422104,Operacional,Manutenção de Equipamentos,EH-12,CC-422,392.19
 2025,Mai,422104,Operacional,Manutenção de Equipamentos,EH-12,CC-422,727.15
-2025,Mai,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,445.35
+2025,Mai,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,445.35
 2025,Mai,422104,Operacional,Manutenção de Equipamentos,CB-13,CC-422,174.28
 2025,Mai,422104,Operacional,Manutenção de Equipamentos,CB-15,CC-422,174.28
 2025,Mai,422104,Operacional,Manutenção de Equipamentos,CB-20,CC-422,174.28
@@ -8815,7 +8815,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422137,Operacional,Seguros,VL-102,CC-422,127.71
 2025,Jun,422137,Operacional,Seguros,VL-103,CC-422,127.41
 2025,Jun,422102,Operacional,Serviços Gerais,GERAL,CC-422,1600
-2025,Jun,422147,Outros,422147 - MANUTENCAO DE VEICULOS,GERAL,CC-422,1878.52
+2025,Jun,422147,Outros,422147 - MANUTENCAO DE VEICULOS,MN-01,CC-422,1878.52
 2025,Jun,422103,Operacional,Combustíveis,VL-23,CC-422,248.4
 2025,Jun,422103,Operacional,Combustíveis,VL-17,CC-422,440
 2025,Jun,422103,Operacional,Combustíveis,GERAL,CC-422,235.56
@@ -8833,11 +8833,11 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,CB-08,CC-422,18.05
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,CB-16,CC-422,9.88
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,EH-15,CC-422,22.58
-2025,Jun,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,57.28
+2025,Jun,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,57.28
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,CB-08,CC-422,446.81
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,CB-16,CC-422,244.22
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,EH-15,CC-422,321.06
-2025,Jun,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,814.54
+2025,Jun,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,814.54
 2025,Jun,422103,Operacional,Combustíveis,VL-13,CC-422,136.57
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,VL-13,CC-422,24.86
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,VL-13,CC-422,6870
@@ -8927,7 +8927,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422144,Operacional,Peças,BM-03,CC-422,928
 2025,Jun,421202,Pessoal,FGTS,GERAL,CC-421,4266.37
 2025,Jun,422144,Operacional,Peças,PC-02,CC-422,360
-2025,Jun,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,306.59
+2025,Jun,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,306.59
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,EH-08,CC-422,494.73
 2025,Jun,422103,Operacional,Combustíveis,GERAL,CC-422,236.99
 2025,Jun,422105,Operacional,Manutenção de Edificações,CB-09,CC-422,2036.5
@@ -9028,7 +9028,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,421301,Pessoal,Convênio Médico,GERAL,CC-421,336.64
 2025,Jun,422144,Operacional,Peças,GERAL,CC-422,968.5
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,EH-15,CC-422,71.7
-2025,Jun,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1527.14
+2025,Jun,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,1527.14
 2025,Jun,422104,Operacional,Manutenção de Equipamentos,EH-15,CC-422,924.49
 2025,Jun,421101,Pessoal,Salários,GERAL,CC-421,518.68
 2025,Jun,421101,Pessoal,Salários,GERAL,CC-421,5353.91
@@ -9692,19 +9692,19 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422103,Operacional,Combustíveis,GERAL,CC-422,1049.53
 2025,Jun,422103,Operacional,Combustíveis,BM-02,CC-422,106.5
 2025,Jun,422103,Operacional,Combustíveis,CB-04,CC-422,88.75
-2025,Jun,422103,Operacional,Combustíveis,GERAL,CC-422,124.26
+2025,Jun,422103,Operacional,Combustíveis,MN-01,CC-422,124.26
 2025,Jun,422103,Operacional,Combustíveis,EH-08,CC-422,142.01
 2025,Jun,422103,Operacional,Combustíveis,PC-03,CC-422,133.13
 2025,Jun,422103,Operacional,Combustíveis,EH-14,CC-422,35.5
 2025,Jun,422103,Operacional,Combustíveis,PC-08,CC-422,35.5
 2025,Jun,422103,Operacional,Combustíveis,BM-04,CC-422,71
 2025,Jun,422103,Operacional,Combustíveis,PC-10,CC-422,159.76
-2025,Jun,422103,Operacional,Combustíveis,GERAL,CC-422,53.25
+2025,Jun,422103,Operacional,Combustíveis,GE-336,CC-422,53.25
 2025,Jun,422103,Operacional,Combustíveis,PM-02,CC-422,1403.3
 2025,Jun,422103,Operacional,Combustíveis,CP-01,CC-422,31.59
 2025,Jun,422103,Operacional,Combustíveis,CP-02,CC-422,19.56
 2025,Jun,422103,Operacional,Combustíveis,PC-10,CC-422,23.97
-2025,Jun,422103,Operacional,Combustíveis,GERAL,CC-422,318.09
+2025,Jun,422103,Operacional,Combustíveis,AMB-001,CC-422,318.09
 2025,Jun,422103,Operacional,Combustíveis,VL-23,CC-422,685.53
 2025,Jun,422103,Operacional,Combustíveis,VL-101,CC-422,361.96
 2025,Jun,422103,Operacional,Combustíveis,VL-102,CC-422,707.47
@@ -9756,7 +9756,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422105,Operacional,Manutenção de Edificações,EH-09,CC-422,2.72
 2025,Jun,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,55.68
 2025,Jun,422105,Operacional,Manutenção de Edificações,BM-01,CC-422,48.95
-2025,Jun,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,48.95
+2025,Jun,422105,Operacional,Manutenção de Edificações,GE-07,CC-422,48.95
 2025,Jun,422105,Operacional,Manutenção de Edificações,BM-04,CC-422,5.63
 2025,Jun,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,5.63
 2025,Jun,422105,Operacional,Manutenção de Edificações,BM-01,CC-422,90.96
@@ -9771,7 +9771,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422105,Operacional,Manutenção de Edificações,BM-01,CC-422,27.3
 2025,Jun,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,60.95
 2025,Jun,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,11.38
-2025,Jun,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,48.53
+2025,Jun,422105,Operacional,Manutenção de Edificações,GE-07,CC-422,48.53
 2025,Jun,422105,Operacional,Manutenção de Edificações,PV-01,CC-422,419.57
 2025,Jun,422105,Operacional,Manutenção de Edificações,BM-03,CC-422,18.08
 2025,Jun,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,158.7
@@ -9812,14 +9812,14 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422137,Operacional,Seguros,TE-03,CC-422,7
 2025,Jun,422144,Operacional,Peças,CB-09,CC-422,1135.64
 2025,Jun,422144,Operacional,Peças,BM-02,CC-422,191.03
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,32.74
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,65.48
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,465.57
+2025,Jun,422144,Operacional,Peças,GE-05,CC-422,32.74
+2025,Jun,422144,Operacional,Peças,GE-08,CC-422,65.48
+2025,Jun,422144,Operacional,Peças,GE-05,CC-422,465.57
 2025,Jun,422144,Operacional,Peças,EH-06,CC-422,78.82
 2025,Jun,422144,Operacional,Peças,TE-02,CC-422,78.82
 2025,Jun,422144,Operacional,Peças,EH-06,CC-422,311.33
 2025,Jun,422144,Operacional,Peças,EH-06,CC-422,156.3
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,690.3
+2025,Jun,422144,Operacional,Peças,GE-08,CC-422,690.3
 2025,Jun,422144,Operacional,Peças,CA-01,CC-422,67.32
 2025,Jun,422144,Operacional,Peças,TE-08,CC-422,698.68
 2025,Jun,422144,Operacional,Peças,BM-04,CC-422,993.67
@@ -9867,8 +9867,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422144,Operacional,Peças,EH-13,CC-422,887.6
 2025,Jun,422144,Operacional,Peças,EH-14,CC-422,443.8
 2025,Jun,422144,Operacional,Peças,EH-17,CC-422,443.8
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,47.25
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,94.5
+2025,Jun,422144,Operacional,Peças,GE-05,CC-422,47.25
+2025,Jun,422144,Operacional,Peças,GE-08,CC-422,94.5
 2025,Jun,422144,Operacional,Peças,TE-03,CC-422,247.88
 2025,Jun,422144,Operacional,Peças,CA-01,CC-422,858.87
 2025,Jun,422144,Operacional,Peças,BM-01,CC-422,18.13
@@ -9992,13 +9992,13 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422144,Operacional,Peças,TE-05,CC-422,490.71
 2025,Jun,422144,Operacional,Peças,BM-03,CC-422,1059.2
 2025,Jun,422144,Operacional,Peças,BM-03,CC-422,834.24
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,213.52
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,427.04
+2025,Jun,422144,Operacional,Peças,GE-05,CC-422,213.52
+2025,Jun,422144,Operacional,Peças,GE-08,CC-422,427.04
 2025,Jun,422144,Operacional,Peças,PC-02,CC-422,524.12
 2025,Jun,422144,Operacional,Peças,PC-04,CC-422,262.06
 2025,Jun,422144,Operacional,Peças,PC-02,CC-422,484.28
 2025,Jun,422144,Operacional,Peças,CA-01,CC-422,315.25
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,196.77
+2025,Jun,422144,Operacional,Peças,GE-08,CC-422,196.77
 2025,Jun,422144,Operacional,Peças,PM-02,CC-422,635.5
 2025,Jun,422144,Operacional,Peças,BM-04,CC-422,520.59
 2025,Jun,422144,Operacional,Peças,CA-05,CC-422,27.27
@@ -10012,8 +10012,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jun,422144,Operacional,Peças,BM-01,CC-422,120.1
 2025,Jun,422144,Operacional,Peças,BM-01,CC-422,119.29
 2025,Jun,422144,Operacional,Peças,CB-24,CC-422,4.45
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,9.36
-2025,Jun,422144,Operacional,Peças,GERAL,CC-422,19.23
+2025,Jun,422144,Operacional,Peças,MN-01,CC-422,9.36
+2025,Jun,422144,Operacional,Peças,MN-01,CC-422,19.23
 2025,Jun,422144,Operacional,Peças,VL-23,CC-422,17.06
 2025,Jun,422144,Operacional,Peças,CB-03,CC-422,31.96
 2025,Jun,422144,Operacional,Peças,CB-04,CC-422,31.96
@@ -10533,7 +10533,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,PC-03,CC-422,6911.49
 2025,Jul,422128,Operacional,Lanches e Refeições,GERAL,CC-422,2069.83
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,4777.51
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,5246.42
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,5246.42
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CP-03,CC-422,444.08
 2025,Jul,422144,Operacional,Peças,CB-07,CC-422,466.4
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,PC-01,CC-422,15892.83
@@ -10548,13 +10548,13 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422105,Operacional,Manutenção de Edificações,VL-106,CC-422,1530
 2025,Jul,421405,Pessoal,Saúde Ocupacional,GERAL,CC-421,458.07
 2025,Jul,422103,Operacional,Combustíveis,VL-28,CC-422,252.9
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,379
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,379.11
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,GE-06,CC-422,379
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,GE-07,CC-422,379.11
 2025,Jul,422123,Operacional,Fretes e Carretos,GERAL,CC-422,200.02
 2025,Jul,422102,Operacional,Serviços Gerais,GERAL,CC-422,600
 2025,Jul,422144,Operacional,Peças,BM-01,CC-422,794.25
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,PC-02,CC-422,12210.52
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,29
+2025,Jul,422144,Operacional,Peças,GE-03,CC-422,29
 2025,Jul,421405,Pessoal,Saúde Ocupacional,GERAL,CC-421,175
 2025,Jul,422144,Operacional,Peças,TC-03,CC-422,79
 2025,Jul,422144,Operacional,Peças,TC-03,CC-422,785
@@ -10574,7 +10574,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,CB-02,CC-422,205.04
 2025,Jul,422144,Operacional,Peças,BM-03,CC-422,805.12
 2025,Jul,422144,Operacional,Peças,TC-03,CC-422,2220
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,130.64
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,130.64
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-15,CC-422,432.16
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-17,CC-422,432.15
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-23,CC-422,2040.18
@@ -10625,14 +10625,14 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-23,CC-422,38.12
 2025,Jul,422147,Outros,422147 - MANUTENCAO DE VEICULOS,CB-19,CC-422,7441.5
 2025,Jul,422147,Outros,422147 - MANUTENCAO DE VEICULOS,CB-19,CC-422,9075
-2025,Jul,422156,Outros,422156 - RECAPAGEM,GERAL,CC-422,10661.67
+2025,Jul,422156,Outros,422156 - RECAPAGEM,MN-01,CC-422,10661.67
 2025,Jul,422156,Outros,422156 - RECAPAGEM,CB-23,CC-422,7528.61
 2025,Jul,422103,Operacional,Combustíveis,VL-20,CC-422,249.2
 2025,Jul,422105,Operacional,Manutenção de Edificações,BM-01,CC-422,25.1
 2025,Jul,422144,Operacional,Peças,PC-01,CC-422,294.26
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,215
+2025,Jul,422144,Operacional,Peças,RE-01,CC-422,215
 2025,Jul,422144,Operacional,Peças,PC-01,CC-422,2824.92
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,827.65
+2025,Jul,422144,Operacional,Peças,RE-01,CC-422,827.65
 2025,Jul,422144,Operacional,Peças,BM-03,CC-422,805.03
 2025,Jul,422109,Operacional,Pneus,CB-09,CC-422,1944
 2025,Jul,422144,Operacional,Peças,PC-04,CC-422,997.5
@@ -10716,7 +10716,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,35
 2025,Jul,422147,Outros,422147 - MANUTENCAO DE VEICULOS,GERAL,CC-422,280
 2025,Jul,422147,Outros,422147 - MANUTENCAO DE VEICULOS,GERAL,CC-422,60
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,2300
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,RE-01,CC-422,2300
 2025,Jul,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,80
 2025,Jul,422144,Operacional,Peças,GERAL,CC-422,169.8
 2025,Jul,422103,Operacional,Combustíveis,VL-28,CC-422,315.4
@@ -10770,7 +10770,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,TP-01,CC-422,2128
 2025,Jul,422144,Operacional,Peças,BM-03,CC-422,815.4
 2025,Jul,422102,Operacional,Serviços Gerais,CB-15,CC-422,762.3
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,94.38
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,94.38
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,EH-07,CC-422,658.39
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-17,CC-422,196.02
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-19,CC-422,77.31
@@ -11560,7 +11560,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422103,Operacional,Combustíveis,CB-13,CC-422,1172.27
 2025,Jul,422103,Operacional,Combustíveis,BM-04,CC-422,1745.83
 2025,Jul,422103,Operacional,Combustíveis,EH-07,CC-422,169.28
-2025,Jul,422103,Operacional,Combustíveis,GERAL,CC-422,118.49
+2025,Jul,422103,Operacional,Combustíveis,MN-01,CC-422,118.49
 2025,Jul,422103,Operacional,Combustíveis,TE-02,CC-422,253.92
 2025,Jul,422103,Operacional,Combustíveis,EH-09,CC-422,135.42
 2025,Jul,422103,Operacional,Combustíveis,EH-15,CC-422,3046.99
@@ -11569,7 +11569,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422103,Operacional,Combustíveis,EH-16,CC-422,152.35
 2025,Jul,422103,Operacional,Combustíveis,CA-05,CC-422,1544.36
 2025,Jul,422103,Operacional,Combustíveis,CC-01,CC-422,2222.87
-2025,Jul,422103,Operacional,Combustíveis,GERAL,CC-422,1049.31
+2025,Jul,422103,Operacional,Combustíveis,GE-06,CC-422,1049.31
 2025,Jul,422103,Operacional,Combustíveis,CC-02,CC-422,2217.35
 2025,Jul,422103,Operacional,Combustíveis,PC-10,CC-422,0.72
 2025,Jul,422103,Operacional,Combustíveis,VL-09,CC-422,303.75
@@ -11609,7 +11609,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,116.06
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,72.44
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CG-01,CC-422,18.11
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,18.11
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,RE-01,CC-422,18.11
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-20,CC-422,18.11
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,18.11
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,BM-02,CC-422,550.77
@@ -11706,14 +11706,14 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,TE-05,CC-422,509.58
 2025,Jul,422144,Operacional,Peças,CB-19,CC-422,142.7
 2025,Jul,422144,Operacional,Peças,BM-01,CC-422,523.25
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,95.08
+2025,Jul,422144,Operacional,Peças,MN-01,CC-422,95.08
 2025,Jul,422144,Operacional,Peças,CC-02,CC-422,163.23
 2025,Jul,422144,Operacional,Peças,CB-06,CC-422,118.21
 2025,Jul,422144,Operacional,Peças,BM-02,CC-422,235.54
 2025,Jul,422144,Operacional,Peças,PM-02,CC-422,3612.57
 2025,Jul,422144,Operacional,Peças,CC-02,CC-422,105.29
 2025,Jul,422144,Operacional,Peças,EH-06,CC-422,368.58
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,1963.47
+2025,Jul,422144,Operacional,Peças,RE-01,CC-422,1963.47
 2025,Jul,422144,Operacional,Peças,BM-02,CC-422,133.92
 2025,Jul,422144,Operacional,Peças,BM-03,CC-422,401.76
 2025,Jul,422144,Operacional,Peças,TC-02,CC-422,401.76
@@ -11725,7 +11725,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,CB-19,CC-422,1127.3
 2025,Jul,422144,Operacional,Peças,TE-02,CC-422,72.8
 2025,Jul,422144,Operacional,Peças,GERAL,CC-422,72.8
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,80.22
+2025,Jul,422144,Operacional,Peças,GE-03,CC-422,80.22
 2025,Jul,422144,Operacional,Peças,CB-04,CC-422,74.11
 2025,Jul,422144,Operacional,Peças,CB-08,CC-422,74.11
 2025,Jul,422144,Operacional,Peças,CB-09,CC-422,74.11
@@ -11825,7 +11825,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,BM-03,CC-422,48.64
 2025,Jul,422144,Operacional,Peças,CP-01,CC-422,1.95
 2025,Jul,422144,Operacional,Peças,CB-26,CC-422,387.76
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,679.75
+2025,Jul,422144,Operacional,Peças,RP-01,CC-422,679.75
 2025,Jul,422144,Operacional,Peças,CB-08,CC-422,433.35
 2025,Jul,422144,Operacional,Peças,CB-25,CC-422,576.55
 2025,Jul,422144,Operacional,Peças,GERAL,CC-422,350.12
@@ -11897,7 +11897,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,BM-01,CC-422,1059.2
 2025,Jul,422144,Operacional,Peças,BM-01,CC-422,834.24
 2025,Jul,422144,Operacional,Peças,CB-01,CC-422,140.01
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,768.14
+2025,Jul,422144,Operacional,Peças,MN-01,CC-422,768.14
 2025,Jul,422144,Operacional,Peças,EH-10,CC-422,241.44
 2025,Jul,422144,Operacional,Peças,CC-01,CC-422,44.33
 2025,Jul,422144,Operacional,Peças,CC-01,CC-422,278.74
@@ -11973,15 +11973,15 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,BM-01,CC-422,222.8
 2025,Jul,422144,Operacional,Peças,VL-09,CC-422,6.02
 2025,Jul,422144,Operacional,Peças,CB-27,CC-422,213.85
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,14
+2025,Jul,422144,Operacional,Peças,RE-01,CC-422,14
 2025,Jul,422144,Operacional,Peças,CA-08,CC-422,138.78
 2025,Jul,422144,Operacional,Peças,CA-08,CC-422,225.37
 2025,Jul,422144,Operacional,Peças,CA-07,CC-422,189.66
 2025,Jul,422144,Operacional,Peças,CA-08,CC-422,189.66
 2025,Jul,422144,Operacional,Peças,BM-01,CC-422,34.72
 2025,Jul,422144,Operacional,Peças,VL-13,CC-422,9.36
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,27.51
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,26.24
+2025,Jul,422144,Operacional,Peças,GE-05,CC-422,27.51
+2025,Jul,422144,Operacional,Peças,GE-05,CC-422,26.24
 2025,Jul,422144,Operacional,Peças,VL-17,CC-422,19.15
 2025,Jul,422144,Operacional,Peças,VL-12,CC-422,37.96
 2025,Jul,422144,Operacional,Peças,CG-01,CC-422,39.56
@@ -11995,7 +11995,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,GERAL,CC-422,61.49
 2025,Jul,422144,Operacional,Peças,GERAL,CC-422,210
 2025,Jul,422144,Operacional,Peças,CB-23,CC-422,106.17
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,581.39
+2025,Jul,422144,Operacional,Peças,MN-01,CC-422,581.39
 2025,Jul,422144,Operacional,Peças,VL-17,CC-422,55.5
 2025,Jul,421101,Pessoal,Salários,GERAL,CC-421,343.16
 2025,Jul,421101,Pessoal,Salários,GERAL,CC-421,3220.9
@@ -12153,7 +12153,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,36.79
 2025,Jul,421407,Pessoal,Uniformes e EPI,GERAL,CC-421,77.51
 2025,Jul,422103,Operacional,Combustíveis,CC-01,CC-422,2216.83
-2025,Jul,422103,Operacional,Combustíveis,GERAL,CC-422,1046.45
+2025,Jul,422103,Operacional,Combustíveis,GE-06,CC-422,1046.45
 2025,Jul,422103,Operacional,Combustíveis,CC-02,CC-422,2211.31
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CC-01,CC-422,122.54
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CC-02,CC-422,122.54
@@ -12226,7 +12226,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422144,Operacional,Peças,PC-03,CC-422,606.97
 2025,Jul,422144,Operacional,Peças,PC-05,CC-422,606.97
 2025,Jul,422144,Operacional,Peças,PM-02,CC-422,2031.98
-2025,Jul,422144,Operacional,Peças,GERAL,CC-422,107.84
+2025,Jul,422144,Operacional,Peças,GE-336,CC-422,107.84
 2025,Jul,422144,Operacional,Peças,CA-07,CC-422,3183.38
 2025,Jul,422144,Operacional,Peças,CA-08,CC-422,3183.38
 2025,Jul,422144,Operacional,Peças,PM-02,CC-422,4924.68
@@ -12244,7 +12244,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-04,CC-422,116.8
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-04,CC-422,258.64
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-19,CC-422,258.64
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,258.64
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,258.64
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-01,CC-422,77.35
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-04,CC-422,77.35
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-18,CC-422,77.35
@@ -12267,8 +12267,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Jul,422103,Operacional,Combustíveis,CB-15,CC-422,534.37
 2025,Jul,422103,Operacional,Combustíveis,CB-17,CC-422,1603.12
 2025,Jul,422103,Operacional,Combustíveis,CB-27,CC-422,1603.11
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,70.78
-2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,584.25
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,70.78
+2025,Jul,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,584.25
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,5684.66
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-17,CC-422,682.16
 2025,Jul,422104,Operacional,Manutenção de Equipamentos,CB-22,CC-422,227.39
@@ -12556,10 +12556,10 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422144,Operacional,Peças,GERAL,CC-422,4.5
 2025,Ago,422144,Operacional,Peças,GERAL,CC-422,65.9
 2025,Ago,422144,Operacional,Peças,TE-06,CC-422,12000
-2025,Ago,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,6352.5
-2025,Ago,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,5246.42
-2025,Ago,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,379
-2025,Ago,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,379.11
+2025,Ago,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,6352.5
+2025,Ago,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,5246.42
+2025,Ago,422104,Operacional,Manutenção de Equipamentos,GE-06,CC-422,379
+2025,Ago,422104,Operacional,Manutenção de Equipamentos,GE-07,CC-422,379.11
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-17,CC-422,6891.65
 2025,Ago,422103,Operacional,Combustíveis,VL-20,CC-422,272.58
 2025,Ago,422103,Operacional,Combustíveis,VL-28,CC-422,223.58
@@ -12583,7 +12583,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,TE-05,CC-422,17.44
 2025,Ago,422105,Operacional,Manutenção de Edificações,TE-05,CC-422,35.79
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,3900
-2025,Ago,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,1250
+2025,Ago,422105,Operacional,Manutenção de Edificações,AMB-001,CC-422,1250
 2025,Ago,422144,Operacional,Peças,TE-06,CC-422,260
 2025,Ago,422103,Operacional,Combustíveis,VL-20,CC-422,289.06
 2025,Ago,422103,Operacional,Combustíveis,VL-28,CC-422,318.07
@@ -12608,7 +12608,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,TE-05,CC-422,15665.61
 2025,Ago,422147,Outros,422147 - MANUTENCAO DE VEICULOS,TE-05,CC-422,10890
 2025,Ago,422147,Outros,422147 - MANUTENCAO DE VEICULOS,EH-16,CC-422,6254.17
-2025,Ago,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,5220.66
+2025,Ago,422104,Operacional,Manutenção de Equipamentos,GE-08,CC-422,5220.66
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-08,CC-422,6515.8
 2025,Ago,422103,Operacional,Combustíveis,VL-20,CC-422,295
 2025,Ago,422113,Operacional,Ferramentas,GERAL,CC-422,359.8
@@ -12641,14 +12641,14 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,PC-10,CC-422,11620.89
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-12,CC-422,6473.69
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-12,CC-422,6473.69
-2025,Ago,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,760
+2025,Ago,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,760
 2025,Ago,422124,Operacional,Viagens,GERAL,CC-422,5.4
 2025,Ago,422124,Operacional,Viagens,GERAL,CC-422,5.4
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-15,CC-422,294.94
 2025,Ago,422147,Outros,422147 - MANUTENCAO DE VEICULOS,TE-05,CC-422,907.5
 2025,Ago,422147,Outros,422147 - MANUTENCAO DE VEICULOS,TE-03,CC-422,12894.29
 2025,Ago,422147,Outros,422147 - MANUTENCAO DE VEICULOS,TE-05,CC-422,11571.28
-2025,Ago,422147,Outros,422147 - MANUTENCAO DE VEICULOS,GERAL,CC-422,11425.67
+2025,Ago,422147,Outros,422147 - MANUTENCAO DE VEICULOS,MN-01,CC-422,11425.67
 2025,Ago,422103,Operacional,Combustíveis,VL-28,CC-422,271.02
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,69.9
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-09,CC-422,32364
@@ -12679,7 +12679,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422144,Operacional,Peças,GERAL,CC-422,140
 2025,Ago,422144,Operacional,Peças,CB-07,CC-422,1672
 2025,Ago,422144,Operacional,Peças,EH-12,CC-422,58.62
-2025,Ago,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,14640.7
+2025,Ago,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,14640.7
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,PC-09,CC-422,11357.09
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,TE-06,CC-422,15016.07
 2025,Ago,422144,Operacional,Peças,EH-10,CC-422,86
@@ -12696,7 +12696,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,PC-10,CC-422,11620.89
 2025,Ago,422144,Operacional,Peças,EH-10,CC-422,84
 2025,Ago,422144,Operacional,Peças,EH-10,CC-422,1064.79
-2025,Ago,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,218.93
+2025,Ago,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,218.93
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-15,CC-422,891.53
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,CC-02,CC-422,43.56
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-09,CC-422,2358.14
@@ -12752,7 +12752,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,TE-06,CC-422,15016.07
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,EH-13,CC-422,6451.27
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,VL-28,CC-422,451.81
-2025,Ago,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,86
+2025,Ago,422105,Operacional,Manutenção de Edificações,AMB-001,CC-422,86
 2025,Ago,422109,Operacional,Pneus,VL-28,CC-422,2280
 2025,Ago,422123,Operacional,Fretes e Carretos,GERAL,CC-422,0.01
 2025,Ago,422144,Operacional,Peças,BM-01,CC-422,76.72
@@ -12768,7 +12768,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422128,Operacional,Lanches e Refeições,GERAL,CC-422,2240.64
 2025,Ago,422144,Operacional,Peças,BM-04,CC-422,303.28
 2025,Ago,422142,Operacional,IPVA,CC-02,CC-422,1.87
-2025,Ago,422156,Outros,422156 - RECAPAGEM,GERAL,CC-422,6019.27
+2025,Ago,422156,Outros,422156 - RECAPAGEM,MN-01,CC-422,6019.27
 2025,Ago,422128,Operacional,Lanches e Refeições,GERAL,CC-422,214.44
 2025,Ago,421101,Pessoal,Salários,GERAL,CC-421,907.67
 2025,Ago,421101,Pessoal,Salários,GERAL,CC-421,5353.91
@@ -13502,7 +13502,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422103,Operacional,Combustíveis,CB-25,CC-422,1324.81
 2025,Ago,422103,Operacional,Combustíveis,BM-01,CC-422,69.73
 2025,Ago,422103,Operacional,Combustíveis,EH-06,CC-422,226.61
-2025,Ago,422103,Operacional,Combustíveis,GERAL,CC-422,69.73
+2025,Ago,422103,Operacional,Combustíveis,GE-03,CC-422,69.73
 2025,Ago,422103,Operacional,Combustíveis,PC-01,CC-422,400.92
 2025,Ago,422103,Operacional,Combustíveis,TE-05,CC-422,226.61
 2025,Ago,422103,Operacional,Combustíveis,CB-14,CC-422,104.59
@@ -13522,7 +13522,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422103,Operacional,Combustíveis,CC-01,CC-422,2604.45
 2025,Ago,422103,Operacional,Combustíveis,CC-02,CC-422,2103.81
 2025,Ago,422103,Operacional,Combustíveis,VL-13,CC-422,264.38
-2025,Ago,422103,Operacional,Combustíveis,GERAL,CC-422,337.51
+2025,Ago,422103,Operacional,Combustíveis,AMB-001,CC-422,337.51
 2025,Ago,422103,Operacional,Combustíveis,GERAL,CC-422,5889.55
 2025,Ago,422103,Operacional,Combustíveis,VL-23,CC-422,1130.66
 2025,Ago,422104,Operacional,Manutenção de Equipamentos,PC-09,CC-422,1054.37
@@ -13644,7 +13644,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422144,Operacional,Peças,TE-05,CC-422,689.75
 2025,Ago,422144,Operacional,Peças,BM-04,CC-422,521.17
 2025,Ago,422144,Operacional,Peças,GERAL,CC-422,72.47
-2025,Ago,422144,Operacional,Peças,GERAL,CC-422,74.86
+2025,Ago,422144,Operacional,Peças,GE-04,CC-422,74.86
 2025,Ago,422144,Operacional,Peças,CB-08,CC-422,74.11
 2025,Ago,422144,Operacional,Peças,CB-08,CC-422,25.43
 2025,Ago,422144,Operacional,Peças,PC-10,CC-422,77.33
@@ -13792,7 +13792,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Ago,422144,Operacional,Peças,PC-09,CC-422,667.32
 2025,Ago,422144,Operacional,Peças,CG-01,CC-422,124.19
 2025,Ago,422144,Operacional,Peças,BM-04,CC-422,519.61
-2025,Ago,422144,Operacional,Peças,GERAL,CC-422,713.46
+2025,Ago,422144,Operacional,Peças,GE-04,CC-422,713.46
 2025,Ago,422144,Operacional,Peças,PM-01,CC-422,101.91
 2025,Ago,422144,Operacional,Peças,PM-01,CC-422,1944.09
 2025,Ago,422144,Operacional,Peças,CA-05,CC-422,79.72
@@ -14336,9 +14336,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422147,Outros,422147 - MANUTENCAO DE VEICULOS,GERAL,CC-422,6183.82
 2025,Set,422103,Operacional,Combustíveis,VL-28,CC-422,240
 2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,321
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,5246.42
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,379
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,379.11
+2025,Set,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,5246.42
+2025,Set,422104,Operacional,Manutenção de Equipamentos,GE-06,CC-422,379
+2025,Set,422104,Operacional,Manutenção de Equipamentos,GE-07,CC-422,379.11
 2025,Set,422113,Operacional,Ferramentas,GERAL,CC-422,566.3
 2025,Set,422102,Operacional,Serviços Gerais,GERAL,CC-422,600
 2025,Set,422144,Operacional,Peças,BM-03,CC-422,672
@@ -14355,9 +14355,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,CB-03,CC-422,145.8
 2025,Set,422144,Operacional,Peças,EH-10,CC-422,400.18
 2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,5223.04
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,76.23
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1547.13
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,3737.89
+2025,Set,422104,Operacional,Manutenção de Equipamentos,RE-01,CC-422,76.23
+2025,Set,422104,Operacional,Manutenção de Equipamentos,RE-01,CC-422,1547.13
+2025,Set,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,3737.89
 2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,210
 2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1960
 2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,10780
@@ -14384,7 +14384,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422104,Operacional,Manutenção de Equipamentos,VL-23,CC-422,340
 2025,Set,422104,Operacional,Manutenção de Equipamentos,VL-13,CC-422,720
 2025,Set,422105,Operacional,Manutenção de Edificações,BM-04,CC-422,186.3
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,100
+2025,Set,422144,Operacional,Peças,AMB-001,CC-422,100
 2025,Set,422144,Operacional,Peças,VL-17,CC-422,200
 2025,Set,422144,Operacional,Peças,VL-23,CC-422,340
 2025,Set,422144,Operacional,Peças,VL-13,CC-422,260
@@ -14442,8 +14442,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,EH-10,CC-422,1926.94
 2025,Set,422144,Operacional,Peças,PC-04,CC-422,263
 2025,Set,422144,Operacional,Peças,PC-10,CC-422,416.96
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,36.7
-2025,Set,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,100.95
+2025,Set,422104,Operacional,Manutenção de Equipamentos,RE-01,CC-422,36.7
+2025,Set,422105,Operacional,Manutenção de Edificações,RE-01,CC-422,100.95
 2025,Set,422103,Operacional,Combustíveis,VL-28,CC-422,274.98
 2025,Set,422103,Operacional,Combustíveis,VL-28,CC-422,284.52
 2025,Set,422103,Operacional,Combustíveis,VL-20,CC-422,282.12
@@ -14456,8 +14456,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,VL-09,CC-422,1650
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,1110
 2025,Set,422144,Operacional,Peças,PC-01,CC-422,1370.19
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,530.7
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,683.09
+2025,Set,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,530.7
+2025,Set,422144,Operacional,Peças,GE-05,CC-422,683.09
 2025,Set,422104,Operacional,Manutenção de Equipamentos,EH-14,CC-422,71.7
 2025,Set,422104,Operacional,Manutenção de Equipamentos,EH-14,CC-422,490.85
 2025,Set,422147,Outros,422147 - MANUTENCAO DE VEICULOS,EH-14,CC-422,7341.25
@@ -14512,7 +14512,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,865.8
 2025,Set,422144,Operacional,Peças,CB-06,CC-422,7725.2
 2025,Set,422144,Operacional,Peças,TE-06,CC-422,387.67
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,241.98
+2025,Set,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,241.98
 2025,Set,422104,Operacional,Manutenção de Equipamentos,EH-09,CC-422,1252.06
 2025,Set,422144,Operacional,Peças,TE-05,CC-422,275
 2025,Set,422144,Operacional,Peças,TE-05,CC-422,2481.85
@@ -14546,7 +14546,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422104,Operacional,Manutenção de Equipamentos,EH-07,CC-422,6391.27
 2025,Set,422104,Operacional,Manutenção de Equipamentos,PC-10,CC-422,11334.95
 2025,Set,422104,Operacional,Manutenção de Equipamentos,TE-02,CC-422,7626.64
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,726.95
+2025,Set,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,726.95
 2025,Set,422104,Operacional,Manutenção de Equipamentos,EH-07,CC-422,199.29
 2025,Set,422104,Operacional,Manutenção de Equipamentos,TE-03,CC-422,359.32
 2025,Set,422119,Tecnologia,Software,GERAL,CC-422,7500
@@ -15270,7 +15270,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422103,Operacional,Combustíveis,EH-10,CC-422,253.93
 2025,Set,422103,Operacional,Combustíveis,PC-04,CC-422,220.07
 2025,Set,422103,Operacional,Combustíveis,PC-09,CC-422,50.79
-2025,Set,422103,Operacional,Combustíveis,GERAL,CC-422,67.72
+2025,Set,422103,Operacional,Combustíveis,GE-336,CC-422,67.72
 2025,Set,422103,Operacional,Combustíveis,PM-02,CC-422,392.68
 2025,Set,422103,Operacional,Combustíveis,CC-01,CC-422,2395.25
 2025,Set,422103,Operacional,Combustíveis,CG-01,CC-422,466.89
@@ -15301,7 +15301,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422104,Operacional,Manutenção de Equipamentos,BM-04,CC-422,33.52
 2025,Set,422104,Operacional,Manutenção de Equipamentos,PC-09,CC-422,541.89
 2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,64.43
-2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,64.43
+2025,Set,422104,Operacional,Manutenção de Equipamentos,RE-01,CC-422,64.43
 2025,Set,422104,Operacional,Manutenção de Equipamentos,TE-03,CC-422,64.43
 2025,Set,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,193.29
 2025,Set,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,10.21
@@ -15404,12 +15404,12 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,1449.78
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,68.68
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,50.43
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,465.57
+2025,Set,422144,Operacional,Peças,GE-05,CC-422,465.57
 2025,Set,422144,Operacional,Peças,EH-06,CC-422,162.92
 2025,Set,422144,Operacional,Peças,EH-06,CC-422,622.66
 2025,Set,422144,Operacional,Peças,EH-06,CC-422,312.6
 2025,Set,422144,Operacional,Peças,EH-06,CC-422,44.17
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,396.24
+2025,Set,422144,Operacional,Peças,GE-03,CC-422,396.24
 2025,Set,422144,Operacional,Peças,TE-06,CC-422,467.02
 2025,Set,422144,Operacional,Peças,TE-06,CC-422,661.26
 2025,Set,422144,Operacional,Peças,TE-08,CC-422,661.26
@@ -15417,20 +15417,20 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,TE-06,CC-422,809.52
 2025,Set,422144,Operacional,Peças,PC-02,CC-422,1123.01
 2025,Set,422144,Operacional,Peças,BM-04,CC-422,2178.32
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,123.47
+2025,Set,422144,Operacional,Peças,GE-05,CC-422,123.47
 2025,Set,422144,Operacional,Peças,EH-06,CC-422,317.87
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,190.17
+2025,Set,422144,Operacional,Peças,MN-01,CC-422,190.17
 2025,Set,422144,Operacional,Peças,PC-05,CC-422,95.08
 2025,Set,422144,Operacional,Peças,BM-01,CC-422,81282.79
 2025,Set,422144,Operacional,Peças,PV-01,CC-422,570.3
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,64.48
+2025,Set,422144,Operacional,Peças,RE-01,CC-422,64.48
 2025,Set,422144,Operacional,Peças,BM-03,CC-422,27821.73
 2025,Set,422144,Operacional,Peças,TE-04,CC-422,1963.47
 2025,Set,422144,Operacional,Peças,TC-02,CC-422,250.69
 2025,Set,422144,Operacional,Peças,TC-02,CC-422,77.79
 2025,Set,422144,Operacional,Peças,TE-02,CC-422,72.47
 2025,Set,422144,Operacional,Peças,CB-04,CC-422,1641.19
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,74.86
+2025,Set,422144,Operacional,Peças,GE-03,CC-422,74.86
 2025,Set,422144,Operacional,Peças,CB-05,CC-422,78.43
 2025,Set,422144,Operacional,Peças,CP-02,CC-422,1390.69
 2025,Set,422144,Operacional,Peças,CB-05,CC-422,26.8
@@ -15455,7 +15455,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,EH-10,CC-422,1072.35
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,120.61
 2025,Set,422144,Operacional,Peças,PC-04,CC-422,466.01
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,123.9
+2025,Set,422144,Operacional,Peças,RE-01,CC-422,123.9
 2025,Set,422144,Operacional,Peças,TE-04,CC-422,747.38
 2025,Set,422144,Operacional,Peças,EH-15,CC-422,475.41
 2025,Set,422144,Operacional,Peças,TE-03,CC-422,71.03
@@ -15503,7 +15503,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,CB-17,CC-422,28.41
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,5066.7
 2025,Set,422144,Operacional,Peças,CB-22,CC-422,98.24
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,66.12
+2025,Set,422144,Operacional,Peças,GE-03,CC-422,66.12
 2025,Set,422144,Operacional,Peças,PC-02,CC-422,1050.68
 2025,Set,422144,Operacional,Peças,CB-16,CC-422,433.35
 2025,Set,422144,Operacional,Peças,CB-16,CC-422,576.55
@@ -15557,7 +15557,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,TE-06,CC-422,488.64
 2025,Set,422144,Operacional,Peças,BM-01,CC-422,2118.4
 2025,Set,422144,Operacional,Peças,BM-01,CC-422,834.24
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,140.01
+2025,Set,422144,Operacional,Peças,GE-03,CC-422,140.01
 2025,Set,422144,Operacional,Peças,TE-04,CC-422,366.99
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,237.58
 2025,Set,422144,Operacional,Peças,CB-03,CC-422,195.55
@@ -15578,7 +15578,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Set,422144,Operacional,Peças,GERAL,CC-422,145.12
 2025,Set,422144,Operacional,Peças,VL-05,CC-422,145.12
 2025,Set,422144,Operacional,Peças,CB-22,CC-422,13.42
-2025,Set,422144,Operacional,Peças,GERAL,CC-422,38.46
+2025,Set,422144,Operacional,Peças,MN-01,CC-422,38.46
 2025,Set,422144,Operacional,Peças,PC-10,CC-422,38.46
 2025,Set,422144,Operacional,Peças,VL-16,CC-422,35.75
 2025,Set,422144,Operacional,Peças,PC-10,CC-422,69.75
@@ -16179,9 +16179,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,312102,Outros,312102 - RECEITAS FINANCEIRAS,GERAL,CC-312,0.01
 2025,Out,422103,Operacional,Combustíveis,VL-28,CC-422,304.06
 2025,Out,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,28
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,5246.42
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,379
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,379.11
+2025,Out,422104,Operacional,Manutenção de Equipamentos,GE-05,CC-422,5246.42
+2025,Out,422104,Operacional,Manutenção de Equipamentos,GE-06,CC-422,379
+2025,Out,422104,Operacional,Manutenção de Equipamentos,GE-07,CC-422,379.11
 2025,Out,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,250
 2025,Out,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,54
 2025,Out,422144,Operacional,Peças,BM-01,CC-422,3048
@@ -16203,7 +16203,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CG-01,CC-422,108.9
 2025,Out,422104,Operacional,Manutenção de Equipamentos,EH-10,CC-422,14171.24
 2025,Out,422104,Operacional,Manutenção de Equipamentos,EH-11,CC-422,15464.81
-2025,Out,422156,Outros,422156 - RECAPAGEM,GERAL,CC-422,6470.3
+2025,Out,422156,Outros,422156 - RECAPAGEM,MN-01,CC-422,6470.3
 2025,Out,422109,Operacional,Pneus,PC-05,CC-422,10350
 2025,Out,422103,Operacional,Combustíveis,VL-110,CC-422,98.26
 2025,Out,422103,Operacional,Combustíveis,VL-20,CC-422,138.39
@@ -16216,7 +16216,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CA-07,CC-422,622.22
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CA-08,CC-422,622.24
 2025,Out,422104,Operacional,Manutenção de Equipamentos,BM-03,CC-422,1080
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,1300
+2025,Out,422104,Operacional,Manutenção de Equipamentos,GE-03,CC-422,1300
 2025,Out,422104,Operacional,Manutenção de Equipamentos,BM-03,CC-422,500
 2025,Out,422105,Operacional,Manutenção de Edificações,GERAL,CC-422,204.14
 2025,Out,422102,Operacional,Serviços Gerais,GERAL,CC-422,850
@@ -16276,7 +16276,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422128,Operacional,Lanches e Refeições,GERAL,CC-422,2605.71
 2025,Out,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.02
 2025,Out,422104,Operacional,Manutenção de Equipamentos,EH-08,CC-422,639.42
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,661.95
+2025,Out,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,661.95
 2025,Out,422104,Operacional,Manutenção de Equipamentos,EH-08,CC-422,1467.83
 2025,Out,422104,Operacional,Manutenção de Equipamentos,TE-08,CC-422,3327.28
 2025,Out,422104,Operacional,Manutenção de Equipamentos,EH-09,CC-422,578.56
@@ -16298,7 +16298,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,PC-04,CC-422,794.99
 2025,Out,422104,Operacional,Manutenção de Equipamentos,PC-04,CC-422,3167.17
 2025,Out,422104,Operacional,Manutenção de Equipamentos,TE-02,CC-422,301.94
-2025,Out,522106,Outros,522106 - JUROS SOBRE FORNECEDORES,GERAL,CC-522,0.01
+2025,Out,522106,Outros,522106 - JUROS SOBRE FORNECEDORES,MN-01,CC-522,0.01
 2025,Out,421304,Pessoal,Alimentação,GERAL,CC-421,5098.91
 2025,Out,421304,Pessoal,Alimentação,GERAL,CC-421,22308.44
 2025,Out,422113,Operacional,Ferramentas,GERAL,CC-422,979.99
@@ -16392,7 +16392,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,PC-02,CC-422,39965.09
 2025,Out,422144,Operacional,Peças,PC-10,CC-422,3133.78
 2025,Out,312102,Outros,312102 - DESCONTOS OBTIDOS,GERAL,CC-312,0.02
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,2419.78
+2025,Out,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,2419.78
 2025,Out,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,1500
 2025,Out,422104,Operacional,Manutenção de Equipamentos,BM-01,CC-422,600
 2025,Out,422104,Operacional,Manutenção de Equipamentos,PC-03,CC-422,6767.5
@@ -16477,8 +16477,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,CB-09,CC-422,397.76
 2025,Out,522401,Outros,522401 - JUROS SOBRE FORNECEDORES,EH-13,CC-522,0.07
 2025,Out,421301,Pessoal,Convênio Médico,GERAL,CC-421,5073.96
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,37538.83
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,28904.14
+2025,Out,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,37538.83
+2025,Out,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,28904.14
 2025,Out,522106,Outros,522106 - JUROS SOBRE FORNECEDORES,EH-11,CC-522,0.03
 2025,Out,522106,Outros,522106 - JUROS SOBRE FORNECEDORES,TE-04,CC-522,0.13
 2025,Out,312102,Outros,312102 - RECEITAS FINANCEIRAS,GERAL,CC-312,0.01
@@ -17259,14 +17259,14 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422103,Operacional,Combustíveis,CG-01,CC-422,965.66
 2025,Out,422103,Operacional,Combustíveis,EH-06,CC-422,2447.49
 2025,Out,422103,Operacional,Combustíveis,EH-07,CC-422,1520.1
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,76.52
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,2074.71
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,1061.31
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,2352.91
+2025,Out,422103,Operacional,Combustíveis,GE-01,CC-422,76.52
+2025,Out,422103,Operacional,Combustíveis,GE-03,CC-422,2074.71
+2025,Out,422103,Operacional,Combustíveis,GE-04,CC-422,1061.31
+2025,Out,422103,Operacional,Combustíveis,MN-01,CC-422,2352.91
 2025,Out,422103,Operacional,Combustíveis,PC-01,CC-422,3514.18
 2025,Out,422103,Operacional,Combustíveis,PC-02,CC-422,4897.13
 2025,Out,422103,Operacional,Combustíveis,PV-01,CC-422,1632.56
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,221.88
+2025,Out,422103,Operacional,Combustíveis,RE-01,CC-422,221.88
 2025,Out,422103,Operacional,Combustíveis,TE-02,CC-422,4138.15
 2025,Out,422103,Operacional,Combustíveis,TE-03,CC-422,502.94
 2025,Out,422103,Operacional,Combustíveis,TE-04,CC-422,1879.65
@@ -17281,9 +17281,9 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422103,Operacional,Combustíveis,EH-09,CC-422,2388.31
 2025,Out,422103,Operacional,Combustíveis,PC-03,CC-422,2989.6
 2025,Out,422103,Operacional,Combustíveis,BM-03,CC-422,439.83
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,3527.94
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,191.13
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,236.19
+2025,Out,422103,Operacional,Combustíveis,GE-05,CC-422,3527.94
+2025,Out,422103,Operacional,Combustíveis,GE-06,CC-422,191.13
+2025,Out,422103,Operacional,Combustíveis,GE-07,CC-422,236.19
 2025,Out,422103,Operacional,Combustíveis,EH-10,CC-422,1193.26
 2025,Out,422103,Operacional,Combustíveis,EH-11,CC-422,809.75
 2025,Out,422103,Operacional,Combustíveis,EH-12,CC-422,2894.12
@@ -17321,12 +17321,12 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422103,Operacional,Combustíveis,EH-16,CC-422,2818.67
 2025,Out,422103,Operacional,Combustíveis,EH-17,CC-422,2815.63
 2025,Out,422103,Operacional,Combustíveis,TE-08,CC-422,2175.01
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,4890.88
+2025,Out,422103,Operacional,Combustíveis,GE-336,CC-422,4890.88
 2025,Out,422103,Operacional,Combustíveis,CC-01,CC-422,921.06
 2025,Out,422103,Operacional,Combustíveis,CG-01,CC-422,100
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,262.12
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,281.84
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,405.86
+2025,Out,422103,Operacional,Combustíveis,GE-05,CC-422,262.12
+2025,Out,422103,Operacional,Combustíveis,GE-06,CC-422,281.84
+2025,Out,422103,Operacional,Combustíveis,GE-07,CC-422,405.86
 2025,Out,422103,Operacional,Combustíveis,CP-01,CC-422,14.94
 2025,Out,422103,Operacional,Combustíveis,CP-02,CC-422,34.88
 2025,Out,422103,Operacional,Combustíveis,CC-02,CC-422,665.15
@@ -17345,7 +17345,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CB-27,CC-422,12.64
 2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,101.15
 2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,27.48
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,13.74
+2025,Out,422104,Operacional,Manutenção de Equipamentos,GE-07,CC-422,13.74
 2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,2.66
 2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,118
 2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,775.8
@@ -17451,8 +17451,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422142,Operacional,IPVA,VL-20,CC-422,239.88
 2025,Out,422144,Operacional,Peças,BM-01,CC-422,175.36
 2025,Out,422144,Operacional,Peças,BM-02,CC-422,175.36
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,32.74
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,931.14
+2025,Out,422144,Operacional,Peças,GE-05,CC-422,32.74
+2025,Out,422144,Operacional,Peças,GE-05,CC-422,931.14
 2025,Out,422144,Operacional,Peças,EH-06,CC-422,81.46
 2025,Out,422144,Operacional,Peças,EH-06,CC-422,44.02
 2025,Out,422144,Operacional,Peças,TE-02,CC-422,75.23
@@ -17496,7 +17496,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,PM-01,CC-422,140.79
 2025,Out,422144,Operacional,Peças,PM-02,CC-422,140.79
 2025,Out,422144,Operacional,Peças,CB-24,CC-422,12.55
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,385
+2025,Out,422144,Operacional,Peças,GE-05,CC-422,385
 2025,Out,422144,Operacional,Peças,BM-01,CC-422,17.75
 2025,Out,422144,Operacional,Peças,TE-02,CC-422,320.51
 2025,Out,422144,Operacional,Peças,EH-06,CC-422,0.95
@@ -17510,7 +17510,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,CB-26,CC-422,2.77
 2025,Out,422144,Operacional,Peças,EH-13,CC-422,475.41
 2025,Out,422144,Operacional,Peças,EH-07,CC-422,2177.16
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,44.84
+2025,Out,422144,Operacional,Peças,GE-05,CC-422,44.84
 2025,Out,422144,Operacional,Peças,TE-05,CC-422,461.98
 2025,Out,422144,Operacional,Peças,TE-05,CC-422,421.13
 2025,Out,422144,Operacional,Peças,GERAL,CC-422,48.31
@@ -17630,7 +17630,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,PM-02,CC-422,176.34
 2025,Out,422144,Operacional,Peças,BM-01,CC-422,382.19
 2025,Out,422144,Operacional,Peças,BM-02,CC-422,382.19
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,386.37
+2025,Out,422144,Operacional,Peças,RE-01,CC-422,386.37
 2025,Out,422144,Operacional,Peças,BM-02,CC-422,169.11
 2025,Out,422144,Operacional,Peças,PM-01,CC-422,567.71
 2025,Out,422144,Operacional,Peças,PM-02,CC-422,567.71
@@ -17645,10 +17645,10 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,BM-01,CC-422,1722.74
 2025,Out,422144,Operacional,Peças,BM-01,CC-422,1443.1
 2025,Out,422144,Operacional,Peças,EH-06,CC-422,205.43
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,205.43
+2025,Out,422144,Operacional,Peças,GE-05,CC-422,205.43
 2025,Out,422144,Operacional,Peças,BM-01,CC-422,2093.7
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,742.28
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,528.86
+2025,Out,422144,Operacional,Peças,MN-01,CC-422,742.28
+2025,Out,422144,Operacional,Peças,MN-01,CC-422,528.86
 2025,Out,422144,Operacional,Peças,PC-04,CC-422,508.29
 2025,Out,422144,Operacional,Peças,EH-13,CC-422,381.87
 2025,Out,422144,Operacional,Peças,EH-14,CC-422,381.87
@@ -17673,7 +17673,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,CC-02,CC-422,13.42
 2025,Out,422144,Operacional,Peças,CB-04,CC-422,3.54
 2025,Out,422144,Operacional,Peças,CB-27,CC-422,7.09
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,9.36
+2025,Out,422144,Operacional,Peças,RE-01,CC-422,9.36
 2025,Out,422144,Operacional,Peças,PC-01,CC-422,38.46
 2025,Out,422144,Operacional,Peças,TE-02,CC-422,57.69
 2025,Out,422144,Operacional,Peças,PC-03,CC-422,76.92
@@ -17697,7 +17697,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422144,Operacional,Peças,CB-19,CC-422,5.23
 2025,Out,422144,Operacional,Peças,CB-27,CC-422,5.23
 2025,Out,422144,Operacional,Peças,CB-07,CC-422,7.55
-2025,Out,422144,Operacional,Peças,GERAL,CC-422,611.32
+2025,Out,422144,Operacional,Peças,GE-07,CC-422,611.32
 2025,Out,422144,Operacional,Peças,CB-05,CC-422,667.46
 2025,Out,422144,Operacional,Peças,CC-01,CC-422,18.85
 2025,Out,422144,Operacional,Peças,CB-27,CC-422,15.63
@@ -17939,8 +17939,8 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422103,Operacional,Combustíveis,CB-01,CC-422,33.06
 2025,Out,422103,Operacional,Combustíveis,CC-01,CC-422,751.34
 2025,Out,422103,Operacional,Combustíveis,CG-01,CC-422,99.92
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,543.51
-2025,Out,422103,Operacional,Combustíveis,GERAL,CC-422,405.52
+2025,Out,422103,Operacional,Combustíveis,GE-06,CC-422,543.51
+2025,Out,422103,Operacional,Combustíveis,GE-07,CC-422,405.52
 2025,Out,422103,Operacional,Combustíveis,CP-01,CC-422,14.93
 2025,Out,422103,Operacional,Combustíveis,CP-02,CC-422,34.86
 2025,Out,422103,Operacional,Combustíveis,CC-02,CC-422,664.6
@@ -18044,7 +18044,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CB-18,CC-422,12.73
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CB-26,CC-422,190.64
 2025,Out,431102,Outros,431102 - (-) CUSTO MERCADORIA DEVOLVIDA,GERAL,CC-431,6511.12
-2025,Out,422102,Operacional,Serviços Gerais,GERAL,CC-422,2155.49
+2025,Out,422102,Operacional,Serviços Gerais,MN-01,CC-422,2155.49
 2025,Out,422102,Operacional,Serviços Gerais,CB-02,CC-422,521.49
 2025,Out,422102,Operacional,Serviços Gerais,CB-12,CC-422,521.49
 2025,Out,422102,Operacional,Serviços Gerais,CB-13,CC-422,521.49
@@ -18229,7 +18229,7 @@ ano,mes,classe_codigo,classe_orcamentaria,subclasse,equipamento,centro_custo,val
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CB-22,CC-422,137.21
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CB-23,CC-422,137.21
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CB-25,CC-422,137.21
-2025,Out,422104,Operacional,Manutenção de Equipamentos,GERAL,CC-422,445.16
+2025,Out,422104,Operacional,Manutenção de Equipamentos,MN-01,CC-422,445.16
 2025,Out,422104,Operacional,Manutenção de Equipamentos,TE-03,CC-422,445.16
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CB-12,CC-422,206.65
 2025,Out,422104,Operacional,Manutenção de Equipamentos,CB-13,CC-422,206.65

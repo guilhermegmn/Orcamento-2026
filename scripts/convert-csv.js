@@ -31,7 +31,14 @@ const CATEGORIAS_VALIDAS = {
   'TC': 'TRANSPORTADOR DE CORREIA',
   'PM': 'PENEIRA MOVEL',
   'PV': 'PENEIRA VIBRATORIA',
-  'BM': 'BRITADOR'
+  'BM': 'BRITADOR',
+  'GE': 'GRUPO GERADOR',
+  'MN': 'MOTONIVELADORA',
+  'PTA': 'EQUIPAMENTO LOCADO',
+  'TI': 'TORRE DE ILUMINACAO',
+  'RE': 'RETROESCAVADEIRA',
+  'RP': 'ROMPEDOR',
+  'AMB': 'AMBULANCIA'
 };
 
 // Função para extrair categoria do código de equipamento

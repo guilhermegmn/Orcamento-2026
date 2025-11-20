@@ -343,6 +343,27 @@ export default function Dashboard() {
     };
   }, [detalhamento2025, filtroCategoriasDetalhamento, filtroEquipamentosDetalhamento, filtroMesesDetalhamento, equipamentos]);
 
+  // Calcular gastos por categoria de equipamentos
+  const gastosPorCategoria = useMemo(() => {
+    const { filtrados } = dadosDetalhamento;
+    const categoriasMap = new Map<string, number>();
+
+    filtrados.forEach((item) => {
+      const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
+      const categoria = equipamentoObj?.categoria || 'SEM CATEGORIA';
+
+      const current = categoriasMap.get(categoria) || 0;
+      categoriasMap.set(categoria, current + item.valorTotal);
+    });
+
+    return Array.from(categoriasMap.entries())
+      .map(([categoria, total]) => ({
+        categoria,
+        total
+      }))
+      .sort((a, b) => b.total - a.total); // Ordenar por total decrescente
+  }, [dadosDetalhamento, equipamentos]);
+
   // Opções para os filtros (usando classes agrupadas)
   const opcoesClasses = useMemo(() => {
     const classesSet = new Set<string>();
@@ -904,6 +925,50 @@ export default function Dashboard() {
                       </CardTitle>
                     </CardHeader>
                   </Card>
+                </div>
+
+                {/* Tabela de Gastos por Categoria */}
+                <div className="mb-6">
+                  <h3 className="text-lg font-semibold mb-4">Gastos por Categoria de Equipamento</h3>
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b">
+                          <th className="text-left p-3 font-medium">Categoria</th>
+                          <th className="text-right p-3 font-medium">Total Gasto</th>
+                          <th className="text-right p-3 font-medium">% do Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {gastosPorCategoria.map((item, idx) => {
+                          const percentual = dadosDetalhamento.total > 0
+                            ? (item.total / dadosDetalhamento.total) * 100
+                            : 0;
+
+                          return (
+                            <tr key={idx} className="border-b hover:bg-slate-50 dark:hover:bg-slate-800">
+                              <td className="p-3 font-medium">{item.categoria}</td>
+                              <td className="p-3 text-right">
+                                {formatCurrency(item.total, config || undefined)}
+                              </td>
+                              <td className="p-3 text-right">
+                                {formatPercentage(percentual)}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                      <tfoot>
+                        <tr className="border-t-2 font-bold">
+                          <td className="p-3">TOTAL</td>
+                          <td className="p-3 text-right">
+                            {formatCurrency(dadosDetalhamento.total, config || undefined)}
+                          </td>
+                          <td className="p-3 text-right">100,00%</td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
                 </div>
 
                 {/* Tabela Detalhada */}
