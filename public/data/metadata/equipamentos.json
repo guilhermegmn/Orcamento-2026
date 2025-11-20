@@ -923,8 +923,8 @@
     {
       "codigo": "TI-02",
       "nome": "TI-02",
-      "categoria": "TRATOR INDUSTRIAL",
-      "descricao": "TRATOR INDUSTRIAL TI-02",
+      "categoria": "TORRE DE ILUMINACAO",
+      "descricao": "TORRE DE ILUMINACAO TI-02",
       "centro_custo": "CC-093",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
@@ -933,8 +933,8 @@
     {
       "codigo": "TI-03",
       "nome": "TI-03",
-      "categoria": "TRATOR INDUSTRIAL",
-      "descricao": "TRATOR INDUSTRIAL TI-03",
+      "categoria": "TORRE DE ILUMINACAO",
+      "descricao": "TORRE DE ILUMINACAO TI-03",
       "centro_custo": "CC-094",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
@@ -943,8 +943,8 @@
     {
       "codigo": "TI-04",
       "nome": "TI-04",
-      "categoria": "TRATOR INDUSTRIAL",
-      "descricao": "TRATOR INDUSTRIAL TI-04",
+      "categoria": "TORRE DE ILUMINACAO",
+      "descricao": "TORRE DE ILUMINACAO TI-04",
       "centro_custo": "CC-095",
       "responsavel": "A definir",
       "email": "equipamentos@empresa.com.br",
