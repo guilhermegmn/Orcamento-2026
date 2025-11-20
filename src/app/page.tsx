@@ -31,6 +31,25 @@ import type {
 
 const MESES = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
+// Função para agrupar classes orçamentárias
+function agruparClasse(classeCodigo: string, subclasse: string): string {
+  // Folha Salarial: 411101 até 421405, mais 421901, 421902, 421903
+  const codigoNum = parseInt(classeCodigo);
+
+  if ((codigoNum >= 411101 && codigoNum <= 421405) ||
+      classeCodigo === '421901' || classeCodigo === '421902' || classeCodigo === '421903') {
+    return "FOLHA SALARIAL";
+  }
+
+  // Receitas: classes que começam com 3
+  if (classeCodigo.startsWith('3')) {
+    return "RECEITAS";
+  }
+
+  // Outras classes: manter formato original
+  return `${classeCodigo} - ${subclasse}`;
+}
+
 export default function Dashboard() {
   const [realizado2025, setRealizado2025] = useState<BudgetDataRow[]>([]);
   const [orcado2026, setOrcado2026] = useState<BudgetDataRow[]>([]);
@@ -125,14 +144,14 @@ export default function Dashboard() {
     const classesMap = new Map<string, { orcado2025: number; orcado2026: number }>();
 
     filtrado2025.forEach((item) => {
-      const key = `${item.classe_codigo} - ${item.subclasse}`;
+      const key = agruparClasse(item.classe_codigo, item.subclasse);
       const current = classesMap.get(key) || { orcado2025: 0, orcado2026: 0 };
       current.orcado2025 += item.valor;
       classesMap.set(key, current);
     });
 
     filtrado2026.forEach((item) => {
-      const key = `${item.classe_codigo} - ${item.subclasse}`;
+      const key = agruparClasse(item.classe_codigo, item.subclasse);
       const current = classesMap.get(key) || { orcado2025: 0, orcado2026: 0 };
       current.orcado2026 += item.valor;
       classesMap.set(key, current);
