@@ -1,5 +1,5 @@
 import Papa from "papaparse";
-import type { BudgetDataRow, ClasseOrcamentaria, Equipamento, Config } from "./types";
+import type { BudgetDataRow, ClasseOrcamentaria, Equipamento, Config, DetalhamentoRow } from "./types";
 
 export async function loadCSVData(filePath: string): Promise<BudgetDataRow[]> {
   try {
@@ -14,6 +14,33 @@ export async function loadCSVData(filePath: string): Promise<BudgetDataRow[]> {
           const data = results.data.map((row) => ({
             ...row,
             valor: parseFloat(String(row.valor)) || 0,
+          }));
+          resolve(data);
+        },
+        error: (error: Error) => reject(error),
+      });
+    });
+  } catch (error) {
+    console.error(`Erro ao carregar ${filePath}:`, error);
+    return [];
+  }
+}
+
+export async function loadDetalhamentoData(filePath: string): Promise<DetalhamentoRow[]> {
+  try {
+    const response = await fetch(filePath);
+    const csvText = await response.text();
+
+    return new Promise((resolve, reject) => {
+      Papa.parse<DetalhamentoRow>(csvText, {
+        header: true,
+        skipEmptyLines: true,
+        complete: (results) => {
+          const data = results.data.map((row) => ({
+            ...row,
+            quantidade: parseFloat(String(row.quantidade)) || 0,
+            valorUnitario: parseFloat(String(row.valorUnitario)) || 0,
+            valorTotal: parseFloat(String(row.valorTotal)) || 0,
           }));
           resolve(data);
         },
@@ -41,6 +68,7 @@ export async function loadAllData() {
     realizado2025,
     orcado2026,
     realizado2026,
+    detalhamento2025,
     classesData,
     equipamentosData,
     configData,
@@ -48,6 +76,7 @@ export async function loadAllData() {
     loadCSVData("/data/2025/realizado.csv"),
     loadCSVData("/data/2026/orcado.csv"),
     loadCSVData("/data/2026/realizado.csv"),
+    loadDetalhamentoData("/data/2025/detalhamento.csv"),
     loadJSON<{ classes_orcamentarias: ClasseOrcamentaria[] }>(
       "/data/metadata/classes.json"
     ),
@@ -59,6 +88,7 @@ export async function loadAllData() {
     realizado2025,
     orcado2026,
     realizado2026,
+    detalhamento2025,
     classes: classesData?.classes_orcamentarias || [],
     equipamentos: equipamentosData?.equipamentos || [],
     config: configData,
