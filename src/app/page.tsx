@@ -276,6 +276,9 @@ export default function Dashboard() {
 
   const dadosDetalhamento = useMemo(() => {
     const filtrados = realizado2025.filter((item) => {
+      // Filtrar APENAS equipamentos válidos (excluir GERAL)
+      if (item.equipamento === 'GERAL') return false;
+
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
 
       const categoriaMatch =
