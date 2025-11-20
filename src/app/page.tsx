@@ -26,6 +26,7 @@ import type {
   ClasseOrcamentaria,
   Equipamento,
   Config,
+  DetalhamentoRow,
 } from "@/lib/types";
 
 const MESES = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
@@ -34,6 +35,7 @@ export default function Dashboard() {
   const [realizado2025, setRealizado2025] = useState<BudgetDataRow[]>([]);
   const [orcado2026, setOrcado2026] = useState<BudgetDataRow[]>([]);
   const [realizado2026, setRealizado2026] = useState<BudgetDataRow[]>([]);
+  const [detalhamento2025, setDetalhamento2025] = useState<DetalhamentoRow[]>([]);
   const [classes, setClasses] = useState<ClasseOrcamentaria[]>([]);
   const [equipamentos, setEquipamentos] = useState<Equipamento[]>([]);
   const [config, setConfig] = useState<Config | null>(null);
@@ -61,6 +63,7 @@ export default function Dashboard() {
       setRealizado2025(data.realizado2025);
       setOrcado2026(data.orcado2026);
       setRealizado2026(data.realizado2026);
+      setDetalhamento2025(data.detalhamento2025);
       setClasses(data.classes);
       setEquipamentos(data.equipamentos);
       setConfig(data.config);
@@ -275,10 +278,7 @@ export default function Dashboard() {
   // ============= ABA DETALHAMENTO: Dados Detalhados 2025 =============
 
   const dadosDetalhamento = useMemo(() => {
-    const filtrados = realizado2025.filter((item) => {
-      // Filtrar APENAS equipamentos válidos (excluir GERAL)
-      if (item.equipamento === 'GERAL') return false;
-
+    const filtrados = detalhamento2025.filter((item) => {
       const equipamentoObj = equipamentos.find(eq => eq.codigo === item.equipamento);
 
       const categoriaMatch =
@@ -289,21 +289,31 @@ export default function Dashboard() {
         filtroEquipamentosDetalhamento.length === 0 ||
         filtroEquipamentosDetalhamento.includes(item.equipamento);
 
+      // Extrair mês da data (formato: 2025-04-10 00:00:00)
+      const dataParts = item.data?.split('-');
+      let mesAbrev = '';
+      if (dataParts && dataParts.length >= 2) {
+        const mesNum = parseInt(dataParts[1]);
+        if (mesNum >= 1 && mesNum <= 12) {
+          mesAbrev = MESES[mesNum - 1];
+        }
+      }
+
       const mesMatch =
         filtroMesesDetalhamento.length === 0 ||
-        filtroMesesDetalhamento.includes(item.mes);
+        filtroMesesDetalhamento.includes(mesAbrev);
 
       return categoriaMatch && equipamentoMatch && mesMatch;
     });
 
-    const total = filtrados.reduce((sum, item) => sum + item.valor, 0);
+    const total = filtrados.reduce((sum, item) => sum + item.valorTotal, 0);
 
     return {
       filtrados,
       total,
       count: filtrados.length
     };
-  }, [realizado2025, filtroCategoriasDetalhamento, filtroEquipamentosDetalhamento, filtroMesesDetalhamento, equipamentos]);
+  }, [detalhamento2025, filtroCategoriasDetalhamento, filtroEquipamentosDetalhamento, filtroMesesDetalhamento, equipamentos]);
 
   // Opções para os filtros
   const opcoesClasses = useMemo(() => {
@@ -873,28 +883,39 @@ export default function Dashboard() {
                 <div>
                   <h3 className="text-lg font-semibold mb-4">Registros Detalhados</h3>
                   <div className="overflow-x-auto max-h-[600px] overflow-y-auto">
-                    <table className="w-full">
+                    <table className="w-full text-sm">
                       <thead className="sticky top-0 bg-white dark:bg-slate-800">
                         <tr className="border-b">
-                          <th className="text-left p-2 font-medium">Mês</th>
+                          <th className="text-left p-2 font-medium">Data</th>
                           <th className="text-left p-2 font-medium">Equipamento</th>
-                          <th className="text-left p-2 font-medium">Classe</th>
-                          <th className="text-left p-2 font-medium">Subclasse</th>
-                          <th className="text-right p-2 font-medium">Valor</th>
+                          <th className="text-left p-2 font-medium">Produto</th>
+                          <th className="text-right p-2 font-medium">Qtd</th>
+                          <th className="text-right p-2 font-medium">Vlr Unit.</th>
+                          <th className="text-right p-2 font-medium">Total</th>
+                          <th className="text-left p-2 font-medium">Fornecedor</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {dadosDetalhamento.filtrados.slice(0, 1000).map((item, idx) => (
-                          <tr key={idx} className="border-b hover:bg-slate-50 dark:hover:bg-slate-800">
-                            <td className="p-2">{item.mes}</td>
-                            <td className="p-2">{item.equipamento}</td>
-                            <td className="p-2">{item.classe_codigo}</td>
-                            <td className="p-2">{item.subclasse}</td>
-                            <td className="p-2 text-right">
-                              {formatCurrency(item.valor, config || undefined)}
-                            </td>
-                          </tr>
-                        ))}
+                        {dadosDetalhamento.filtrados.slice(0, 1000).map((item, idx) => {
+                          // Formatar data (2025-04-10 00:00:00 -> 10/04/2025)
+                          const dataFormatada = item.data ? new Date(item.data).toLocaleDateString('pt-BR') : '';
+
+                          return (
+                            <tr key={idx} className="border-b hover:bg-slate-50 dark:hover:bg-slate-800">
+                              <td className="p-2 whitespace-nowrap">{dataFormatada}</td>
+                              <td className="p-2 whitespace-nowrap">{item.equipamento}</td>
+                              <td className="p-2 max-w-xs truncate" title={item.produto}>{item.produto}</td>
+                              <td className="p-2 text-right whitespace-nowrap">{item.quantidade.toLocaleString('pt-BR', {minimumFractionDigits: 0, maximumFractionDigits: 2})}</td>
+                              <td className="p-2 text-right whitespace-nowrap">
+                                {formatCurrency(item.valorUnitario, config || undefined)}
+                              </td>
+                              <td className="p-2 text-right whitespace-nowrap font-medium">
+                                {formatCurrency(item.valorTotal, config || undefined)}
+                              </td>
+                              <td className="p-2 max-w-xs truncate" title={item.fornecedor}>{item.fornecedor}</td>
+                            </tr>
+                          );
+                        })}
                       </tbody>
                     </table>
                     {dadosDetalhamento.filtrados.length > 1000 && (
