@@ -437,6 +437,10 @@ export default function Dashboard() {
     []
   );
 
+  // Hooks de ordenação para tabelas (chamados no nível superior)
+  const sortCategoria = useSortableData(gastosPorCategoria, 'total' as keyof typeof gastosPorCategoria[0]);
+  const sortEquipamento = useSortableData(gastosPorEquipamento, 'total' as keyof typeof gastosPorEquipamento[0]);
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 flex items-center justify-center">
@@ -958,41 +962,34 @@ export default function Dashboard() {
                 </div>
 
                 {/* Tabela de Gastos por Categoria */}
-                {(() => {
-                  const { sortedItems, requestSort, sortKey, sortDirection } = useSortableData(
-                    gastosPorCategoria,
-                    'total' as keyof typeof gastosPorCategoria[0]
-                  );
-
-                  return (
-                    <div className="mb-6">
-                      <h3 className="text-lg font-semibold mb-4">Gastos por Categoria de Equipamento</h3>
-                      <div className="overflow-x-auto">
-                        <table className="w-full">
-                          <thead>
-                            <tr className="border-b">
-                              <SortableHeader
-                                column={'categoria' as keyof typeof gastosPorCategoria[0]}
-                                label="Categoria"
-                                sortKey={sortKey}
-                                sortDirection={sortDirection}
-                                requestSort={requestSort}
-                                align="left"
-                              />
-                              <SortableHeader
-                                column={'total' as keyof typeof gastosPorCategoria[0]}
-                                label="Total Gasto"
-                                sortKey={sortKey}
-                                sortDirection={sortDirection}
-                                requestSort={requestSort}
-                                align="right"
-                              />
-                              <th className="text-right p-3 font-medium">% do Total</th>
-                              <th className="text-center p-3 font-medium">Ação</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {sortedItems.map((item, idx) => {
+                <div className="mb-6">
+                  <h3 className="text-lg font-semibold mb-4">Gastos por Categoria de Equipamento</h3>
+                  <div className="overflow-x-auto">
+                    <table className="w-full">
+                      <thead>
+                        <tr className="border-b">
+                          <SortableHeader
+                            column={'categoria' as keyof typeof gastosPorCategoria[0]}
+                            label="Categoria"
+                            sortKey={sortCategoria.sortKey}
+                            sortDirection={sortCategoria.sortDirection}
+                            requestSort={sortCategoria.requestSort}
+                            align="left"
+                          />
+                          <SortableHeader
+                            column={'total' as keyof typeof gastosPorCategoria[0]}
+                            label="Total Gasto"
+                            sortKey={sortCategoria.sortKey}
+                            sortDirection={sortCategoria.sortDirection}
+                            requestSort={sortCategoria.requestSort}
+                            align="right"
+                          />
+                          <th className="text-right p-3 font-medium">% do Total</th>
+                          <th className="text-center p-3 font-medium">Ação</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {sortCategoria.sortedItems.map((item, idx) => {
                           const percentual = dadosDetalhamento.total > 0
                             ? (item.total / dadosDetalhamento.total) * 100
                             : 0;
@@ -1041,54 +1038,46 @@ export default function Dashboard() {
                     </table>
                   </div>
                 </div>
-                  );
-                })()}
 
                 {/* Tabela de Gastos por Equipamento (quando categoria selecionada) */}
-                {categoriaSelecionada && gastosPorEquipamento.length > 0 && (() => {
-                  const { sortedItems, requestSort, sortKey, sortDirection } = useSortableData(
-                    gastosPorEquipamento,
-                    'total' as keyof typeof gastosPorEquipamento[0]
-                  );
-
-                  return (
-                    <div className="mb-6">
-                      <div className="flex items-center justify-between mb-4">
-                        <h3 className="text-lg font-semibold">
-                          Gastos por Equipamento: {categoriaSelecionada}
-                        </h3>
-                        <button
-                          onClick={() => setCategoriaSelecionada(null)}
-                          className="text-sm text-slate-600 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
-                        >
-                          ✕ Fechar
-                        </button>
-                      </div>
-                      <div className="overflow-x-auto border border-slate-200 dark:border-slate-700 rounded-lg">
-                        <table className="w-full">
-                          <thead className="bg-slate-50 dark:bg-slate-800">
-                            <tr className="border-b">
-                              <SortableHeader
-                                column={'equipamento' as keyof typeof gastosPorEquipamento[0]}
-                                label="Equipamento"
-                                sortKey={sortKey}
-                                sortDirection={sortDirection}
-                                requestSort={requestSort}
-                                align="left"
-                              />
-                              <SortableHeader
-                                column={'total' as keyof typeof gastosPorEquipamento[0]}
-                                label="Total Gasto"
-                                sortKey={sortKey}
-                                sortDirection={sortDirection}
-                                requestSort={requestSort}
-                                align="right"
-                              />
-                              <th className="text-right p-3 font-medium">% da Categoria</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {sortedItems.map((item, idx) => {
+                {categoriaSelecionada && gastosPorEquipamento.length > 0 && (
+                  <div className="mb-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <h3 className="text-lg font-semibold">
+                        Gastos por Equipamento: {categoriaSelecionada}
+                      </h3>
+                      <button
+                        onClick={() => setCategoriaSelecionada(null)}
+                        className="text-sm text-slate-600 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-200"
+                      >
+                        ✕ Fechar
+                      </button>
+                    </div>
+                    <div className="overflow-x-auto border border-slate-200 dark:border-slate-700 rounded-lg">
+                      <table className="w-full">
+                        <thead className="bg-slate-50 dark:bg-slate-800">
+                          <tr className="border-b">
+                            <SortableHeader
+                              column={'equipamento' as keyof typeof gastosPorEquipamento[0]}
+                              label="Equipamento"
+                              sortKey={sortEquipamento.sortKey}
+                              sortDirection={sortEquipamento.sortDirection}
+                              requestSort={sortEquipamento.requestSort}
+                              align="left"
+                            />
+                            <SortableHeader
+                              column={'total' as keyof typeof gastosPorEquipamento[0]}
+                              label="Total Gasto"
+                              sortKey={sortEquipamento.sortKey}
+                              sortDirection={sortEquipamento.sortDirection}
+                              requestSort={sortEquipamento.requestSort}
+                              align="right"
+                            />
+                            <th className="text-right p-3 font-medium">% da Categoria</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {sortEquipamento.sortedItems.map((item, idx) => {
                             const totalCategoria = gastosPorCategoria.find(
                               c => c.categoria === categoriaSelecionada
                             )?.total || 0;
@@ -1124,8 +1113,7 @@ export default function Dashboard() {
                       </table>
                     </div>
                   </div>
-                  );
-                })()}
+                )}
 
                 {/* Tabela Detalhada */}
                 <div>
